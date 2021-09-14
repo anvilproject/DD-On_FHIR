@@ -33,7 +33,11 @@ Description: "Example of grouping subjects together for high level summarization
 * characteristic[=].exclude = false
 * member
   * entity = Reference(patient-example-pt001)
-  * entity[+] = Reference(patient-example-pt002)
-  * entity[+] = Reference(patient-example-pt003)
-  * entity[+] = Reference(patient-example-pt004)
-  * entity[+] = Reference(patient-example-pt005)
+* member[+]
+  * entity = Reference(patient-example-pt002)
+* member[+]
+  * entity = Reference(patient-example-pt003)
+* member[+]
+  * entity = Reference(patient-example-pt004)
+* member[+]
+  * entity = Reference(patient-example-pt005)
