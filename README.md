@@ -3,6 +3,8 @@ Example data-dictionary representation using FHIR Shorthand (FSH)
 
 The purpose for this repository is to identify a common way to represent study metadata in FHIR in a way that is clear and accessible without straying any further from standard FHIR resources than is absolutely necessary. 
 
+We encourage anyone interested in exploring this topic to participate by creating issues or pull requests.
+
 ## Quick Start
 (shamelessy stolen from [NCPI FHIR IG README](https://github.com/NIH-NCPI/ncpi-fhir-ig))
 
