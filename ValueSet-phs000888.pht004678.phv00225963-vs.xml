@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="phs000888.pht004678.phv00225963-vs"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-phs000888.pht004678.phv00225963.v1.p1.html"><code>https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/variable.cgi?study_id=phs000888.v1.p1&amp;phv=225963</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-phs000888.pht004678.phv00225963.v1.p1.html#phs000888.pht004678.phv00225963.v1.p1-1">1</a></td><td>1900-1919</td></tr><tr><td><a href="CodeSystem-phs000888.pht004678.phv00225963.v1.p1.html#phs000888.pht004678.phv00225963.v1.p1-2">2</a></td><td>1920-1929</td></tr><tr><td><a href="CodeSystem-phs000888.pht004678.phv00225963.v1.p1.html#phs000888.pht004678.phv00225963.v1.p1-3">3</a></td><td>1930-1939</td></tr><tr><td><a href="CodeSystem-phs000888.pht004678.phv00225963.v1.p1.html#phs000888.pht004678.phv00225963.v1.p1-4">4</a></td><td>1940-1949</td></tr><tr><td><a href="CodeSystem-phs000888.pht004678.phv00225963.v1.p1.html#phs000888.pht004678.phv00225963.v1.p1-5">5</a></td><td>1950-1959</td></tr><tr><td><a href="CodeSystem-phs000888.pht004678.phv00225963.v1.p1.html#phs000888.pht004678.phv00225963.v1.p1-6">6</a></td><td>1960-1960</td></tr><tr><td><a href="CodeSystem-phs000888.pht004678.phv00225963.v1.p1.html#phs000888.pht004678.phv00225963.v1.p1-7">7</a></td><td>1970-1979</td></tr><tr><td><a href="CodeSystem-phs000888.pht004678.phv00225963.v1.p1.html#phs000888.pht004678.phv00225963.v1.p1-8">8</a></td><td>1980-1989</td></tr><tr><td><a href="CodeSystem-phs000888.pht004678.phv00225963.v1.p1.html#phs000888.pht004678.phv00225963.v1.p1-9">9</a></td><td>1990-1999</td></tr><tr><td><a href="CodeSystem-phs000888.pht004678.phv00225963.v1.p1.html#phs000888.pht004678.phv00225963.v1.p1-10">10</a></td><td>Year 2000 and later</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-umls.html"><code>https://uts.nlm.nih.gov/uts/umls</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>C1705492</td><td>Missing</td><td>Not existing; not able to be found</td></tr><tr><td>C439673</td><td>Unknown</td><td>Not known, not observed, not recorded, or refused.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phs000888.pht004678.phv00225963-vs"/>
+  <version value="0.1.0"/>
+  <name value="Phv00225963_vs"/>
+  <title value="Values_for_Phv00225963-vs"/>
+  <status value="active"/>
+  <date value="2021-09-14T22:17:05+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-NCPI"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Torstenson"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eric.s.torstenson@vumc.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Values allowed for Phv00225962"/>
+  <compose>
+    <include>
+      <system value="https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/variable.cgi?study_id=phs000888.v1.p1&amp;phv=225963"/>
+      <concept>
+        <code value="1"/>
+        <display value="1900-1919"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="1920-1929"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="1930-1939"/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="1940-1949"/>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="1950-1959"/>
+      </concept>
+      <concept>
+        <code value="6"/>
+        <display value="1960-1960"/>
+      </concept>
+      <concept>
+        <code value="7"/>
+        <display value="1970-1979"/>
+      </concept>
+      <concept>
+        <code value="8"/>
+        <display value="1980-1989"/>
+      </concept>
+      <concept>
+        <code value="9"/>
+        <display value="1990-1999"/>
+      </concept>
+      <concept>
+        <code value="10"/>
+        <display value="Year 2000 and later"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+      <concept>
+        <code value="C1705492"/>
+        <display value="Missing"/>
+      </concept>
+      <concept>
+        <code value="C439673"/>
+        <display value="Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

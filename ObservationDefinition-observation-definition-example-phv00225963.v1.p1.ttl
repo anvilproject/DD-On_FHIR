@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225963.v1.p1> a fhir:ObservationDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "observation-definition-example-phv00225963.v1.p1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225963.v1.p1}\">DECADE_BIRTH</span></p><p><b>permittedDataType</b>: CodeableConcept</p><p><b>validCodedValueSet</b>: <a href=\"ValueSet-phs000888.pht004678.phv00225963-vs.html\">Generated Summary: url: https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phs000888.pht004678.phv00225963-vs; version: 0.1.0; name: Phv00225963_vs; title: Values_for_Phv00225963-vs; status: active; date: Sep 14, 2021 10:17:05 PM; publisher: NCPI FHIR Working Group; NCPI FHIR Working Group: https://github.com/nih-NCPI, Eric Torstenson: eric.s.torstenson@vumc.org; description: Values allowed for Phv00225962</a></p></div>"
+  ];
+  fhir:ObservationDefinition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4678" ];
+       fhir:Coding.code [ fhir:value "phv00225963.v1.p1" ];
+       fhir:Coding.display [ fhir:value "DECADE_BIRTH" ]
+     ]
+  ];
+  fhir:ObservationDefinition.permittedDataType [
+     fhir:value "CodeableConcept";
+     fhir:index 0
+  ];
+  fhir:ObservationDefinition.validCodedValueSet [
+     fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phs000888.pht004678.phv00225963-vs>;
+     fhir:Reference.reference [ fhir:value "ValueSet/phs000888.pht004678.phv00225963-vs" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225963.v1.p1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

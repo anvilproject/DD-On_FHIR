@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-pt001-phv00225967",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225967.v1.p1}, {http://snomed.info/sct 233985008}, {https://uts.nlm.nih.gov/uts/umls C0162871}, {http://loinc.org 58266-8}\">CASE_CONTROL_AAA</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-pt001.html\">Generated Summary: </a></p><p><b>value</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C99269}\">Case</span></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4678",
+        "code": "phv00225967.v1.p1",
+        "display": "CASE_CONTROL_AAA"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "233985008",
+        "display": "Abdominal aortic aneurysm"
+      },
+      {
+        "system": "https://uts.nlm.nih.gov/uts/umls",
+        "code": "C0162871",
+        "display": "Abdominal aortic aneurysm"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "58266-8",
+        "display": "Ever diagnosed by a doctor as having an abdominal aortic aneurysm"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-example-pt001"
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "https://uts.nlm.nih.gov/uts/umls",
+        "code": "C99269",
+        "display": "Case"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "resourceType": "ObservationDefinition",
+  "id": "observation-definition-example-phv00225969",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225969.v1.p1}\">CASE_CONTROL_ADHD</span></p><p><b>permittedDataType</b>: CodeableConcept</p><p><b>validCodedValueSet</b>: <a href=\"ValueSet-phv-case-control-vs.html\">Generated Summary: url: https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phv-case-control-vs; version: 0.1.0; name: Phv_Case_Control_vs; title: Values For Case Control Variables; status: active; date: Sep 14, 2021 10:17:05 PM; publisher: NCPI FHIR Working Group; NCPI FHIR Working Group: https://github.com/nih-NCPI, Eric Torstenson: eric.s.torstenson@vumc.org; description: Values For Case Control Variables</a></p></div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4678",
+        "code": "phv00225969.v1.p1",
+        "display": "CASE_CONTROL_ADHD"
+      }
+    ]
+  },
+  "permittedDataType": [
+    "CodeableConcept"
+  ],
+  "validCodedValueSet": {
+    "reference": "ValueSet/phv-case-control-vs"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "resourceType": "ResearchStudy",
+  "id": "research-study-phs000888.v1.p1",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>title</b>: eMERGE Network Imputed GWAS for 41 Phenotypes</p><p><b>status</b>: completed</p><p><b>primaryPurposeType</b>: <span title=\"Codes: \">diagnostic</span></p></div>"
+  },
+  "title": "eMERGE Network Imputed GWAS for 41 Phenotypes",
+  "status": "completed",
+  "primaryPurposeType": {
+    "coding": [
+      {
+        "code": "diagnostic"
+      }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ConceptMap/ConceptMap-UMLS> a fhir:ConceptMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ConceptMap-UMLS"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>UMLS Analogs (https://uts.nlm.nih.gov/uts/umls)</h2><p>Mapping from <a href=\"CodeSystem-umls.html\">https://uts.nlm.nih.gov/uts/umls</a> to <a href=\"ValueSet-combined-annotation-vs.html\">https://ddent.someplace.org/dd-on-fhir/ValueSets/common-systems</a></p><p>DRAFT. Published on Sep 14, 2021 10:17:05 PM by NCPI FHIR Working Group (NCPI FHIR Working Group: <a href=\"https://github.com/nih-NCPI\">https://github.com/nih-NCPI</a>, Eric Torstenson: <a href=\"mailto:eric.s.torstenson@vumc.org\">eric.s.torstenson@vumc.org</a>). </p><div><p>These terms may appear as part of a dataset's encoding. This map will permit systematic expansion to other terminologies</p>\n</div><br/><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td>C0162871</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>233985008 (Abdominal aortic aneurysm)</td></tr></table><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td>C0162871</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>58266-8 (Ever diagnosed by a doctor as having an abdominal aortic aneurysm)</td></tr><tr><td>C0005890 (Body Height)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>8302-2 (Body height)</td></tr><tr><td>C0005910 (Body Weight)</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>29463-7 (Body weight)</td></tr><tr><td>C1305855</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>39156-5 (Body mass index (BMI) [Ratio])</td></tr></table></div>"
+  ];
+  fhir:ConceptMap.url [ fhir:value "https://uts.nlm.nih.gov/uts/umls"];
+  fhir:ConceptMap.version [ fhir:value "0.1.0"];
+  fhir:ConceptMap.name [ fhir:value "UMLS Analogs"];
+  fhir:ConceptMap.title [ fhir:value "Alternate mappings that can be made for UMLS terms"];
+  fhir:ConceptMap.status [ fhir:value "draft"];
+  fhir:ConceptMap.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:ConceptMap.date [ fhir:value "2021-09-14T22:17:05+00:00"^^xsd:dateTime];
+  fhir:ConceptMap.publisher [ fhir:value "NCPI FHIR Working Group"];
+  fhir:ConceptMap.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "NCPI FHIR Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/nih-NCPI" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Eric Torstenson" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "eric.s.torstenson@vumc.org" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ];
+  fhir:ConceptMap.description [ fhir:value "These terms may appear as part of a dataset's encoding. This map will permit systematic expansion to other terminologies"];
+  fhir:ConceptMap.sourceUri [ fhir:value "https://uts.nlm.nih.gov/uts/umls"];
+  fhir:ConceptMap.targetUri [ fhir:value "https://ddent.someplace.org/dd-on-fhir/ValueSets/common-systems"];
+  fhir:ConceptMap.group [
+     fhir:index 0;
+     fhir:ConceptMap.group.source [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+     fhir:ConceptMap.group.target [ fhir:value "http://snomed.info/sct" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "C0162871" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "Abdominal aortic aneurysm" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "233985008" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Abdominal aortic aneurysm" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ConceptMap.group.source [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+     fhir:ConceptMap.group.target [ fhir:value "http://loinc.org" ];
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "C0162871" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "Abdominal aortic aneurysm" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "58266-8" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Ever diagnosed by a doctor as having an abdominal aortic aneurysm" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ConceptMap.group.element.code [ fhir:value "C0005890" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "Body height" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "8302-2" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Body height" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ConceptMap.group.element.code [ fhir:value "C0005910" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "Body Weight" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "29463-7" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Body Weight" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ConceptMap.group.element.code [ fhir:value "C1305855" ];
+       fhir:ConceptMap.group.element.display [ fhir:value "Body mass index" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "39156-5" ];
+         fhir:ConceptMap.group.element.target.display [ fhir:value "Body mass index (BMI) [Ratio]" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ConceptMap/ConceptMap-UMLS.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

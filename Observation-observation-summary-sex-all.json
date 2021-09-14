@@ -1,0 +1,56 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-summary-sex-all",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225962.v1.p1}\">SEX</span></p><p><b>subject</b>: <a href=\"Group-research-group-phs000888-all.html\">Generated Summary: type: person; actual; name: all study members; 1</a></p><p><b>focus</b>: <a href=\"ObservationDefinition-observation-definition-example-phv00225962.html\">Generated Summary: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225962.v1.p1}\">SEX</span>; permittedDataType: CodeableConcept</a></p><p><b>value</b>: 55029 C1515051</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C46109}\">Male</span></p><p><b>value</b>: 25246</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C46110}\">Female</span></p><p><b>value</b>: 29783</p></blockquote></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4678",
+        "code": "phv00225962.v1.p1"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Group/research-group-phs000888-all"
+  },
+  "focus": [
+    {
+      "reference": "ObservationDefinition/observation-definition-example-phv00225962"
+    }
+  ],
+  "valueQuantity": {
+    "value": 55029,
+    "system": "https://uts.nlm.nih.gov/uts/umls",
+    "code": "C1515051"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://uts.nlm.nih.gov/uts/umls",
+            "code": "C46109",
+            "display": "Male"
+          }
+        ]
+      },
+      "valueInteger": 25246
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://uts.nlm.nih.gov/uts/umls",
+            "code": "C46110",
+            "display": "Female"
+          }
+        ]
+      },
+      "valueInteger": 29783
+    }
+  ]
+}

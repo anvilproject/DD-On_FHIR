@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "phs000888-groups",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier/phs000888 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">AllSubjects<a name=\"phs000888-groups-AllSubjects\"> </a></td><td>All subjects</td></tr><tr><td style=\"white-space:nowrap\">GroupConsentHMB<a name=\"phs000888-groups-GroupConsentHMB\"> </a></td><td>Consent Group 01 HMB</td></tr><tr><td style=\"white-space:nowrap\">GroupConsent02<a name=\"phs000888-groups-GroupConsent02\"> </a></td><td>Consent Group 02</td></tr></table></div>"
+  },
+  "url": "https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier/phs000888",
+  "identifier": [
+    {
+      "system": "https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier",
+      "value": "phs000888"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "Study_phs000888_groups",
+  "title": "eMERGE Groups",
+  "status": "active",
+  "date": "2021-09-14T22:17:05+00:00",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/nih-NCPI"
+        }
+      ]
+    },
+    {
+      "name": "Eric Torstenson",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "eric.s.torstenson@vumc.org",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Group types associated with study phs000888.",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "AllSubjects",
+      "display": "All subjects"
+    },
+    {
+      "code": "GroupConsentHMB",
+      "display": "Consent Group 01 HMB"
+    },
+    {
+      "code": "GroupConsent02",
+      "display": "Consent Group 02"
+    }
+  ]
+}

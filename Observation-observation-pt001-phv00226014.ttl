@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt001-phv00226014> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "observation-pt001-phv00226014"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226014.v1.p1}, {https://uts.nlm.nih.gov/uts/umls C0005910}, {http://loinc.org 29463-7}\">WEIGHT</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-pt001.html\">Generated Summary: </a></p><p><b>value</b>: 73.5 kg</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4680" ];
+       fhir:Coding.code [ fhir:value "phv00226014.v1.p1" ];
+       fhir:Coding.display [ fhir:value "WEIGHT" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+       fhir:Coding.code [ fhir:value "C0005910" ];
+       fhir:Coding.display [ fhir:value "Body Weight" ]
+     ], [
+       fhir:index 2;
+       a loinc:29463-7;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "29463-7" ];
+       fhir:Coding.display [ fhir:value "Body weight" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Patient/patient-example-pt001>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example-pt001" ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "73.5"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "kg" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "kg" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt001-phv00226014.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

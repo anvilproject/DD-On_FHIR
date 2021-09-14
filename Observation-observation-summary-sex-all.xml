@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-summary-sex-all"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225962.v1.p1}">SEX</span></p><p><b>subject</b>: <a href="Group-research-group-phs000888-all.html">Generated Summary: type: person; actual; name: all study members; 1</a></p><p><b>focus</b>: <a href="ObservationDefinition-observation-definition-example-phv00225962.html">Generated Summary: <span title="Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225962.v1.p1}">SEX</span>; permittedDataType: CodeableConcept</a></p><p><b>value</b>: 55029 C1515051</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {https://uts.nlm.nih.gov/uts/umls C46109}">Male</span></p><p><b>value</b>: 25246</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {https://uts.nlm.nih.gov/uts/umls C46110}">Female</span></p><p><b>value</b>: 29783</p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678"/>
+      <code value="phv00225962.v1.p1"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Group/research-group-phs000888-all"/>
+  </subject>
+  <focus>
+    <reference value="ObservationDefinition/observation-definition-example-phv00225962"/>
+  </focus>
+  <valueQuantity>
+    <value value="55029"/>
+    <system value="https://uts.nlm.nih.gov/uts/umls"/>
+    <code value="C1515051"/>
+  </valueQuantity>
+  <component>
+    <code>
+      <coding>
+        <system value="https://uts.nlm.nih.gov/uts/umls"/>
+        <code value="C46109"/>
+        <display value="Male"/>
+      </coding>
+    </code>
+    <valueInteger value="25246"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://uts.nlm.nih.gov/uts/umls"/>
+        <code value="C46110"/>
+        <display value="Female"/>
+      </coding>
+    </code>
+    <valueInteger value="29783"/>
+  </component>
+</Observation>

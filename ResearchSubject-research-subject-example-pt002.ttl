@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ResearchSubject/research-subject-example-pt002> a fhir:ResearchSubject;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "research-subject-example-pt002"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: on-study</p><p><b>study</b>: <a href=\"ResearchStudy-research-study-phs000888.v1.p1.html\">Generated Summary: title: eMERGE Network Imputed GWAS for 41 Phenotypes; status: completed; <span title=\"Codes: \">diagnostic</span></a></p><p><b>individual</b>: <a href=\"Patient-patient-example-pt002.html\">Generated Summary: </a></p><p><b>consent</b>: <a href=\"Consent-consent-hmb.html\">Generated Summary: id: HMB; status: inactive; <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C0035168}\">Research</span>; <span title=\"Codes: \">rsdid</span>; <span title=\"Codes: \">hipaa-research</span></a></p></div>"
+  ];
+  fhir:ResearchSubject.status [ fhir:value "on-study"];
+  fhir:ResearchSubject.study [
+     fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ResearchStudy/research-study-phs000888.v1.p1>;
+     fhir:Reference.reference [ fhir:value "ResearchStudy/research-study-phs000888.v1.p1" ]
+  ];
+  fhir:ResearchSubject.individual [
+     fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Patient/patient-example-pt002>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example-pt002" ]
+  ];
+  fhir:ResearchSubject.consent [
+     fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Consent/consent-hmb>;
+     fhir:Reference.reference [ fhir:value "Consent/consent-hmb" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ResearchSubject/research-subject-example-pt002.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

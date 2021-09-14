@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="phs000888.v1.p1-cuis"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=233985008">233985008</a></td><td>Abdominal aortic aneurysm</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-umls.html"><code>https://uts.nlm.nih.gov/uts/umls</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C0162871</td><td>Abdominal aortic aneurysm</td></tr><tr><td>C0005890</td><td>Body Height</td></tr><tr><td>C0005910</td><td>Body Weight</td></tr><tr><td>C1305855</td><td>Body mass index</td></tr><tr><td>C0005893</td><td>Body mass index procedure</td></tr><tr><td>C0424638</td><td>Height and weight</td></tr></table></li><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://details.loinc.org/LOINC/8302-2.html">8302-2</a></td><td>Body height</td></tr><tr><td><a href="http://details.loinc.org/LOINC/29463-7.html">29463-7</a></td><td>Body Weight</td></tr><tr><td><a href="http://details.loinc.org/LOINC/39156-5.html">39156-5</a></td><td>Body mass index (BMI) [Ratio]</td></tr><tr><td><a href="http://details.loinc.org/LOINC/58266-8.html">58266-8</a></td><td>Ever diagnosed by a doctor as having an abdominal aortic aneurysm</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phs000888.v1.p1-cuis"/>
+  <version value="0.1.0"/>
+  <name value="Phs000888_v1_p1_CUIs"/>
+  <title value="CUIs mapped to phs000888.v1.p1"/>
+  <status value="active"/>
+  <date value="2021-09-14T22:17:05+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-NCPI"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Torstenson"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eric.s.torstenson@vumc.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="CUIs mapped to phs000888.v1.p1"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="233985008"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+      <concept>
+        <code value="C0162871"/>
+        <display value="Abdominal aortic aneurysm"/>
+      </concept>
+      <concept>
+        <code value="C0005890"/>
+        <display value="Body Height"/>
+      </concept>
+      <concept>
+        <code value="C0005910"/>
+        <display value="Body Weight"/>
+      </concept>
+      <concept>
+        <code value="C1305855"/>
+        <display value="Body mass index"/>
+      </concept>
+      <concept>
+        <code value="C0005893"/>
+        <display value="Body mass index procedure"/>
+      </concept>
+      <concept>
+        <code value="C0424638"/>
+        <display value="Height and weight"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="8302-2"/>
+        <display value="Body height"/>
+      </concept>
+      <concept>
+        <code value="29463-7"/>
+        <display value="Body Weight"/>
+      </concept>
+      <concept>
+        <code value="39156-5"/>
+        <display value="Body mass index (BMI) [Ratio]"/>
+      </concept>
+      <concept>
+        <code value="58266-8"/>
+        <display value="Ever diagnosed by a doctor as having an abdominal aortic aneurysm"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

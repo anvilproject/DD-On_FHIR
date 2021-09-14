@@ -1,0 +1,172 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Composition/composition-phs000888.v1.p1.summary> a fhir:Composition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "composition-phs000888.v1.p1.summary"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C0947630}\">Scientific Study</span></p><p><b>date</b>: 2021-08-30</p><p><b>author</b>: <a href=\"Organization-organization-ncpi.html\">Generated Summary: name: NCPI FHIR team</a></p><p><b>title</b>: All Documents associated with study, phs000888.v1.p1</p></div>"
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+       fhir:Coding.code [ fhir:value "C0947630" ];
+       fhir:Coding.display [ fhir:value "Scientific Study" ]
+     ]
+  ];
+  fhir:Composition.date [ fhir:value "2021-08-30"^^xsd:date];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Organization/organization-ncpi>;
+     fhir:Reference.reference [ fhir:value "Organization/organization-ncpi" ]
+  ];
+  fhir:Composition.title [ fhir:value "All Documents associated with study, phs000888.v1.p1"];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "Variable Definitions" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:61149-1;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "61149-1" ];
+         fhir:Coding.display [ fhir:value "Objective Narrative" ]
+       ]
+     ];
+     fhir:Composition.section.focus [
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ActivityDefinition/activity-definition-example-pht004678.v1.p1>;
+       fhir:Reference.reference [ fhir:value "ActivityDefinition/activity-definition-example-pht004678.v1.p1" ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225961>;
+       fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225961" ]
+     ], [
+       fhir:index 1;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225962>;
+       fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225962" ]
+     ], [
+       fhir:index 2;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225963.v1.p1>;
+       fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225963.v1.p1" ]
+     ], [
+       fhir:index 3;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225964.v1.p1>;
+       fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225964.v1.p1" ]
+     ], [
+       fhir:index 4;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225967>;
+       fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225967" ]
+     ], [
+       fhir:index 5;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225968>;
+       fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225968" ]
+     ], [
+       fhir:index 6;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225969>;
+       fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225969" ]
+     ], [
+       fhir:index 7;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00226013>;
+       fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00226013" ]
+     ], [
+       fhir:index 8;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00226014>;
+       fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00226014" ]
+     ], [
+       fhir:index 9;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00226015>;
+       fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00226015" ]
+     ], [
+       fhir:index 10;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00226016>;
+       fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00226016" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "Summary Observations - Full Study" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier/phs000888" ];
+         fhir:Coding.code [ fhir:value "AllSubjects" ];
+         fhir:Coding.display [ fhir:value "All subjects" ]
+       ]
+     ];
+     fhir:Composition.section.focus [
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Group/research-group-phs000888-all>;
+       fhir:Reference.reference [ fhir:value "Group/research-group-phs000888-all" ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-sex-all>;
+       fhir:Reference.reference [ fhir:value "Observation/observation-summary-sex-all" ]
+     ], [
+       fhir:index 1;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-aaa-all>;
+       fhir:Reference.reference [ fhir:value "Observation/observation-summary-aaa-all" ]
+     ], [
+       fhir:index 2;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-weight-all>;
+       fhir:Reference.reference [ fhir:value "Observation/observation-summary-weight-all" ]
+     ], [
+       fhir:index 3;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-height-all>;
+       fhir:Reference.reference [ fhir:value "Observation/observation-summary-height-all" ]
+     ], [
+       fhir:index 4;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-bmi-all>;
+       fhir:Reference.reference [ fhir:value "Observation/observation-summary-bmi-all" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Composition.section.title [ fhir:value "Summary Observations - Consent Group HMB" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier/phs000888" ];
+         fhir:Coding.code [ fhir:value "GroupConsentHMB" ]
+       ]
+     ];
+     fhir:Composition.section.focus [
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Group/research-group-phs000888-hmb>;
+       fhir:Reference.reference [ fhir:value "Group/research-group-phs000888-hmb" ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-sex-hmb>;
+       fhir:Reference.reference [ fhir:value "Observation/observation-summary-sex-hmb" ]
+     ], [
+       fhir:index 1;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-aaa-hmb>;
+       fhir:Reference.reference [ fhir:value "Observation/observation-summary-aaa-hmb" ]
+     ], [
+       fhir:index 2;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-weight-hmb>;
+       fhir:Reference.reference [ fhir:value "Observation/observation-summary-weight-hmb" ]
+     ], [
+       fhir:index 3;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-height-hmb>;
+       fhir:Reference.reference [ fhir:value "Observation/observation-summary-height-hmb" ]
+     ], [
+       fhir:index 4;
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-bmi-hmb>;
+       fhir:Reference.reference [ fhir:value "Observation/observation-summary-bmi-hmb" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Composition/composition-phs000888.v1.p1.summary.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

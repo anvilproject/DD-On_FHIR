@@ -1,0 +1,168 @@
+﻿NCPIDDonFHIRImplementationGuide : Validation Results
+=========================================
+
+err = 0, warn = 9, info = 7
+IG Publisher Version: 1.1.80
+Generated Tue Sep 14 22:17:35 UTC 2021. FHIR version 4.0.1 for NCPI-DD-on-FHIR-Implementation-Guide#0.1.0 (canonical = https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig)
+
+ Build Errors : 0 / 0 / 0
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ActivityDefinition-activity-definition-example-pht004678.v1.p1 : 0 / 1 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/CodeSystem-loinc : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/CodeSystem-phs000888-groups : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/CodeSystem-phs000888-pht004678.v1.p1 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/CodeSystem-phs000888-pht004680.v1.p1 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/CodeSystem-phs000888.pht004678.phv00225963.v1.p1 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/CodeSystem-snomed : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/CodeSystem-ucum : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/CodeSystem-umls : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Composition-composition-phs000888.v1.p1.summary : 0 / 0 / 2
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ConceptMap-ConceptMap-UMLS : 0 / 1 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ConceptMap-Instance-ConceptMap-CUI-To-DD : 0 / 1 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ConceptMap-Instance-ConceptMap-DD-To-CUI : 0 / 1 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Consent-consent-hmb : 0 / 2 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Group-research-group-phs000888-all : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Group-research-group-phs000888-hmb : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ImplementationGuide-NCPI-DD-on-FHIR-Implementation-Guide : 0 / 0 / 7
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-pt001-phv00225967 : 0 / 1 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-pt001-phv00226013 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-pt001-phv00226014 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-pt001-phv00226015 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-pt001-phv00226016 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-pt002-phv00225967 : 0 / 1 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-pt002-phv00226014 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-pt002-phv00226015 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-pt002-phv00226016 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-pt003-phv00226014 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-pt003-phv00226015 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-pt003-phv00226016 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-summary-aaa-all : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-summary-aaa-hmb : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-summary-bmi-all : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-summary-bmi-hmb : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-summary-height-all : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-summary-height-hmb : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-summary-sex-all : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-summary-sex-hmb : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-summary-weight-all : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Observation-observation-summary-weight-hmb : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00225961 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00225962 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00225963.v1.p1 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00225964.v1.p1 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00225967 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00225968 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00225969 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00226013 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00226014 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00226015 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00226016 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Organization-organization-ncpi : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Patient-patient-example-pt001 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Patient-patient-example-pt002 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Patient-patient-example-pt003 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Patient-patient-example-pt004 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/Patient-patient-example-pt005 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ResearchStudy-research-study-phs000888.v1.p1 : 0 / 1 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ResearchSubject-research-subject-example-pt001 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ResearchSubject-research-subject-example-pt002 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ResearchSubject-research-subject-example-pt003 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ResearchSubject-research-subject-example-pt004 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ResearchSubject-research-subject-example-pt005 : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ValueSet-combined-annotation-vs : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ValueSet-loinc-vs : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ValueSet-phs000888.pht004678.phv00225963-vs : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ValueSet-phs000888.v1.p1-cuis : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ValueSet-phv-case-control-vs : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ValueSet-phv00225962-vs : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ValueSet-snomed-vs : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ValueSet-ucum-vs : 0 / 0 / 1
+ /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ValueSet-umls-vs : 0 / 0 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/ActivityDefinition-activity-definition-example-pht004678.v1.p1.json ==
+WARNING: ActivityDefinition/activity-definition-example-pht004678.v1.p1: ActivityDefinition: adf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/CodeSystem-loinc.json ==
+== fsh-generated/resources/CodeSystem-phs000888-groups.json ==
+== fsh-generated/resources/CodeSystem-phs000888-pht004678.v1.p1.json ==
+== fsh-generated/resources/CodeSystem-phs000888-pht004680.v1.p1.json ==
+== fsh-generated/resources/CodeSystem-phs000888.pht004678.phv00225963.v1.p1.json ==
+== fsh-generated/resources/CodeSystem-snomed.json ==
+== fsh-generated/resources/CodeSystem-ucum.json ==
+== fsh-generated/resources/CodeSystem-umls.json ==
+== fsh-generated/resources/Composition-composition-phs000888.v1.p1.summary.json ==
+INFORMATION: Composition/composition-phs000888.v1.p1.summary: Composition.type: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = https://uts.nlm.nih.gov/uts/umls#C0947630)
+== fsh-generated/resources/ConceptMap-ConceptMap-UMLS.json ==
+WARNING: ConceptMap/ConceptMap-UMLS: ConceptMap: cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/ConceptMap-Instance-ConceptMap-CUI-To-DD.json ==
+WARNING: ConceptMap/Instance-ConceptMap-CUI-To-DD: ConceptMap: cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/ConceptMap-Instance-ConceptMap-DD-To-CUI.json ==
+WARNING: ConceptMap/Instance-ConceptMap-DD-To-CUI: ConceptMap: cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/Consent-consent-hmb.json ==
+WARNING: Consent/consent-hmb: Consent.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Consent/consent-hmb: Consent.policyRule.coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Group-research-group-phs000888-all.json ==
+== fsh-generated/resources/Group-research-group-phs000888-hmb.json ==
+== fsh-generated/resources/ImplementationGuide-NCPI-DD-on-FHIR-Implementation-Guide.json ==
+INFORMATION: ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide: ImplementationGuide.definition.resource[23].description: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide: ImplementationGuide.definition.resource[24].description: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide: ImplementationGuide.definition.resource[25].description: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide: ImplementationGuide.definition.resource[28].description: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide: ImplementationGuide.definition.resource[29].description: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide: ImplementationGuide.definition.resource[30].description: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/Observation-observation-pt001-phv00225967.json ==
+WARNING: Observation/observation-pt001-phv00225967: Observation.code.coding[2]: Unknown Code https://uts.nlm.nih.gov/uts/umls#C0162871 in https://uts.nlm.nih.gov/uts/umls - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'https://uts.nlm.nih.gov/uts/umls#C0162871'
+== fsh-generated/resources/Observation-observation-pt001-phv00226013.json ==
+== fsh-generated/resources/Observation-observation-pt001-phv00226014.json ==
+== fsh-generated/resources/Observation-observation-pt001-phv00226015.json ==
+== fsh-generated/resources/Observation-observation-pt001-phv00226016.json ==
+== fsh-generated/resources/Observation-observation-pt002-phv00225967.json ==
+WARNING: Observation/observation-pt002-phv00225967: Observation.code.coding[2]: Unknown Code https://uts.nlm.nih.gov/uts/umls#C0162871 in https://uts.nlm.nih.gov/uts/umls - note that the code system is labelled as a fragment, so the code may be valid in some other fragment for 'https://uts.nlm.nih.gov/uts/umls#C0162871'
+== fsh-generated/resources/Observation-observation-pt002-phv00226014.json ==
+== fsh-generated/resources/Observation-observation-pt002-phv00226015.json ==
+== fsh-generated/resources/Observation-observation-pt002-phv00226016.json ==
+== fsh-generated/resources/Observation-observation-pt003-phv00226014.json ==
+== fsh-generated/resources/Observation-observation-pt003-phv00226015.json ==
+== fsh-generated/resources/Observation-observation-pt003-phv00226016.json ==
+== fsh-generated/resources/Observation-observation-summary-aaa-all.json ==
+== fsh-generated/resources/Observation-observation-summary-aaa-hmb.json ==
+== fsh-generated/resources/Observation-observation-summary-bmi-all.json ==
+== fsh-generated/resources/Observation-observation-summary-bmi-hmb.json ==
+== fsh-generated/resources/Observation-observation-summary-height-all.json ==
+== fsh-generated/resources/Observation-observation-summary-height-hmb.json ==
+== fsh-generated/resources/Observation-observation-summary-sex-all.json ==
+== fsh-generated/resources/Observation-observation-summary-sex-hmb.json ==
+== fsh-generated/resources/Observation-observation-summary-weight-all.json ==
+== fsh-generated/resources/Observation-observation-summary-weight-hmb.json ==
+== fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00225961.json ==
+== fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00225962.json ==
+== fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00225963.v1.p1.json ==
+== fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00225964.v1.p1.json ==
+== fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00225967.json ==
+== fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00225968.json ==
+== fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00225969.json ==
+== fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00226013.json ==
+== fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00226014.json ==
+== fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00226015.json ==
+== fsh-generated/resources/ObservationDefinition-observation-definition-example-phv00226016.json ==
+== fsh-generated/resources/Organization-organization-ncpi.json ==
+== fsh-generated/resources/Patient-patient-example-pt001.json ==
+== fsh-generated/resources/Patient-patient-example-pt002.json ==
+== fsh-generated/resources/Patient-patient-example-pt003.json ==
+== fsh-generated/resources/Patient-patient-example-pt004.json ==
+== fsh-generated/resources/Patient-patient-example-pt005.json ==
+== fsh-generated/resources/ResearchStudy-research-study-phs000888.v1.p1.json ==
+WARNING: ResearchStudy/research-study-phs000888.v1.p1: ResearchStudy.primaryPurposeType.coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/ResearchSubject-research-subject-example-pt001.json ==
+== fsh-generated/resources/ResearchSubject-research-subject-example-pt002.json ==
+== fsh-generated/resources/ResearchSubject-research-subject-example-pt003.json ==
+== fsh-generated/resources/ResearchSubject-research-subject-example-pt004.json ==
+== fsh-generated/resources/ResearchSubject-research-subject-example-pt005.json ==
+== fsh-generated/resources/ValueSet-combined-annotation-vs.json ==
+== fsh-generated/resources/ValueSet-loinc-vs.json ==
+== fsh-generated/resources/ValueSet-phs000888.pht004678.phv00225963-vs.json ==
+== fsh-generated/resources/ValueSet-phs000888.v1.p1-cuis.json ==
+== fsh-generated/resources/ValueSet-phv-case-control-vs.json ==
+== fsh-generated/resources/ValueSet-phv00225962-vs.json ==
+== fsh-generated/resources/ValueSet-snomed-vs.json ==
+== fsh-generated/resources/ValueSet-ucum-vs.json ==
+== fsh-generated/resources/ValueSet-umls-vs.json ==

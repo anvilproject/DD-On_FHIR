@@ -1,0 +1,113 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-summary-bmi-all",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226016.v1.p1}\">BODY_MASS_INDEX</span></p><p><b>subject</b>: <a href=\"Group-research-group-phs000888-all.html\">Generated Summary: type: person; actual; name: all study members; 1</a></p><p><b>focus</b>: <a href=\"ObservationDefinition-observation-definition-example-phv00226016.html\">Generated Summary: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226016.v1.p1}\">BODY_MASS_INDEX</span>; permittedDataType: Quantity</a></p><p><b>value</b>: 2438477 C1515051</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C1524031}\">Minimum</span></p><p><b>value</b>: 0.3 C1515051</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C0876920}\">Median</span></p><p><b>value</b>: 29.57 C1515051</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C0806909}\">Maximum</span></p><p><b>value</b>: 632.3 C1515051</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C0444504}\">Mean</span></p><p><b>value</b>: 31.01 C1515051</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C0871420}\">Std</span></p><p><b>value</b>: 7.779 C1515051</p></blockquote></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4680",
+        "code": "phv00226016.v1.p1",
+        "display": "BODY_MASS_INDEX"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Group/research-group-phs000888-all"
+  },
+  "focus": [
+    {
+      "reference": "ObservationDefinition/observation-definition-example-phv00226016"
+    }
+  ],
+  "valueQuantity": {
+    "value": 2438477,
+    "system": "https://uts.nlm.nih.gov/uts/umls",
+    "code": "C1515051"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://uts.nlm.nih.gov/uts/umls",
+            "code": "C1524031",
+            "display": "Minimum"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 0.3,
+        "system": "https://uts.nlm.nih.gov/uts/umls",
+        "code": "C1515051"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://uts.nlm.nih.gov/uts/umls",
+            "code": "C0876920",
+            "display": "Median"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 29.57,
+        "system": "https://uts.nlm.nih.gov/uts/umls",
+        "code": "C1515051"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://uts.nlm.nih.gov/uts/umls",
+            "code": "C0806909",
+            "display": "Maximum"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 632.3,
+        "system": "https://uts.nlm.nih.gov/uts/umls",
+        "code": "C1515051"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://uts.nlm.nih.gov/uts/umls",
+            "code": "C0444504",
+            "display": "Mean"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 31.01,
+        "system": "https://uts.nlm.nih.gov/uts/umls",
+        "code": "C1515051"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://uts.nlm.nih.gov/uts/umls",
+            "code": "C0871420",
+            "display": "Std"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 7.779,
+        "system": "https://uts.nlm.nih.gov/uts/umls",
+        "code": "C1515051"
+      }
+    }
+  ]
+}

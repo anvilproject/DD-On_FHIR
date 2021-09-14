@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phv00225962-vs> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "phv00225962-vs"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-umls.html\"><code>https://uts.nlm.nih.gov/uts/umls</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>C439673</td><td>Unknown</td><td>Not known, not observed, not recorded, or refused.</td></tr><tr><td>C3846720</td><td>No Assessed</td><td>Indicates that an assessment was not performed.</td></tr><tr><td>C1705492</td><td>Missing</td><td>Not existing; not able to be found</td></tr><tr><td>C46109</td><td>Male</td><td>Male Gender</td></tr><tr><td>C46110</td><td>Female</td><td>Female Gender</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phv00225962-vs"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "Phv00225962_vs"];
+  fhir:ValueSet.title [ fhir:value "Values_for_Phv00225962"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-09-14T22:17:05+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "NCPI FHIR Working Group"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "NCPI FHIR Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/nih-NCPI" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Eric Torstenson" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "eric.s.torstenson@vumc.org" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Values allowed for Phv00225962"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "C439673" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unknown" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "C3846720" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No Assessed" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "C1705492" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Missing" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "C46109" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Male" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "C46110" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Female" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phv00225962-vs.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

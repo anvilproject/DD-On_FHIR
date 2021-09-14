@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ucum",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://unitsofmeasure.org defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">cm<a name=\"ucum-cm\"> </a></td><td>cm</td></tr><tr><td style=\"white-space:nowrap\">kg<a name=\"ucum-kg\"> </a></td><td>kg</td></tr><tr><td style=\"white-space:nowrap\">kg/m2<a name=\"ucum-kg.47m2\"> </a></td><td>kg/m2</td></tr></table></div>"
+  },
+  "url": "http://unitsofmeasure.org",
+  "version": "0.1.0",
+  "name": "Ucum",
+  "title": "UCUM Codes",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-09-14T22:17:05+00:00",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/nih-NCPI"
+        }
+      ]
+    },
+    {
+      "name": "Eric Torstenson",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "eric.s.torstenson@vumc.org",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Unified Code for Units of Measure",
+  "content": "fragment",
+  "concept": [
+    {
+      "code": "cm",
+      "display": "cm"
+    },
+    {
+      "code": "kg",
+      "display": "kg"
+    },
+    {
+      "code": "kg/m2",
+      "display": "kg/m2"
+    }
+  ]
+}

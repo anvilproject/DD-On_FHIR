@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="NCPI-DD-on-FHIR-Implementation-Guide"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>NCPIDDonFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide</pre><div><p>Example FHIR model for reprenting Data Dictionaries on FHIR for NCPI Studies.</p>
+</div></div>
+  </text>
+  <url value="https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide"/>
+  <version value="0.1.0"/>
+  <name value="NCPIDDonFHIRImplementationGuide"/>
+  <title value="NCPI DD on FHIR Implementation Guide"/>
+  <status value="draft"/>
+  <date value="2021-09-14T22:17:05+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-NCPI"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Torstenson"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eric.s.torstenson@vumc.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Example FHIR model for reprenting Data Dictionaries on FHIR for NCPI Studies."/>
+  <packageId value="NCPI-DD-on-FHIR-Implementation-Guide"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7_fhir_us_core">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.1.1"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2021+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/combined-annotation-vs"/>
+      </reference>
+      <name value="Codings associated with all supported annotation systems"/>
+      <description value="Codings associated with all supported annotation systems"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/loinc-vs"/>
+      </reference>
+      <name value="LOINC Codes"/>
+      <description value="All codes from the local LOINC system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/phs000888.v1.p1-cuis"/>
+      </reference>
+      <name value="CUIs mapped to phs000888.v1.p1"/>
+      <description value="CUIs mapped to phs000888.v1.p1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/phv00225962-vs"/>
+      </reference>
+      <name value="Values_for_Phv00225962"/>
+      <description value="Values allowed for Phv00225962"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/phs000888.pht004678.phv00225963-vs"/>
+      </reference>
+      <name value="Values_for_Phv00225963-vs"/>
+      <description value="Values allowed for Phv00225962"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/phv-case-control-vs"/>
+      </reference>
+      <name value="Values For Case Control Variables"/>
+      <description value="Values For Case Control Variables"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/snomed-vs"/>
+      </reference>
+      <name value="SNOMED Codes"/>
+      <description value="All codes from the local SNOMED system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ucum-vs"/>
+      </reference>
+      <name value="UCUM Codes"/>
+      <description value="Unified Code for Units of Measure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/umls-vs"/>
+      </reference>
+      <name value="UMLs Value Set"/>
+      <description value="All codes from the local UMLS system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/loinc"/>
+      </reference>
+      <name value="LOINC Codes"/>
+      <description value="The international standard for identifying health measurements, observations, and documents."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/phs000888-pht004678.v1.p1"/>
+      </reference>
+      <name value="eMERGE_Imputed_Subject_Phenotypes"/>
+      <description value="The dataset provides information about presence/absence of medical diagnoses, including AAA, ADHD, AMD, appendicitis, asthma and n=34 other case/control statuses."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/phs000888-pht004680.v1.p1"/>
+      </reference>
+      <name value="EMERGEII_BMI_merged"/>
+      <description value="The dataset provides data of repeat BMI/height/weight measurements and age of observation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/phs000888.pht004678.phv00225963.v1.p1"/>
+      </reference>
+      <name value="Decade of birth"/>
+      <description value="The dataset provides information about presence/absence of medical diagnoses, including AAA, ADHD, AMD, appendicitis, asthma and n=34 other case/control statuses."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/snomed"/>
+      </reference>
+      <name value="SNOMED terms"/>
+      <description value="Selected Codes from SNOMED"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/phs000888-groups"/>
+      </reference>
+      <name value="eMERGE Groups"/>
+      <description value="Group types associated with study phs000888."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ucum"/>
+      </reference>
+      <name value="UCUM Codes"/>
+      <description value="Unified Code for Units of Measure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/umls"/>
+      </reference>
+      <name value="UMLs CUIs"/>
+      <description value="CUIs maintained by UMLs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/ConceptMap-UMLS"/>
+      </reference>
+      <name value="ConceptMap-UMLS"/>
+      <description value="These terms may appear as part of a dataset&#39;s encoding. This map will permit systematic expansion to other terminologies"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/Instance-ConceptMap-CUI-To-DD"/>
+      </reference>
+      <name value="Instance-ConceptMap-CUI-To-DD"/>
+      <description value="The electronic Medical Records and Genomics (eMERGE) Network is a consortium of ten participating sites"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/Instance-ConceptMap-DD-To-CUI"/>
+      </reference>
+      <name value="Instance-ConceptMap-DD-To-CUI"/>
+      <description value="The electronic Medical Records and Genomics (eMERGE) Network is a consortium of ten participating sites"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActivityDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActivityDefinition/activity-definition-example-pht004678.v1.p1"/>
+      </reference>
+      <name value="activity-definition-example-pht004678.v1.p1"/>
+      <description value="This wraps up all data set variables"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/composition-phs000888.v1.p1.summary"/>
+      </reference>
+      <name value="Example Summary Composition"/>
+      <description value="An example composition for the summary content associated with study phs000888.v1.p1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/consent-hmb"/>
+      </reference>
+      <name value="consent-hmb"/>
+      <description value="Consent for Health/Medical/Biomedical"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-example-phv00225961"/>
+      </reference>
+      <name value="observation-definition-example-phv00225961"/>
+      <description value="Non-enumerated value domain. De-identified ID where the first two digits denote the origination site of the samples; site key: Marshfield Clinic=16; Vanderbilt University=27; Group Health Cooperative=38; Mayo Clinic=49; Northwestern University=52 External variable resource: &lt;a href=&#39;https://cdebrowser.nci.nih.gov&#39;&gt;caDSR&lt;/a&gt;; enter source ID: 2181644 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-example-phv00225962"/>
+      </reference>
+      <name value="observation-definition-example-phv00225962"/>
+      <description value="External variable resource: &lt;a href=&#39;https://cdebrowser.nci.nih.gov&#39;&gt;caDSR&lt;/a&gt;; enter source ID: 2200604 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-example-phv00225963.v1.p1"/>
+      </reference>
+      <name value="observation-definition-example-phv00225963.v1.p1"/>
+      <description value="Group patients born prior to 1920 (&amp;gt;=89 years of age) into one group External variable resource: &lt;a href=&#39;https://cdebrowser.nci.nih.gov&#39;&gt;caDSR&lt;/a&gt;; enter source ID: 3018429 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-example-phv00225964.v1.p1"/>
+      </reference>
+      <name value="observation-definition-example-phv00225964.v1.p1"/>
+      <description value="Show year of birth when decade of birth = 9 or more"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-example-phv00225967"/>
+      </reference>
+      <name value="observation-definition-example-phv00225967"/>
+      <description value="Case - control status: Abdominal Aortic Aneurysm"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-example-phv00225968"/>
+      </reference>
+      <name value="observation-definition-example-phv00225968"/>
+      <description value="External variable resource: &lt;a href=&#39;https://cdebrowser.nci.nih.gov&#39;&gt;caDSR&lt;/a&gt;; enter source ID: 2200604 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-example-phv00225969"/>
+      </reference>
+      <name value="observation-definition-example-phv00225969"/>
+      <description value="External variable resource: &lt;a href=&#39;https://cdebrowser.nci.nih.gov&#39;&gt;caDSR&lt;/a&gt;; enter source ID: 2200604 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-example-phv00226013"/>
+      </reference>
+      <name value="observation-definition-example-phv00226013"/>
+      <description value="Non-enumerated value domain. De-identified ID where the first two digits denote the origination site of the samples; site key: Marshfield Clinic=16; Vanderbilt University=27; Group Health Cooperative=38; Mayo Clinic=49; Northwestern University=52 External variable resource: &lt;a href=&#39;https://cdebrowser.nci.nih.gov&#39;&gt;caDSR&lt;/a&gt;; enter source ID: 2181644 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-example-phv00226014"/>
+      </reference>
+      <name value="observation-definition-example-phv00226014"/>
+      <description value="Subject&#39;s weight at enrollment"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-example-phv00226015"/>
+      </reference>
+      <name value="observation-definition-example-phv00226015"/>
+      <description value="Subject&#39;s height at enrollment"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ObservationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ObservationDefinition/observation-definition-example-phv00226016"/>
+      </reference>
+      <name value="observation-definition-example-phv00226016"/>
+      <description value="Subject&#39;s BMI over time"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-pt001-phv00225967"/>
+      </reference>
+      <name value="Status-Abdominal Aortic Aneurysm"/>
+      <description value="Example case/control status for Abdominal Aortic Aneurysm"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-pt001-phv00226013"/>
+      </reference>
+      <name value="SUBJID - pt001"/>
+      <description value="De-identified Subject- eMERGE ID"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-pt001-phv00226014"/>
+      </reference>
+      <name value="WEIGHT - pt001"/>
+      <description value="Subject&#39;s weight at enrollment"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-pt001-phv00226015"/>
+      </reference>
+      <name value="HEIGHT - pt001"/>
+      <description value="Subject&#39;s height at enrollment"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-pt001-phv00226016"/>
+      </reference>
+      <name value="BMI - pt001"/>
+      <description value="Subject&#39;s BMI over time"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-pt002-phv00225967"/>
+      </reference>
+      <name value="Status-Abdominal Aortic Aneurysm for pt001"/>
+      <description value="Example case/control status for Abdominal Aortic Aneurysm"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-pt002-phv00226014"/>
+      </reference>
+      <name value="WEIGHT - pt002"/>
+      <description value="Subject&#39;s weight at enrollment"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-pt002-phv00226015"/>
+      </reference>
+      <name value="HEIGHT - pt002"/>
+      <description value="Subject&#39;s height at enrollment"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-pt002-phv00226016"/>
+      </reference>
+      <name value="BMI - pt002"/>
+      <description value="Subject&#39;s BMI over time"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-pt003-phv00226014"/>
+      </reference>
+      <name value="WEIGHT - pt003"/>
+      <description value="Subject&#39;s weight at enrollment"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-pt003-phv00226015"/>
+      </reference>
+      <name value="HEIGHT - pt003"/>
+      <description value="Subject&#39;s height at enrollment"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-pt003-phv00226016"/>
+      </reference>
+      <name value="BMI - pt003"/>
+      <description value="Subject&#39;s BMI over time"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-summary-aaa-all"/>
+      </reference>
+      <name value="Summary details for variable phv00225967.v1.p1, aaa"/>
+      <description value="Summary details for variable phv00225967.v1.p1, aaa"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-summary-aaa-hmb"/>
+      </reference>
+      <name value="Summary details for variable phv00225967.v1.p1, aaa (HMB)"/>
+      <description value="Summary details for variable phv00225967.v1.p1, aaa for consent group (HMB)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-summary-bmi-all"/>
+      </reference>
+      <name value="Summary counts for variable phv00226016.v1.p1 , BMI"/>
+      <description value="summary counts for variable phv00226016.v1.p1 , BMI"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-summary-bmi-hmb"/>
+      </reference>
+      <name value="Summary counts for variable phv00226016.v1.p1, BMI (HMB)"/>
+      <description value="summary counts for variable phv00226016.v1.p1, BMI (HMB)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-summary-height-all"/>
+      </reference>
+      <name value="Summary counts for variable phv00226015.v1.p1 , height"/>
+      <description value="summary counts for variable phv00226015.v1.p1 , height"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-summary-height-hmb"/>
+      </reference>
+      <name value="Summary counts for variable phv00226015.v1.p1 , height (HMB)"/>
+      <description value="summary counts for variable phv00226015.v1.p1 , height (HMB)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-summary-sex-all"/>
+      </reference>
+      <name value="Summary counts for variable phv00225962.v1.p1, sex"/>
+      <description value="summary counts for variable phv00225962.v1.p1, sex"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-summary-sex-hmb"/>
+      </reference>
+      <name value="Summary counts for variable phv00225962.v1.p1, sex for subgroup HMB"/>
+      <description value="summary counts for variable phv00225962.v1.p1, sex for subgroup HBM"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-summary-weight-all"/>
+      </reference>
+      <name value="Summary counts for variable phv00226014.v1.p1 , weight"/>
+      <description value="summary counts for variable phv00226014.v1.p1 , weight"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation-summary-weight-hmb"/>
+      </reference>
+      <name value="Summary counts for variable phv00226014.v1.p1 , weight (HMB)"/>
+      <description value="summary counts for variable phv00226014.v1.p1 , weight (HMB)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization-ncpi"/>
+      </reference>
+      <name value="organization-ncpi"/>
+      <description value="Example NCPI organization."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-pt001"/>
+      </reference>
+      <name value="patient-example-pt001"/>
+      <description value="Example of the representation of Patient."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-pt002"/>
+      </reference>
+      <name value="patient-example-pt002"/>
+      <description value="Example of the representation of Patient."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-pt003"/>
+      </reference>
+      <name value="patient-example-pt003"/>
+      <description value="Example of the representation of Patient."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-pt004"/>
+      </reference>
+      <name value="patient-example-pt004"/>
+      <description value="Example of the representation of Patient."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-example-pt005"/>
+      </reference>
+      <name value="patient-example-pt005"/>
+      <description value="Example of the representation of Patient."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/research-group-phs000888-all"/>
+      </reference>
+      <name value="research-group-phs000888-all"/>
+      <description value="Example of grouping subjects together for high level summarization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Group"/>
+      </extension>
+      <reference>
+        <reference value="Group/research-group-phs000888-hmb"/>
+      </reference>
+      <name value="research-group-phs000888-hmb"/>
+      <description value="Example of grouping subjects together for high level summarization"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/research-study-phs000888.v1.p1"/>
+      </reference>
+      <name value="research-study-phs000888.v1.p1"/>
+      <description value="The electronic Medical Records and Genomics (eMERGE) Network is a consortium of ten participating sites (Cincinnati Children&#39;s Hospital Medical Center/Boston Children&#39;s Hospital, Children&#39;s Hospital of Philadelphia, Essentia Institute of Rural Health, Marshfield Clinic Research Foundation and Pennsylvania State University, Geisinger Clinic, Group Health Cooperative/University of Washington, Mayo Clinic, Icahn School of Medicine at Mount Sinai, Northwestern University, Vanderbilt University Medical Center) funded by the NHGRI to investigate the use of electronic medical record (EMR) systems for genomic research. The goal of eMERGE is to conduct genome-wide association studies in approximately 55,000 individuals using EMR-derived phenotypes and DNA from linked Biorepositories."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/research-subject-example-pt001"/>
+      </reference>
+      <name value="research-subject-example-pt001"/>
+      <description value="Example of the representation of Research Subject."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/research-subject-example-pt002"/>
+      </reference>
+      <name value="research-subject-example-pt002"/>
+      <description value="Example of the representation of Research Subject."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/research-subject-example-pt003"/>
+      </reference>
+      <name value="research-subject-example-pt003"/>
+      <description value="Example of the representation of Research Subject."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/research-subject-example-pt004"/>
+      </reference>
+      <name value="research-subject-example-pt004"/>
+      <description value="Example of the representation of Research Subject."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/research-subject-example-pt005"/>
+      </reference>
+      <name value="research-subject-example-pt005"/>
+      <description value="Example of the representation of Research Subject."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="authors.html"/>
+        <title value="Authors"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="contact.html"/>
+        <title value="Contact"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="interoperability.html"/>
+        <title value="Interoperability"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

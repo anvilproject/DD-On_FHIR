@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="combined-annotation-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-umls.html"><code>https://uts.nlm.nih.gov/uts/umls</code></a></li><li>Include all codes defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a></li><li>Include all codes defined in <a href="http://loinc.org"><code>http://loinc.org</code></a></li></ul></div>
+  </text>
+  <url value="https://ddent.someplace.org/dd-on-fhir/ValueSets/common-systems"/>
+  <version value="0.1.0"/>
+  <name value="CombinedAnnotationVS"/>
+  <title value="Codings associated with all supported annotation systems"/>
+  <status value="active"/>
+  <date value="2021-09-14T22:17:05+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-NCPI"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Torstenson"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eric.s.torstenson@vumc.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Codings associated with all supported annotation systems"/>
+  <compose>
+    <include>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+    </include>
+  </compose>
+</ValueSet>

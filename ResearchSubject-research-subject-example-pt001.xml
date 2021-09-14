@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ResearchSubject xmlns="http://hl7.org/fhir">
+  <id value="research-subject-example-pt001"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: on-study</p><p><b>study</b>: <a href="ResearchStudy-research-study-phs000888.v1.p1.html">Generated Summary: title: eMERGE Network Imputed GWAS for 41 Phenotypes; status: completed; <span title="Codes: ">diagnostic</span></a></p><p><b>individual</b>: <a href="Patient-patient-example-pt001.html">Generated Summary: </a></p><p><b>consent</b>: <a href="Consent-consent-hmb.html">Generated Summary: id: HMB; status: inactive; <span title="Codes: {https://uts.nlm.nih.gov/uts/umls C0035168}">Research</span>; <span title="Codes: ">rsdid</span>; <span title="Codes: ">hipaa-research</span></a></p></div>
+  </text>
+  <status value="on-study"/>
+  <study>
+    <reference value="ResearchStudy/research-study-phs000888.v1.p1"/>
+  </study>
+  <individual>
+    <reference value="Patient/patient-example-pt001"/>
+  </individual>
+  <consent>
+    <reference value="Consent/consent-hmb"/>
+  </consent>
+</ResearchSubject>

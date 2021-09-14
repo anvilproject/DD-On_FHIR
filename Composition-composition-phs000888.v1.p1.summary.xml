@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="composition-phs000888.v1.p1.summary"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {https://uts.nlm.nih.gov/uts/umls C0947630}">Scientific Study</span></p><p><b>date</b>: 2021-08-30</p><p><b>author</b>: <a href="Organization-organization-ncpi.html">Generated Summary: name: NCPI FHIR team</a></p><p><b>title</b>: All Documents associated with study, phs000888.v1.p1</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+      <code value="C0947630"/>
+      <display value="Scientific Study"/>
+    </coding>
+  </type>
+  <date value="2021-08-30"/>
+  <author>
+    <reference value="Organization/organization-ncpi"/>
+  </author>
+  <title value="All Documents associated with study, phs000888.v1.p1"/>
+  <section>
+    <title value="Variable Definitions"/>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="61149-1"/>
+        <display value="Objective Narrative"/>
+      </coding>
+    </code>
+    <focus>
+      <reference value="ActivityDefinition/activity-definition-example-pht004678.v1.p1"/>
+    </focus>
+    <entry>
+      <reference value="ObservationDefinition/observation-definition-example-phv00225961"/>
+    </entry>
+    <entry>
+      <reference value="ObservationDefinition/observation-definition-example-phv00225962"/>
+    </entry>
+    <entry>
+      <reference value="ObservationDefinition/observation-definition-example-phv00225963.v1.p1"/>
+    </entry>
+    <entry>
+      <reference value="ObservationDefinition/observation-definition-example-phv00225964.v1.p1"/>
+    </entry>
+    <entry>
+      <reference value="ObservationDefinition/observation-definition-example-phv00225967"/>
+    </entry>
+    <entry>
+      <reference value="ObservationDefinition/observation-definition-example-phv00225968"/>
+    </entry>
+    <entry>
+      <reference value="ObservationDefinition/observation-definition-example-phv00225969"/>
+    </entry>
+    <entry>
+      <reference value="ObservationDefinition/observation-definition-example-phv00226013"/>
+    </entry>
+    <entry>
+      <reference value="ObservationDefinition/observation-definition-example-phv00226014"/>
+    </entry>
+    <entry>
+      <reference value="ObservationDefinition/observation-definition-example-phv00226015"/>
+    </entry>
+    <entry>
+      <reference value="ObservationDefinition/observation-definition-example-phv00226016"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Summary Observations - Full Study"/>
+    <code>
+      <coding>
+        <system value="https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier/phs000888"/>
+        <code value="AllSubjects"/>
+        <display value="All subjects"/>
+      </coding>
+    </code>
+    <focus>
+      <reference value="Group/research-group-phs000888-all"/>
+    </focus>
+    <entry>
+      <reference value="Observation/observation-summary-sex-all"/>
+    </entry>
+    <entry>
+      <reference value="Observation/observation-summary-aaa-all"/>
+    </entry>
+    <entry>
+      <reference value="Observation/observation-summary-weight-all"/>
+    </entry>
+    <entry>
+      <reference value="Observation/observation-summary-height-all"/>
+    </entry>
+    <entry>
+      <reference value="Observation/observation-summary-bmi-all"/>
+    </entry>
+  </section>
+  <section>
+    <title value="Summary Observations - Consent Group HMB"/>
+    <code>
+      <coding>
+        <system value="https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier/phs000888"/>
+        <code value="GroupConsentHMB"/>
+      </coding>
+    </code>
+    <focus>
+      <reference value="Group/research-group-phs000888-hmb"/>
+    </focus>
+    <entry>
+      <reference value="Observation/observation-summary-sex-hmb"/>
+    </entry>
+    <entry>
+      <reference value="Observation/observation-summary-aaa-hmb"/>
+    </entry>
+    <entry>
+      <reference value="Observation/observation-summary-weight-hmb"/>
+    </entry>
+    <entry>
+      <reference value="Observation/observation-summary-height-hmb"/>
+    </entry>
+    <entry>
+      <reference value="Observation/observation-summary-bmi-hmb"/>
+    </entry>
+  </section>
+</Composition>

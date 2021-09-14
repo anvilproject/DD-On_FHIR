@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+  <id value="observation-definition-example-phv00225961"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title="Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225961.v1.p1}">SUBJID</span></p><p><b>permittedDataType</b>: integer</p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678"/>
+      <code value="phv00225961.v1.p1"/>
+      <display value="SUBJID"/>
+    </coding>
+  </code>
+  <permittedDataType value="integer"/>
+</ObservationDefinition>

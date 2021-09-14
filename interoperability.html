@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NCPI-DD-ON-FHIR-IMPLEMENTATION-GUIDE\Interoperability - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">NCPI DD on FHIR Implementation Guide</span><br/>0.1.0 - ci-build</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Background
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="authors.html">Authors</a>
+      </li>
+      <li>
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Interoperability</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">NCPI DD on FHIR Implementation Guide - Local Development build (v0.1.0). See the <a href="https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Interoperability</h2>
+  
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="interoperability-through-standardization">Interoperability Through Standardization</h3>
+<p>A fundamental objective is to make certain that data associated with studies is not only accessible by those with valid research interests, but also interpretable. To make interoperability possible, it is recognized that the data should be properly identified according to standard terminologies.</p>
+
+<p>The difficulty with doing this is that there is a lot of human effort that would be required in order to do this for the large number of pre-existing studies, a task which is likely not funded. As such, it is necessary to think of ways to automate this effort as best as possible wherever we can.</p>
+
+<h4 id="automating-variable-terminologies-through-nlp">Automating Variable Terminologies Through NLP</h4>
+<p>Natural Language Processing (NLP) can be employed in many cases to the translate descriptive text provided by researchers into recognizable terminologies when employed by research aware NLP software.</p>
+
+<p>These output terminologies can then be mapped to other terminologies where possible. For instance, a descriptive text that can be confidently mapped to a particular Concept Unique Identifier (CUI) can then be mapped to an appropriate LOINC or SNOMED term via the basic mapping technologies provided by FHIR’s ConceptMaps.</p>
+
+<h4 id="conceptmaps">ConceptMaps</h4>
+<p>ConceptMaps provide a simple translation mechanism for mapping terms from one ValueSet to another. These ValueSets can be comprised of one or more distinct terminologies, so, for instance, if the system provides a mapping between CUIs and their related terms from SNOMED, LOINC and other terminologies, it would then be a straight forward leap from the output from the NLP (a CUI) to then provide the codes appropriate codes that would then be used by end user queries.</p>
+
+<p>For example, if we have the variable, phv0226015, which is a part of the table, pht004680, where the description of the variable was mapped tot he CUI, C0005890, for Body height, a simple query such as the one below could return the known mappings for that code:</p>
+
+<p>ConceptMap/12345/$translate?code=C0005890</p>
+
+<p>For this example, we’ll assume that the ConceptMap with the id 12345 was actually the ConceptMap, ConceptMap-UMLS. Based on the returns from that mapping, we could then populate additional codes to broaden the Observation’s interoperability potential. It may look like the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Instance: observation-pt001-phv00226015
+InstanceOf: Observation
+Title: "HEIGHT - pt001"
+Description: "Subject ID"
+* status = #final
+* code.coding = $pht004680#phv00226015.v1.p1 "HEIGHT"
+* code.coding[+] = $umls#C0005890 "Body Height"
+* code.coding[+] = $loinc#8302-2 "Body height"
+* subject = Reference(patient-example-pt001)
+* valueQuantity
+* value = 162
+* unit = "cm"
+* code = $ucum#cm
+* system = $ucum
+</code></pre></div></div>
+
+<p>The table identifier, $pht004680, would exist as as a CodeSystem/ValueSet containing each of that table’s variables as terms. The final observation would contain a valid reference to the original source of the value (the #phv coding), the CUI from the NLP match and, finally, the LOINC code that would probably be considered the gold standard terminology for this type of observation.</p>
+
+<p>Mappings between these terminologies is being done by various groups, though, not necessarily in FHIR, and there will certainly be gaps that will require some effort to build ourselves.</p>
+
+<h4 id="todo">TODO</h4>
+
+<h5 id="ddent">DDENT</h5>
+<p>Robert Carroll’s team has a python library that can utilize an NLP service to populate CUIs for variables from DbGAP data dictionaries. This currently supports CLAMP but we have plans to incorporate other NLP systems as time permits. This will not provide 100% coverage of variables, but it does automate much of the work. It does have some amount of inappropriate terms as well, so there will need to be some degree of human verification of the final output. For other groups to use this service, permission from the tool’s authors will be necessary.</p>
+
+<p>In addition to performing the mapping which can be used for help doing harmonization, the system generates ConceptMaps going in both directions: from the dbgap table entries to CUIs, and visa-versa. We could theoretically provide a service which provides lookups for all variables that match a particular CUI. In fact, we do have a proof of concept website, WebDDENT which does exactly that along with providing a simple mechanism for importing DbGAP studies and building out the Data Dictionary Concept Maps described above.</p>
+
+<p>This service provides only the first step in the process, however. Additional work needs to be done collecting mappings and building out the appropriate concept maps required to enable to translations to LOINC, SNOMED, etc.</p>
+
+<p>Once those are in place, it makes sense to provide a web service that stands in front of the FHIR service containing those resources. This service can manage caching of terms and iterate over the various concept maps necessary to complete all of the translations in order to make the process run more quickly and be easier to use. Much of the work of such a service will have already been done as a result of the work done on WebDDENT, but there will need to be some additional work as well to make sure it’s robust and maximally efficient.</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://github.com/nih-NCPI">NCPI FHIR Working Group</a>.  Package NCPI-DD-on-FHIR-Implementation-Guide#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Sep 14, 2021 22:17+0000">2021-09-14</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

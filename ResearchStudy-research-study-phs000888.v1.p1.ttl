@@ -1,0 +1,30 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ResearchStudy/research-study-phs000888.v1.p1> a fhir:ResearchStudy;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "research-study-phs000888.v1.p1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>title</b>: eMERGE Network Imputed GWAS for 41 Phenotypes</p><p><b>status</b>: completed</p><p><b>primaryPurposeType</b>: <span title=\"Codes: \">diagnostic</span></p></div>"
+  ];
+  fhir:ResearchStudy.title [ fhir:value "eMERGE Network Imputed GWAS for 41 Phenotypes"];
+  fhir:ResearchStudy.status [ fhir:value "completed"];
+  fhir:ResearchStudy.primaryPurposeType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "diagnostic" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ResearchStudy/research-study-phs000888.v1.p1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

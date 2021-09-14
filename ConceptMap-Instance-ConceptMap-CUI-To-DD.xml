@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="Instance-ConceptMap-CUI-To-DD"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>phs000888.v1.p-CUItoDD (http://ddent.ncpi.someplace.org/ddent-fhir/ConceptMap/CUI/phs000888.v1.p1-CUItoDD)</h2><p>Mapping from http://ddent.ncpi.someplace.org/ddent-fhir/ValueSet/CUI/phs000888.v1.p1 to http://ddent.ncpi.someplace.org/ddent-fhir/ValueSet/DD/phs000888.v1.p1</p><p>DRAFT. Published on Sep 14, 2021 10:17:05 PM by NCPI FHIR Working Group (NCPI FHIR Working Group: <a href="https://github.com/nih-NCPI">https://github.com/nih-NCPI</a>, Eric Torstenson: <a href="mailto:eric.s.torstenson@vumc.org">eric.s.torstenson@vumc.org</a>). </p><div><p>The electronic Medical Records and Genomics (eMERGE) Network is a consortium of ten participating sites</p>
+</div><br/><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td><td><b>Comment</b></td></tr><tr><td>233985008 (Abdominal aortic aneurysm)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>phv00225967.v1</td><td>* Semantics: problem
+ * Assertion: present
+ * Prob:  0.867	
+ * Loc: 23-48
+ * Matched: Abdominal Aortic Aneurysm
+ * Source Text: Case - control status: Abdominal Aortic Aneurysm</td></tr></table><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td><td><b>Comment</b></td></tr><tr><td>C0162871</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>phv00225967.v1</td><td>* Semantics: problem
+ * Assertion: present
+ * Prob:  0.867	
+ * Loc: 23-48
+ * Matched: Abdominal Aortic Aneurysm
+ * Source Text: Case - control status: Abdominal Aortic Aneurysm</td></tr></table><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td><td><b>Comment</b></td></tr><tr><td>58266-8 (Ever diagnosed by a doctor as having an abdominal aortic aneurysm)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>phv00225967.v1</td><td>* Semantics: problem
+ * Assertion: present
+ * Prob:  0.867	
+ * Loc: 23-48
+ * Matched: Abdominal Aortic Aneurysm
+ * Source Text: Case - control status: Abdominal Aortic Aneurysm</td></tr></table><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td><td><b>Comment</b></td></tr><tr><td>C0005890 (Body Height)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>phv00226015.v1.p1</td><td>* Semantics: problem
+ * Assertion: present
+ * Prob:  0.962	
+ * Loc: 11-17
+ * Matched: Height
+ * Source Text: Subject's height at enrollment</td></tr><tr><td>C0005910 (Body Weight)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>phv00226014.v1.p1</td><td>* Semantics: problem
+ * Assertion: present
+ * Prob:  0.962	
+ * Loc: 11-17
+ * Matched: Weight
+ * Source Text: Subject's weight at enrollment</td></tr></table><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td><td><b>Comment</b></td></tr><tr><td>8302-2 (Body height)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>phv00226015.v1.p1</td><td>* Semantics: problem
+ * Assertion: present
+ * Prob:  0.962	
+ * Loc: 11-17
+ * Matched: Height
+ * Source Text: Subject's height at enrollment</td></tr><tr><td>29463-7 (Body weight)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>phv00226014.v1.p1</td><td>* Semantics: problem
+ * Assertion: present
+ * Prob:  0.962	
+ * Loc: 11-17
+ * Matched: Weight
+ * Source Text: Subject's weight at enrollment</td></tr></table><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td><td><b>Comment</b></td></tr><tr><td>C1305855</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>phv00265018.v1</td><td>* Semantics: test
+ * Assertion: present
+ * Prob:  0.493	
+ * Loc: 10-12
+ * Matched: BMI
+ * Source Text: Subject's BMI over time</td></tr><tr><td>C0424638 (Height and weight)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>phv00265019.v1</td><td>* Semantics: test
+ * Assertion: present
+ * Prob:  0.998	
+ * Loc: 0-40
+ * Matched: Height of first qualifying height/weight
+ * Source Text: Height of first qualifying height/weight measurement. NOTE: two measurements of &gt;= 99th percentile (BMI) are needed on different calendar days.  H1/W1 and H2/W2 should be the latest two qualifying measurements.</td></tr></table><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td><td><b>Comment</b></td></tr><tr><td>39156-5 (Body mass index (BMI) [Ratio])</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>phv00265018.v1</td><td>* Semantics: test
+ * Assertion: present
+ * Prob:  0.493	
+ * Loc: 10-12
+ * Matched: BMI
+ * Source Text: Subject's BMI over time</td></tr></table><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td><td><b>Comment</b></td></tr><tr><td>C0005893 (Body mass index procedure)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>phv00265049.v1</td><td>* Semantics: test
+ * Assertion: present
+ * Prob:  0.937	
+ * Loc: 0-15
+ * Matched: Body Mass Index
+ * Source Text: Body Mass Index closest to reference date</td></tr></table><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td><td><b>Comment</b></td></tr><tr><td>39156-5 (Body mass index (BMI) [Ratio])</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>phv00265049.v1</td><td>* Semantics: test
+ * Assertion: present
+ * Prob:  0.937	
+ * Loc: 0-15
+ * Matched: Body Mass Index
+ * Source Text: Body Mass Index closest to reference date</td></tr></table></div>
+  </text>
+  <url value="http://ddent.ncpi.someplace.org/ddent-fhir/ConceptMap/CUI/phs000888.v1.p1-CUItoDD"/>
+  <identifier>
+    <system value="http://ddent.ncpi.someplace.org/ddent-fhir/study/cm/cui-dd"/>
+    <value value="phs000888.v1.p1"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="phs000888.v1.p-CUItoDD"/>
+  <title value="Study Concept Map for eMERGE Network Imputed GWAS for 41 Phenotypes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2021-09-14T22:17:05+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-NCPI"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Torstenson"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eric.s.torstenson@vumc.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="The electronic Medical Records and Genomics (eMERGE) Network is a consortium of ten participating sites"/>
+  <sourceUri value="http://ddent.ncpi.someplace.org/ddent-fhir/ValueSet/CUI/phs000888.v1.p1"/>
+  <targetUri value="http://ddent.ncpi.someplace.org/ddent-fhir/ValueSet/DD/phs000888.v1.p1"/>
+  <group>
+    <source value="http://snomed.info/sct"/>
+    <target value="http://ddent.ncpi.someplace.org/ddent-fhir/CodeSystems/DD/DbGAP/phs000888.v1/pht004678.v1.phs000888.v1"/>
+    <element>
+      <code value="233985008"/>
+      <display value="Abdominal aortic aneurysm"/>
+      <target>
+        <code value="phv00225967.v1"/>
+        <display value="CASE_CONTROL_AAA"/>
+        <equivalence value="equivalent"/>
+        <comment value="* Semantics: problem&#xA; * Assertion: present&#xA; * Prob:  0.867&#x9;&#xA; * Loc: 23-48&#xA; * Matched: Abdominal Aortic Aneurysm&#xA; * Source Text: Case - control status: Abdominal Aortic Aneurysm"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://uts.nlm.nih.gov/uts/umls"/>
+    <target value="http://ddent.ncpi.someplace.org/ddent-fhir/CodeSystems/DD/DbGAP/phs000888.v1/pht004678.v1.phs000888.v1"/>
+    <element>
+      <code value="C0162871"/>
+      <display value="Abdominal aortic aneurysm"/>
+      <target>
+        <code value="phv00225967.v1"/>
+        <display value="CASE_CONTROL_AAA"/>
+        <equivalence value="equivalent"/>
+        <comment value="* Semantics: problem&#xA; * Assertion: present&#xA; * Prob:  0.867&#x9;&#xA; * Loc: 23-48&#xA; * Matched: Abdominal Aortic Aneurysm&#xA; * Source Text: Case - control status: Abdominal Aortic Aneurysm"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="http://loinc.org"/>
+    <target value="http://ddent.ncpi.someplace.org/ddent-fhir/CodeSystems/DD/DbGAP/phs000888.v1/pht004678.v1.phs000888.v1"/>
+    <element>
+      <code value="58266-8"/>
+      <display value="Ever diagnosed by a doctor as having an abdominal aortic aneurysm"/>
+      <target>
+        <code value="phv00225967.v1"/>
+        <display value="CASE_CONTROL_AAA"/>
+        <equivalence value="equivalent"/>
+        <comment value="* Semantics: problem&#xA; * Assertion: present&#xA; * Prob:  0.867&#x9;&#xA; * Loc: 23-48&#xA; * Matched: Abdominal Aortic Aneurysm&#xA; * Source Text: Case - control status: Abdominal Aortic Aneurysm"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://uts.nlm.nih.gov/uts/umls"/>
+    <target value="http://ddent.ncpi.someplace.org/ddent-fhir/CodeSystems/DD/DbGAP/phs000888.v1/Pht004680_v1.phs000888.v1"/>
+    <element>
+      <code value="C0005890"/>
+      <display value="Body Height"/>
+      <target>
+        <code value="phv00226015.v1.p1"/>
+        <display value="HEIGHT"/>
+        <equivalence value="equivalent"/>
+        <comment value="* Semantics: problem&#xA; * Assertion: present&#xA; * Prob:  0.962&#x9;&#xA; * Loc: 11-17&#xA; * Matched: Height&#xA; * Source Text: Subject&#39;s height at enrollment"/>
+      </target>
+    </element>
+    <element>
+      <code value="C0005910"/>
+      <display value="Body Weight"/>
+      <target>
+        <code value="phv00226014.v1.p1"/>
+        <display value="WEIGHT"/>
+        <equivalence value="equivalent"/>
+        <comment value="* Semantics: problem&#xA; * Assertion: present&#xA; * Prob:  0.962&#x9;&#xA; * Loc: 11-17&#xA; * Matched: Weight&#xA; * Source Text: Subject&#39;s weight at enrollment"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="http://loinc.org"/>
+    <target value="http://ddent.ncpi.someplace.org/ddent-fhir/CodeSystems/DD/DbGAP/phs000888.v1/Pht004680_v1.phs000888.v1"/>
+    <element>
+      <code value="8302-2"/>
+      <display value="Body height"/>
+      <target>
+        <code value="phv00226015.v1.p1"/>
+        <display value="HEIGHT"/>
+        <equivalence value="equivalent"/>
+        <comment value="* Semantics: problem&#xA; * Assertion: present&#xA; * Prob:  0.962&#x9;&#xA; * Loc: 11-17&#xA; * Matched: Height&#xA; * Source Text: Subject&#39;s height at enrollment"/>
+      </target>
+    </element>
+    <element>
+      <code value="29463-7"/>
+      <display value="Body weight"/>
+      <target>
+        <code value="phv00226014.v1.p1"/>
+        <display value="WEIGHT"/>
+        <equivalence value="equivalent"/>
+        <comment value="* Semantics: problem&#xA; * Assertion: present&#xA; * Prob:  0.962&#x9;&#xA; * Loc: 11-17&#xA; * Matched: Weight&#xA; * Source Text: Subject&#39;s weight at enrollment"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://uts.nlm.nih.gov/uts/umls"/>
+    <target value="http://ddent.ncpi.someplace.org/ddent-fhir/CodeSystems/DD/DbGAP/phs000888.v1/pht005581.v1.phs000888.v1"/>
+    <element>
+      <code value="C1305855"/>
+      <display value="Body mass index"/>
+      <target>
+        <code value="phv00265018.v1"/>
+        <display value="H1"/>
+        <equivalence value="equivalent"/>
+        <comment value="* Semantics: test&#xA; * Assertion: present&#xA; * Prob:  0.493&#x9;&#xA; * Loc: 10-12&#xA; * Matched: BMI&#xA; * Source Text: Subject&#39;s BMI over time"/>
+      </target>
+    </element>
+    <element>
+      <code value="C0424638"/>
+      <display value="Height and Weight"/>
+      <target>
+        <code value="phv00265019.v1"/>
+        <display value="W1"/>
+        <equivalence value="equivalent"/>
+        <comment value="* Semantics: test&#xA; * Assertion: present&#xA; * Prob:  0.998&#x9;&#xA; * Loc: 0-40&#xA; * Matched: Height of first qualifying height/weight&#xA; * Source Text: Height of first qualifying height/weight measurement. NOTE: two measurements of &gt;= 99th percentile (BMI) are needed on different calendar days.  H1/W1 and H2/W2 should be the latest two qualifying measurements."/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="http://loinc.org"/>
+    <target value="http://ddent.ncpi.someplace.org/ddent-fhir/CodeSystems/DD/DbGAP/phs000888.v1/pht005581.v1.phs000888.v1"/>
+    <element>
+      <code value="39156-5"/>
+      <display value="Body mass index (BMI) [Ratio]"/>
+      <target>
+        <code value="phv00265018.v1"/>
+        <display value="H1"/>
+        <equivalence value="equivalent"/>
+        <comment value="* Semantics: test&#xA; * Assertion: present&#xA; * Prob:  0.493&#x9;&#xA; * Loc: 10-12&#xA; * Matched: BMI&#xA; * Source Text: Subject&#39;s BMI over time"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://uts.nlm.nih.gov/uts/umls"/>
+    <target value="http://ddent.ncpi.someplace.org/ddent-fhir/CodeSystems/DD/DbGAP/phs000888.v1/pht005584.v1.phs000888.v1"/>
+    <element>
+      <code value="C0005893"/>
+      <display value="Body mass index procedure"/>
+      <target>
+        <code value="phv00265049.v1"/>
+        <display value="BMI"/>
+        <equivalence value="equivalent"/>
+        <comment value="* Semantics: test&#xA; * Assertion: present&#xA; * Prob:  0.937&#x9;&#xA; * Loc: 0-15&#xA; * Matched: Body Mass Index&#xA; * Source Text: Body Mass Index closest to reference date"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="http://loinc.org"/>
+    <target value="http://ddent.ncpi.someplace.org/ddent-fhir/CodeSystems/DD/DbGAP/phs000888.v1/pht005584.v1.phs000888.v1"/>
+    <element>
+      <code value="39156-5"/>
+      <display value="Body mass index (BMI) [Ratio]"/>
+      <target>
+        <code value="phv00265049.v1"/>
+        <display value="BMI"/>
+        <equivalence value="equivalent"/>
+        <comment value="* Semantics: test&#xA; * Assertion: present&#xA; * Prob:  0.937&#x9;&#xA; * Loc: 0-15&#xA; * Matched: Body Mass Index&#xA; * Source Text: Body Mass Index closest to reference date"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

@@ -1,0 +1,12 @@
+{
+  "url": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide",
+  "name": "NCPIDDonFHIRImplementationGuide",
+  "package-id": "NCPI-DD-on-FHIR-Implementation-Guide",
+  "ig-ver": "0.1.0",
+  "date": "Tue, 14 Sep, 2021 22:17:05 +0000",
+  "errs": 0,
+  "warnings": 9,
+  "hints": 7,
+  "version": "4.0.1",
+  "tool": "4.6.0 (3)"
+}

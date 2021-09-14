@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ucum"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://unitsofmeasure.org defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">cm<a name="ucum-cm"> </a></td><td>cm</td></tr><tr><td style="white-space:nowrap">kg<a name="ucum-kg"> </a></td><td>kg</td></tr><tr><td style="white-space:nowrap">kg/m2<a name="ucum-kg.47m2"> </a></td><td>kg/m2</td></tr></table></div>
+  </text>
+  <url value="http://unitsofmeasure.org"/>
+  <version value="0.1.0"/>
+  <name value="Ucum"/>
+  <title value="UCUM Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-09-14T22:17:05+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-NCPI"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Torstenson"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eric.s.torstenson@vumc.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Unified Code for Units of Measure"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="cm"/>
+    <display value="cm"/>
+  </concept>
+  <concept>
+    <code value="kg"/>
+    <display value="kg"/>
+  </concept>
+  <concept>
+    <code value="kg/m2"/>
+    <display value="kg/m2"/>
+  </concept>
+</CodeSystem>

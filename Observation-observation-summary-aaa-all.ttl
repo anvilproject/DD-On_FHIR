@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-aaa-all> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "observation-summary-aaa-all"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225967.v1.p1}\">CASE_CONTROL_AAA</span></p><p><b>subject</b>: <a href=\"Group-research-group-phs000888-all.html\">Generated Summary: type: person; actual; name: all study members; 1</a></p><p><b>focus</b>: <a href=\"ObservationDefinition-observation-definition-example-phv00225967.html\">Generated Summary: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225967.v1.p1}\">CASE_CONTROL_AAA</span>; permittedDataType: CodeableConcept</a></p><p><b>value</b>: 55029 C1515051</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C99269}\">Case</span></p><p><b>value</b>: 1110</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C99270}\">Control</span></p><p><b>value</b>: 22175</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C99273}\">Neither Case or Control Status</span></p><p><b>value</b>: 31744</p></blockquote></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4678" ];
+       fhir:Coding.code [ fhir:value "phv00225967.v1.p1" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Group/research-group-phs000888-all>;
+     fhir:Reference.reference [ fhir:value "Group/research-group-phs000888-all" ]
+  ];
+  fhir:Observation.focus [
+     fhir:index 0;
+     fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225967>;
+     fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225967" ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "55029"^^xsd:decimal ];
+     fhir:Quantity.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+     fhir:Quantity.code [ fhir:value "C1515051" ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+         fhir:Coding.code [ fhir:value "C99269" ];
+         fhir:Coding.display [ fhir:value "Case" ]
+       ]
+     ];
+     fhir:Observation.component.valueInteger [ fhir:value "1110"^^xsd:integer ]
+  ], [
+     fhir:index 1;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+         fhir:Coding.code [ fhir:value "C99270" ];
+         fhir:Coding.display [ fhir:value "Control" ]
+       ]
+     ];
+     fhir:Observation.component.valueInteger [ fhir:value "22175"^^xsd:integer ]
+  ], [
+     fhir:index 2;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+         fhir:Coding.code [ fhir:value "C99273" ];
+         fhir:Coding.display [ fhir:value "Neither Case or Control Status" ]
+       ]
+     ];
+     fhir:Observation.component.valueInteger [ fhir:value "31744"^^xsd:integer ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-aaa-all.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00226016> a fhir:ObservationDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "observation-definition-example-phv00226016"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226016.v1.p1}\">BODY_MASS_INDEX</span></p><p><b>permittedDataType</b>: Quantity</p><h3>QuantitativeDetails</h3><table class=\"grid\"><tr><td>-</td><td><b>Unit</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://unitsofmeasure.org kg/m2}\">kg/m2</span></td></tr></table></div>"
+  ];
+  fhir:ObservationDefinition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4680" ];
+       fhir:Coding.code [ fhir:value "phv00226016.v1.p1" ];
+       fhir:Coding.display [ fhir:value "BODY_MASS_INDEX" ]
+     ]
+  ];
+  fhir:ObservationDefinition.permittedDataType [
+     fhir:value "Quantity";
+     fhir:index 0
+  ];
+  fhir:ObservationDefinition.quantitativeDetails [
+     fhir:ObservationDefinition.quantitativeDetails.unit [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Coding.code [ fhir:value "kg/m2" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00226016.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

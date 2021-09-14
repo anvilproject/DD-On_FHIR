@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="umls-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-umls.html"><code>https://uts.nlm.nih.gov/uts/umls</code></a></li></ul></div>
+  </text>
+  <url value="https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/umls-vs"/>
+  <version value="0.1.0"/>
+  <name value="Umls_VS"/>
+  <title value="UMLs Value Set"/>
+  <status value="draft"/>
+  <date value="2021-09-14T22:17:05+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-NCPI"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Torstenson"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eric.s.torstenson@vumc.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="All codes from the local UMLS system"/>
+  <compose>
+    <include>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,30 @@
+{
+  "resourceType": "ObservationDefinition",
+  "id": "observation-definition-example-phv00226016",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226016.v1.p1}\">BODY_MASS_INDEX</span></p><p><b>permittedDataType</b>: Quantity</p><h3>QuantitativeDetails</h3><table class=\"grid\"><tr><td>-</td><td><b>Unit</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://unitsofmeasure.org kg/m2}\">kg/m2</span></td></tr></table></div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4680",
+        "code": "phv00226016.v1.p1",
+        "display": "BODY_MASS_INDEX"
+      }
+    ]
+  },
+  "permittedDataType": [
+    "Quantity"
+  ],
+  "quantitativeDetails": {
+    "unit": {
+      "coding": [
+        {
+          "system": "http://unitsofmeasure.org",
+          "code": "kg/m2"
+        }
+      ]
+    }
+  }
+}

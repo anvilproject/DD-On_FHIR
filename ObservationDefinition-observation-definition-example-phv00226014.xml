@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+  <id value="observation-definition-example-phv00226014"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title="Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226014.v1.p1}">WEIGHT</span></p><p><b>permittedDataType</b>: Quantity</p><h3>QuantitativeDetails</h3><table class="grid"><tr><td>-</td><td><b>Unit</b></td></tr><tr><td>*</td><td><span title="Codes: {http://unitsofmeasure.org kg}">kg</span></td></tr></table><h3>QualifiedIntervals</h3><table class="grid"><tr><td>-</td><td><b>Category</b></td><td><b>Range</b></td></tr><tr><td>*</td><td>absolute</td><td>30-200</td></tr></table></div>
+  </text>
+  <code>
+    <coding>
+      <system value="https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680"/>
+      <code value="phv00226014.v1.p1"/>
+      <display value="WEIGHT"/>
+    </coding>
+  </code>
+  <permittedDataType value="Quantity"/>
+  <quantitativeDetails>
+    <unit>
+      <coding>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="kg"/>
+      </coding>
+    </unit>
+  </quantitativeDetails>
+  <qualifiedInterval>
+    <category value="absolute"/>
+    <range>
+      <low>
+        <value value="30"/>
+      </low>
+      <high>
+        <value value="200"/>
+      </high>
+    </range>
+  </qualifiedInterval>
+</ObservationDefinition>

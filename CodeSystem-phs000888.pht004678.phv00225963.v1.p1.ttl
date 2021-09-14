@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/CodeSystem/phs000888.pht004678.phv00225963.v1.p1> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "phs000888.pht004678.phv00225963.v1.p1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/variable.cgi?study_id=phs000888.v1.p1&amp;phv=225963 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"phs000888.pht004678.phv00225963.v1.p1-1\"> </a></td><td>1900-1919</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"phs000888.pht004678.phv00225963.v1.p1-2\"> </a></td><td>1920-1929</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"phs000888.pht004678.phv00225963.v1.p1-3\"> </a></td><td>1930-1939</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"phs000888.pht004678.phv00225963.v1.p1-4\"> </a></td><td>1940-1949</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"phs000888.pht004678.phv00225963.v1.p1-5\"> </a></td><td>1950-1959</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"phs000888.pht004678.phv00225963.v1.p1-6\"> </a></td><td>1960-1960</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"phs000888.pht004678.phv00225963.v1.p1-7\"> </a></td><td>1970-1979</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"phs000888.pht004678.phv00225963.v1.p1-8\"> </a></td><td>1980-1989</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"phs000888.pht004678.phv00225963.v1.p1-9\"> </a></td><td>1990-1999</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"phs000888.pht004678.phv00225963.v1.p1-10\"> </a></td><td>Year 2000 and later</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/variable.cgi?study_id=phs000888.v1.p1&phv=225963"];
+  fhir:CodeSystem.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/variable_identifier" ];
+     fhir:Identifier.value [ fhir:value "phv00225963.v1.p1" ]
+  ];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "Phv00225963_v1_p1"];
+  fhir:CodeSystem.title [ fhir:value "Decade of birth"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2021-08-19"^^xsd:date];
+  fhir:CodeSystem.publisher [ fhir:value "NCPI FHIR Working Group"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "NCPI FHIR Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/nih-NCPI" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Eric Torstenson" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "eric.s.torstenson@vumc.org" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "The dataset provides information about presence/absence of medical diagnoses, including AAA, ADHD, AMD, appendicitis, asthma and n=34 other case/control statuses."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "10"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "1900-1919" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "1920-1929" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "1930-1939" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "1940-1949" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "1950-1959" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "1960-1960" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "1970-1979" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "1980-1989" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "1990-1999" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Year 2000 and later" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/CodeSystem/phs000888.pht004678.phv00225963.v1.p1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-pt003-phv00226014"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226014.v1.p1}, {https://uts.nlm.nih.gov/uts/umls C0005910}, {http://loinc.org 29463-7}">WEIGHT</span></p><p><b>subject</b>: <a href="Patient-patient-example-pt003.html">Generated Summary: </a></p><p><b>value</b>: 78.5 kg</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680"/>
+      <code value="phv00226014.v1.p1"/>
+      <display value="WEIGHT"/>
+    </coding>
+    <coding>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+      <code value="C0005910"/>
+      <display value="Body Weight"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="29463-7"/>
+      <display value="Body Weight"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-pt003"/>
+  </subject>
+  <valueQuantity>
+    <value value="78.5"/>
+    <unit value="kg"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="kg"/>
+  </valueQuantity>
+</Observation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Consent xmlns="http://hl7.org/fhir">
+  <id value="consent-hmb"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: HMB</p><p><b>status</b>: inactive</p><p><b>scope</b>: <span title="Codes: {https://uts.nlm.nih.gov/uts/umls C0035168}">Research</span></p><p><b>category</b>: <span title="Codes: ">rsdid</span></p><p><b>policyRule</b>: <span title="Codes: ">hipaa-research</span></p></div>
+  </text>
+  <identifier>
+    <system value="https://www.ncbi.nlm.nih.gov/projects/gap/consent-group-identifier"/>
+    <value value="HMB"/>
+  </identifier>
+  <status value="inactive"/>
+  <scope>
+    <coding>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+      <code value="C0035168"/>
+      <display value="Research"/>
+    </coding>
+  </scope>
+  <category>
+    <coding>
+      <code value="rsdid"/>
+    </coding>
+  </category>
+  <policyRule>
+    <coding>
+      <code value="hipaa-research"/>
+    </coding>
+  </policyRule>
+</Consent>

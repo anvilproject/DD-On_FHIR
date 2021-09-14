@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Group/research-group-phs000888-hmb> a fhir:Group;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "research-group-phs000888-hmb"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>type</b>: person</p><p><b>actual</b>: true</p><p><b>name</b>: Consented with HMB</p><p><b>quantity</b>: 1</p><h3>Characteristics</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td><td><b>Exclude</b></td></tr><tr><td>*</td><td><span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C0742766}\">Consent signed</span></td><td><span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier/phs000888 GroupConsentHMB}\">Consent Group 01 HMB</span></td><td>false</td></tr></table><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-patient-example-pt001.html\">Generated Summary: </a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-patient-example-pt002.html\">Generated Summary: </a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-patient-example-pt003.html\">Generated Summary: </a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-patient-example-pt004.html\">Generated Summary: </a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href=\"Patient-patient-example-pt005.html\">Generated Summary: </a></p></blockquote></div>"
+  ];
+  fhir:Group.type [ fhir:value "person"];
+  fhir:Group.actual [ fhir:value "true"^^xsd:boolean];
+  fhir:Group.name [ fhir:value "Consented with HMB"];
+  fhir:Group.quantity [ fhir:value "1"^^xsd:nonNegativeInteger];
+  fhir:Group.characteristic [
+     fhir:index 0;
+     fhir:Group.characteristic.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+         fhir:Coding.code [ fhir:value "C0742766" ];
+         fhir:Coding.display [ fhir:value "Consent signed" ]
+       ]
+     ];
+     fhir:Group.characteristic.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier/phs000888" ];
+         fhir:Coding.code [ fhir:value "GroupConsentHMB" ]
+       ]
+     ];
+     fhir:Group.characteristic.exclude [ fhir:value "false"^^xsd:boolean ]
+  ];
+  fhir:Group.member [
+     fhir:index 0;
+     fhir:Group.member.entity [
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Patient/patient-example-pt001>;
+       fhir:Reference.reference [ fhir:value "Patient/patient-example-pt001" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Group.member.entity [
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Patient/patient-example-pt002>;
+       fhir:Reference.reference [ fhir:value "Patient/patient-example-pt002" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Group.member.entity [
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Patient/patient-example-pt003>;
+       fhir:Reference.reference [ fhir:value "Patient/patient-example-pt003" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Group.member.entity [
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Patient/patient-example-pt004>;
+       fhir:Reference.reference [ fhir:value "Patient/patient-example-pt004" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Group.member.entity [
+       fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Patient/patient-example-pt005>;
+       fhir:Reference.reference [ fhir:value "Patient/patient-example-pt005" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Group/research-group-phs000888-hmb.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

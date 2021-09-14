@@ -1,0 +1,1377 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "NCPI-DD-on-FHIR-Implementation-Guide",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NCPIDDonFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide</pre><div><p>Example FHIR model for reprenting Data Dictionaries on FHIR for NCPI Studies.</p>\n</div></div>"
+  },
+  "url": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide",
+  "version": "0.1.0",
+  "name": "NCPIDDonFHIRImplementationGuide",
+  "title": "NCPI DD on FHIR Implementation Guide",
+  "status": "draft",
+  "date": "2021-09-14T22:17:05+00:00",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/nih-NCPI"
+        }
+      ]
+    },
+    {
+      "name": "Eric Torstenson",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "eric.s.torstenson@vumc.org",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Example FHIR model for reprenting Data Dictionaries on FHIR for NCPI Studies.",
+  "packageId": "NCPI-DD-on-FHIR-Implementation-Guide",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "id": "hl7_fhir_us_core",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "packageId": "hl7.fhir.us.core",
+      "version": "3.1.1"
+    }
+  ],
+  "definition": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "copyrightyear"
+          },
+          {
+            "url": "value",
+            "valueString": "2021+"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "releaselabel"
+          },
+          {
+            "url": "value",
+            "valueString": "ci-build"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "template/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "input/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-qa"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/qa"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-temp"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/pages"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-output"
+          },
+          {
+            "url": "value",
+            "valueString": "output"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-suppressed-warnings"
+          },
+          {
+            "url": "value",
+            "valueString": "input/ignoreWarnings.txt"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-history"
+          },
+          {
+            "url": "value",
+            "valueString": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/history.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-html"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-md"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page-md.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-contact"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-context"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-copyright"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-jurisdiction"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-license"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-publisher"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-version"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "active-tables"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/combined-annotation-vs"
+        },
+        "name": "Codings associated with all supported annotation systems",
+        "description": "Codings associated with all supported annotation systems",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/loinc-vs"
+        },
+        "name": "LOINC Codes",
+        "description": "All codes from the local LOINC system",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/phs000888.v1.p1-cuis"
+        },
+        "name": "CUIs mapped to phs000888.v1.p1",
+        "description": "CUIs mapped to phs000888.v1.p1",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/phv00225962-vs"
+        },
+        "name": "Values_for_Phv00225962",
+        "description": "Values allowed for Phv00225962",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/phs000888.pht004678.phv00225963-vs"
+        },
+        "name": "Values_for_Phv00225963-vs",
+        "description": "Values allowed for Phv00225962",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/phv-case-control-vs"
+        },
+        "name": "Values For Case Control Variables",
+        "description": "Values For Case Control Variables",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/snomed-vs"
+        },
+        "name": "SNOMED Codes",
+        "description": "All codes from the local SNOMED system",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ucum-vs"
+        },
+        "name": "UCUM Codes",
+        "description": "Unified Code for Units of Measure",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/umls-vs"
+        },
+        "name": "UMLs Value Set",
+        "description": "All codes from the local UMLS system",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/loinc"
+        },
+        "name": "LOINC Codes",
+        "description": "The international standard for identifying health measurements, observations, and documents.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/phs000888-pht004678.v1.p1"
+        },
+        "name": "eMERGE_Imputed_Subject_Phenotypes",
+        "description": "The dataset provides information about presence/absence of medical diagnoses, including AAA, ADHD, AMD, appendicitis, asthma and n=34 other case/control statuses.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/phs000888-pht004680.v1.p1"
+        },
+        "name": "EMERGEII_BMI_merged",
+        "description": "The dataset provides data of repeat BMI/height/weight measurements and age of observation.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/phs000888.pht004678.phv00225963.v1.p1"
+        },
+        "name": "Decade of birth",
+        "description": "The dataset provides information about presence/absence of medical diagnoses, including AAA, ADHD, AMD, appendicitis, asthma and n=34 other case/control statuses.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/snomed"
+        },
+        "name": "SNOMED terms",
+        "description": "Selected Codes from SNOMED",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/phs000888-groups"
+        },
+        "name": "eMERGE Groups",
+        "description": "Group types associated with study phs000888.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ucum"
+        },
+        "name": "UCUM Codes",
+        "description": "Unified Code for Units of Measure",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/umls"
+        },
+        "name": "UMLs CUIs",
+        "description": "CUIs maintained by UMLs",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/ConceptMap-UMLS"
+        },
+        "name": "ConceptMap-UMLS",
+        "description": "These terms may appear as part of a dataset's encoding. This map will permit systematic expansion to other terminologies",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/Instance-ConceptMap-CUI-To-DD"
+        },
+        "name": "Instance-ConceptMap-CUI-To-DD",
+        "description": "The electronic Medical Records and Genomics (eMERGE) Network is a consortium of ten participating sites",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/Instance-ConceptMap-DD-To-CUI"
+        },
+        "name": "Instance-ConceptMap-DD-To-CUI",
+        "description": "The electronic Medical Records and Genomics (eMERGE) Network is a consortium of ten participating sites",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ActivityDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ActivityDefinition/activity-definition-example-pht004678.v1.p1"
+        },
+        "name": "activity-definition-example-pht004678.v1.p1",
+        "description": "This wraps up all data set variables",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/composition-phs000888.v1.p1.summary"
+        },
+        "name": "Example Summary Composition",
+        "description": "An example composition for the summary content associated with study phs000888.v1.p1",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Consent"
+          }
+        ],
+        "reference": {
+          "reference": "Consent/consent-hmb"
+        },
+        "name": "consent-hmb",
+        "description": "Consent for Health/Medical/Biomedical",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/observation-definition-example-phv00225961"
+        },
+        "name": "observation-definition-example-phv00225961",
+        "description": "Non-enumerated value domain. De-identified ID where the first two digits denote the origination site of the samples; site key: Marshfield Clinic=16; Vanderbilt University=27; Group Health Cooperative=38; Mayo Clinic=49; Northwestern University=52 External variable resource: <a href='https://cdebrowser.nci.nih.gov'>caDSR</a>; enter source ID: 2181644 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/observation-definition-example-phv00225962"
+        },
+        "name": "observation-definition-example-phv00225962",
+        "description": "External variable resource: <a href='https://cdebrowser.nci.nih.gov'>caDSR</a>; enter source ID: 2200604 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/observation-definition-example-phv00225963.v1.p1"
+        },
+        "name": "observation-definition-example-phv00225963.v1.p1",
+        "description": "Group patients born prior to 1920 (&gt;=89 years of age) into one group External variable resource: <a href='https://cdebrowser.nci.nih.gov'>caDSR</a>; enter source ID: 3018429 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/observation-definition-example-phv00225964.v1.p1"
+        },
+        "name": "observation-definition-example-phv00225964.v1.p1",
+        "description": "Show year of birth when decade of birth = 9 or more",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/observation-definition-example-phv00225967"
+        },
+        "name": "observation-definition-example-phv00225967",
+        "description": "Case - control status: Abdominal Aortic Aneurysm",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/observation-definition-example-phv00225968"
+        },
+        "name": "observation-definition-example-phv00225968",
+        "description": "External variable resource: <a href='https://cdebrowser.nci.nih.gov'>caDSR</a>; enter source ID: 2200604 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/observation-definition-example-phv00225969"
+        },
+        "name": "observation-definition-example-phv00225969",
+        "description": "External variable resource: <a href='https://cdebrowser.nci.nih.gov'>caDSR</a>; enter source ID: 2200604 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/observation-definition-example-phv00226013"
+        },
+        "name": "observation-definition-example-phv00226013",
+        "description": "Non-enumerated value domain. De-identified ID where the first two digits denote the origination site of the samples; site key: Marshfield Clinic=16; Vanderbilt University=27; Group Health Cooperative=38; Mayo Clinic=49; Northwestern University=52 External variable resource: <a href='https://cdebrowser.nci.nih.gov'>caDSR</a>; enter source ID: 2181644 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/observation-definition-example-phv00226014"
+        },
+        "name": "observation-definition-example-phv00226014",
+        "description": "Subject's weight at enrollment",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/observation-definition-example-phv00226015"
+        },
+        "name": "observation-definition-example-phv00226015",
+        "description": "Subject's height at enrollment",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ObservationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "ObservationDefinition/observation-definition-example-phv00226016"
+        },
+        "name": "observation-definition-example-phv00226016",
+        "description": "Subject's BMI over time",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-pt001-phv00225967"
+        },
+        "name": "Status-Abdominal Aortic Aneurysm",
+        "description": "Example case/control status for Abdominal Aortic Aneurysm",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-pt001-phv00226013"
+        },
+        "name": "SUBJID - pt001",
+        "description": "De-identified Subject- eMERGE ID",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-pt001-phv00226014"
+        },
+        "name": "WEIGHT - pt001",
+        "description": "Subject's weight at enrollment",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-pt001-phv00226015"
+        },
+        "name": "HEIGHT - pt001",
+        "description": "Subject's height at enrollment",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-pt001-phv00226016"
+        },
+        "name": "BMI - pt001",
+        "description": "Subject's BMI over time",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-pt002-phv00225967"
+        },
+        "name": "Status-Abdominal Aortic Aneurysm for pt001",
+        "description": "Example case/control status for Abdominal Aortic Aneurysm",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-pt002-phv00226014"
+        },
+        "name": "WEIGHT - pt002",
+        "description": "Subject's weight at enrollment",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-pt002-phv00226015"
+        },
+        "name": "HEIGHT - pt002",
+        "description": "Subject's height at enrollment",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-pt002-phv00226016"
+        },
+        "name": "BMI - pt002",
+        "description": "Subject's BMI over time",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-pt003-phv00226014"
+        },
+        "name": "WEIGHT - pt003",
+        "description": "Subject's weight at enrollment",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-pt003-phv00226015"
+        },
+        "name": "HEIGHT - pt003",
+        "description": "Subject's height at enrollment",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-pt003-phv00226016"
+        },
+        "name": "BMI - pt003",
+        "description": "Subject's BMI over time",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-summary-aaa-all"
+        },
+        "name": "Summary details for variable phv00225967.v1.p1, aaa",
+        "description": "Summary details for variable phv00225967.v1.p1, aaa",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-summary-aaa-hmb"
+        },
+        "name": "Summary details for variable phv00225967.v1.p1, aaa (HMB)",
+        "description": "Summary details for variable phv00225967.v1.p1, aaa for consent group (HMB)",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-summary-bmi-all"
+        },
+        "name": "Summary counts for variable phv00226016.v1.p1 , BMI",
+        "description": "summary counts for variable phv00226016.v1.p1 , BMI",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-summary-bmi-hmb"
+        },
+        "name": "Summary counts for variable phv00226016.v1.p1, BMI (HMB)",
+        "description": "summary counts for variable phv00226016.v1.p1, BMI (HMB)",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-summary-height-all"
+        },
+        "name": "Summary counts for variable phv00226015.v1.p1 , height",
+        "description": "summary counts for variable phv00226015.v1.p1 , height",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-summary-height-hmb"
+        },
+        "name": "Summary counts for variable phv00226015.v1.p1 , height (HMB)",
+        "description": "summary counts for variable phv00226015.v1.p1 , height (HMB)",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-summary-sex-all"
+        },
+        "name": "Summary counts for variable phv00225962.v1.p1, sex",
+        "description": "summary counts for variable phv00225962.v1.p1, sex",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-summary-sex-hmb"
+        },
+        "name": "Summary counts for variable phv00225962.v1.p1, sex for subgroup HMB",
+        "description": "summary counts for variable phv00225962.v1.p1, sex for subgroup HBM",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-summary-weight-all"
+        },
+        "name": "Summary counts for variable phv00226014.v1.p1 , weight",
+        "description": "summary counts for variable phv00226014.v1.p1 , weight",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation-summary-weight-hmb"
+        },
+        "name": "Summary counts for variable phv00226014.v1.p1 , weight (HMB)",
+        "description": "summary counts for variable phv00226014.v1.p1 , weight (HMB)",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/organization-ncpi"
+        },
+        "name": "organization-ncpi",
+        "description": "Example NCPI organization.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/patient-example-pt001"
+        },
+        "name": "patient-example-pt001",
+        "description": "Example of the representation of Patient.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/patient-example-pt002"
+        },
+        "name": "patient-example-pt002",
+        "description": "Example of the representation of Patient.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/patient-example-pt003"
+        },
+        "name": "patient-example-pt003",
+        "description": "Example of the representation of Patient.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/patient-example-pt004"
+        },
+        "name": "patient-example-pt004",
+        "description": "Example of the representation of Patient.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/patient-example-pt005"
+        },
+        "name": "patient-example-pt005",
+        "description": "Example of the representation of Patient.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Group"
+          }
+        ],
+        "reference": {
+          "reference": "Group/research-group-phs000888-all"
+        },
+        "name": "research-group-phs000888-all",
+        "description": "Example of grouping subjects together for high level summarization",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Group"
+          }
+        ],
+        "reference": {
+          "reference": "Group/research-group-phs000888-hmb"
+        },
+        "name": "research-group-phs000888-hmb",
+        "description": "Example of grouping subjects together for high level summarization",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchStudy"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchStudy/research-study-phs000888.v1.p1"
+        },
+        "name": "research-study-phs000888.v1.p1",
+        "description": "The electronic Medical Records and Genomics (eMERGE) Network is a consortium of ten participating sites (Cincinnati Children's Hospital Medical Center/Boston Children's Hospital, Children's Hospital of Philadelphia, Essentia Institute of Rural Health, Marshfield Clinic Research Foundation and Pennsylvania State University, Geisinger Clinic, Group Health Cooperative/University of Washington, Mayo Clinic, Icahn School of Medicine at Mount Sinai, Northwestern University, Vanderbilt University Medical Center) funded by the NHGRI to investigate the use of electronic medical record (EMR) systems for genomic research. The goal of eMERGE is to conduct genome-wide association studies in approximately 55,000 individuals using EMR-derived phenotypes and DNA from linked Biorepositories.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchSubject"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchSubject/research-subject-example-pt001"
+        },
+        "name": "research-subject-example-pt001",
+        "description": "Example of the representation of Research Subject.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchSubject"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchSubject/research-subject-example-pt002"
+        },
+        "name": "research-subject-example-pt002",
+        "description": "Example of the representation of Research Subject.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchSubject"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchSubject/research-subject-example-pt003"
+        },
+        "name": "research-subject-example-pt003",
+        "description": "Example of the representation of Research Subject.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchSubject"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchSubject/research-subject-example-pt004"
+        },
+        "name": "research-subject-example-pt004",
+        "description": "Example of the representation of Research Subject.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchSubject"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchSubject/research-subject-example-pt005"
+        },
+        "name": "research-subject-example-pt005",
+        "description": "Example of the representation of Research Subject.",
+        "exampleBoolean": true
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "authors.html",
+          "title": "Authors",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "contact.html",
+          "title": "Contact",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "interoperability.html",
+          "title": "Interoperability",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "path-resource",
+        "value": "input/capabilities"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/examples"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/extensions"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/models"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/operations"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/profiles"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/vocabulary"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/maps"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/testing"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/history"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "template/config"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/images"
+      },
+      {
+        "code": "path-tx-cache",
+        "value": "input-cache/txcache"
+      }
+    ]
+  }
+}

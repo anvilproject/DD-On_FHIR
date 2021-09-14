@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Consent/consent-hmb> a fhir:Consent;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "consent-hmb"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: HMB</p><p><b>status</b>: inactive</p><p><b>scope</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C0035168}\">Research</span></p><p><b>category</b>: <span title=\"Codes: \">rsdid</span></p><p><b>policyRule</b>: <span title=\"Codes: \">hipaa-research</span></p></div>"
+  ];
+  fhir:Consent.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/consent-group-identifier" ];
+     fhir:Identifier.value [ fhir:value "HMB" ]
+  ];
+  fhir:Consent.status [ fhir:value "inactive"];
+  fhir:Consent.scope [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+       fhir:Coding.code [ fhir:value "C0035168" ];
+       fhir:Coding.display [ fhir:value "Research" ]
+     ]
+  ];
+  fhir:Consent.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "rsdid" ]
+     ]
+  ];
+  fhir:Consent.policyRule [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "hipaa-research" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Consent/consent-hmb.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

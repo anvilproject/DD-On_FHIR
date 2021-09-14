@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="snomed"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://snomed.info/sct defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">233985008<a name="snomed-233985008"> </a></td><td>Abdominal aortic aneurysm</td></tr></table></div>
+  </text>
+  <url value="http://snomed.info/sct"/>
+  <version value="0.1.0"/>
+  <name value="SnoMED"/>
+  <title value="SNOMED terms"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-08-19"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-NCPI"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Torstenson"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eric.s.torstenson@vumc.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Selected Codes from SNOMED"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="233985008"/>
+    <display value="Abdominal aortic aneurysm"/>
+  </concept>
+</CodeSystem>

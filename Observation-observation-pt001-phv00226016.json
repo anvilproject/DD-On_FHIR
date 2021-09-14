@@ -1,0 +1,37 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-pt001-phv00226016",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226016.v1.p1}, {https://uts.nlm.nih.gov/uts/umls C0005893}, {http://loinc.org 39156-5}\">BODY_MASS_INDEX</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-pt001.html\">Generated Summary: </a></p><p><b>value</b>: 28 kg/m2</p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4680",
+        "code": "phv00226016.v1.p1",
+        "display": "BODY_MASS_INDEX"
+      },
+      {
+        "system": "https://uts.nlm.nih.gov/uts/umls",
+        "code": "C0005893",
+        "display": "Body mass index procedure"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "39156-5",
+        "display": "Body mass index (BMI) [Ratio]"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-example-pt001"
+  },
+  "valueQuantity": {
+    "value": 28,
+    "unit": "kg/m2",
+    "system": "http://unitsofmeasure.org",
+    "code": "kg/m2"
+  }
+}

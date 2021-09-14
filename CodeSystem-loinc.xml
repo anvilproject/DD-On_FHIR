@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="loinc"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://loinc.org defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">8302-2<a name="loinc-8302-2"> </a></td><td>Body height</td></tr><tr><td style="white-space:nowrap">3137-7<a name="loinc-3137-7"> </a></td><td>Body height Measured</td></tr><tr><td style="white-space:nowrap">3138-5<a name="loinc-3138-5"> </a></td><td>Body height Stated</td></tr><tr><td style="white-space:nowrap">29463-7<a name="loinc-29463-7"> </a></td><td>Body Weight</td></tr><tr><td style="white-space:nowrap">3141-9<a name="loinc-3141-9"> </a></td><td>Body weight Measured</td></tr><tr><td style="white-space:nowrap">3142-7<a name="loinc-3142-7"> </a></td><td>Body weight Stated</td></tr><tr><td style="white-space:nowrap">39156-5<a name="loinc-39156-5"> </a></td><td>Body mass index (BMI) [Ratio]</td></tr><tr><td style="white-space:nowrap">89270-3<a name="loinc-89270-3"> </a></td><td>Body mass index (BMI) [Ratio] Estimated</td></tr><tr><td style="white-space:nowrap">58266-8<a name="loinc-58266-8"> </a></td><td>Ever diagnosed by a doctor as having an abdominal aortic aneurysm</td></tr></table></div>
+  </text>
+  <url value="http://loinc.org"/>
+  <version value="0.1.0"/>
+  <name value="LOINC"/>
+  <title value="LOINC Codes"/>
+  <status value="active"/>
+  <date value="2021-09-14T22:17:05+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-NCPI"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Torstenson"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eric.s.torstenson@vumc.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="The international standard for identifying health measurements, observations, and documents."/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="8302-2"/>
+    <display value="Body height"/>
+  </concept>
+  <concept>
+    <code value="3137-7"/>
+    <display value="Body height Measured"/>
+  </concept>
+  <concept>
+    <code value="3138-5"/>
+    <display value="Body height Stated"/>
+  </concept>
+  <concept>
+    <code value="29463-7"/>
+    <display value="Body Weight"/>
+  </concept>
+  <concept>
+    <code value="3141-9"/>
+    <display value="Body weight Measured"/>
+  </concept>
+  <concept>
+    <code value="3142-7"/>
+    <display value="Body weight Stated"/>
+  </concept>
+  <concept>
+    <code value="39156-5"/>
+    <display value="Body mass index (BMI) [Ratio]"/>
+  </concept>
+  <concept>
+    <code value="89270-3"/>
+    <display value="Body mass index (BMI) [Ratio] Estimated"/>
+  </concept>
+  <concept>
+    <code value="58266-8"/>
+    <display value="Ever diagnosed by a doctor as having an abdominal aortic aneurysm"/>
+  </concept>
+</CodeSystem>

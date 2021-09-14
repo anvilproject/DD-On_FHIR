@@ -1,0 +1,9 @@
+{
+  "resourceType": "Organization",
+  "id": "organization-ncpi",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: NCPI FHIR team</p></div>"
+  },
+  "name": "NCPI FHIR team"
+}

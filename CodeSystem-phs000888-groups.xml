@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="phs000888-groups"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier/phs000888 defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">AllSubjects<a name="phs000888-groups-AllSubjects"> </a></td><td>All subjects</td></tr><tr><td style="white-space:nowrap">GroupConsentHMB<a name="phs000888-groups-GroupConsentHMB"> </a></td><td>Consent Group 01 HMB</td></tr><tr><td style="white-space:nowrap">GroupConsent02<a name="phs000888-groups-GroupConsent02"> </a></td><td>Consent Group 02</td></tr></table></div>
+  </text>
+  <url value="https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier/phs000888"/>
+  <identifier>
+    <system value="https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier"/>
+    <value value="phs000888"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="Study_phs000888_groups"/>
+  <title value="eMERGE Groups"/>
+  <status value="active"/>
+  <date value="2021-09-14T22:17:05+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-NCPI"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Torstenson"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eric.s.torstenson@vumc.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Group types associated with study phs000888."/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="AllSubjects"/>
+    <display value="All subjects"/>
+  </concept>
+  <concept>
+    <code value="GroupConsentHMB"/>
+    <display value="Consent Group 01 HMB"/>
+  </concept>
+  <concept>
+    <code value="GroupConsent02"/>
+    <display value="Consent Group 02"/>
+  </concept>
+</CodeSystem>

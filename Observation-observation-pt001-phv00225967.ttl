@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt001-phv00225967> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "observation-pt001-phv00225967"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225967.v1.p1}, {http://snomed.info/sct 233985008}, {https://uts.nlm.nih.gov/uts/umls C0162871}, {http://loinc.org 58266-8}\">CASE_CONTROL_AAA</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-pt001.html\">Generated Summary: </a></p><p><b>value</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C99269}\">Case</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4678" ];
+       fhir:Coding.code [ fhir:value "phv00225967.v1.p1" ];
+       fhir:Coding.display [ fhir:value "CASE_CONTROL_AAA" ]
+     ], [
+       fhir:index 1;
+       a sct:233985008;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "233985008" ];
+       fhir:Coding.display [ fhir:value "Abdominal aortic aneurysm" ]
+     ], [
+       fhir:index 2;
+       fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+       fhir:Coding.code [ fhir:value "C0162871" ];
+       fhir:Coding.display [ fhir:value "Abdominal aortic aneurysm" ]
+     ], [
+       fhir:index 3;
+       a loinc:58266-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "58266-8" ];
+       fhir:Coding.display [ fhir:value "Ever diagnosed by a doctor as having an abdominal aortic aneurysm" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Patient/patient-example-pt001>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example-pt001" ]
+  ];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+       fhir:Coding.code [ fhir:value "C99269" ];
+       fhir:Coding.display [ fhir:value "Case" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt001-phv00225967.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

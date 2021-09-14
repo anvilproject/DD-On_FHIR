@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00226014> a fhir:ObservationDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "observation-definition-example-phv00226014"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226014.v1.p1}\">WEIGHT</span></p><p><b>permittedDataType</b>: Quantity</p><h3>QuantitativeDetails</h3><table class=\"grid\"><tr><td>-</td><td><b>Unit</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://unitsofmeasure.org kg}\">kg</span></td></tr></table><h3>QualifiedIntervals</h3><table class=\"grid\"><tr><td>-</td><td><b>Category</b></td><td><b>Range</b></td></tr><tr><td>*</td><td>absolute</td><td>30-200</td></tr></table></div>"
+  ];
+  fhir:ObservationDefinition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4680" ];
+       fhir:Coding.code [ fhir:value "phv00226014.v1.p1" ];
+       fhir:Coding.display [ fhir:value "WEIGHT" ]
+     ]
+  ];
+  fhir:ObservationDefinition.permittedDataType [
+     fhir:value "Quantity";
+     fhir:index 0
+  ];
+  fhir:ObservationDefinition.quantitativeDetails [
+     fhir:ObservationDefinition.quantitativeDetails.unit [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Coding.code [ fhir:value "kg" ]
+       ]
+     ]
+  ];
+  fhir:ObservationDefinition.qualifiedInterval [
+     fhir:index 0;
+     fhir:ObservationDefinition.qualifiedInterval.category [ fhir:value "absolute" ];
+     fhir:ObservationDefinition.qualifiedInterval.range [
+       fhir:Range.low [
+         fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ]
+       ];
+       fhir:Range.high [
+         fhir:Quantity.value [ fhir:value "200"^^xsd:decimal ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00226014.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,121 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-height-all> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "observation-summary-height-all"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226015.v1.p1}\">HEIGHT</span></p><p><b>subject</b>: <a href=\"Group-research-group-phs000888-all.html\">Generated Summary: type: person; actual; name: all study members; 1</a></p><p><b>focus</b>: <a href=\"ObservationDefinition-observation-definition-example-phv00226015.html\">Generated Summary: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226015.v1.p1}\">HEIGHT</span>; permittedDataType: Quantity</a></p><p><b>value</b>: 1987376 C1515051</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C1524031}\">Minimum</span></p><p><b>value</b>: 33.02 C1515051</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C0876920}\">Median</span></p><p><b>value</b>: 167.6 C1515051</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C0806909}\">Maximum</span></p><p><b>value</b>: 203.2 C1515051</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C0444504}\">Mean</span></p><p><b>value</b>: 168.1 C1515051</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C0871420}\">Std</span></p><p><b>value</b>: 9.965 C1515051</p></blockquote></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4680" ];
+       fhir:Coding.code [ fhir:value "phv00226015.v1.p1" ];
+       fhir:Coding.display [ fhir:value "HEIGHT" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Group/research-group-phs000888-all>;
+     fhir:Reference.reference [ fhir:value "Group/research-group-phs000888-all" ]
+  ];
+  fhir:Observation.focus [
+     fhir:index 0;
+     fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00226015>;
+     fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00226015" ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "1987376"^^xsd:decimal ];
+     fhir:Quantity.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+     fhir:Quantity.code [ fhir:value "C1515051" ]
+  ];
+  fhir:Observation.component [
+     fhir:index 0;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+         fhir:Coding.code [ fhir:value "C1524031" ];
+         fhir:Coding.display [ fhir:value "Minimum" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "33.02"^^xsd:decimal ];
+       fhir:Quantity.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+       fhir:Quantity.code [ fhir:value "C1515051" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+         fhir:Coding.code [ fhir:value "C0876920" ];
+         fhir:Coding.display [ fhir:value "Median" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "167.6"^^xsd:decimal ];
+       fhir:Quantity.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+       fhir:Quantity.code [ fhir:value "C1515051" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+         fhir:Coding.code [ fhir:value "C0806909" ];
+         fhir:Coding.display [ fhir:value "Maximum" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "203.2"^^xsd:decimal ];
+       fhir:Quantity.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+       fhir:Quantity.code [ fhir:value "C1515051" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+         fhir:Coding.code [ fhir:value "C0444504" ];
+         fhir:Coding.display [ fhir:value "Mean" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "168.1"^^xsd:decimal ];
+       fhir:Quantity.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+       fhir:Quantity.code [ fhir:value "C1515051" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+         fhir:Coding.code [ fhir:value "C0871420" ];
+         fhir:Coding.display [ fhir:value "Std" ]
+       ]
+     ];
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "9.965"^^xsd:decimal ];
+       fhir:Quantity.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+       fhir:Quantity.code [ fhir:value "C1515051" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-height-all.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

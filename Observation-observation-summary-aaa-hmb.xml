@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-summary-aaa-hmb"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225967.v1.p1}">CASE_CONTROL_AAA</span></p><p><b>subject</b>: <a href="Group-research-group-phs000888-hmb.html">Generated Summary: type: person; actual; name: Consented with HMB; 1</a></p><p><b>focus</b>: <a href="ObservationDefinition-observation-definition-example-phv00225967.html">Generated Summary: <span title="Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225967.v1.p1}">CASE_CONTROL_AAA</span>; permittedDataType: CodeableConcept</a></p><p><b>value</b>: 18621 C1515051</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {https://uts.nlm.nih.gov/uts/umls C99269}">Case</span></p><p><b>value</b>: 774</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {https://uts.nlm.nih.gov/uts/umls C99270}">Control</span></p><p><b>value</b>: 2404</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {https://uts.nlm.nih.gov/uts/umls C99273}">Neither Case or Control Status</span></p><p><b>value</b>: 15443</p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678"/>
+      <code value="phv00225967.v1.p1"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Group/research-group-phs000888-hmb"/>
+  </subject>
+  <focus>
+    <reference value="ObservationDefinition/observation-definition-example-phv00225967"/>
+  </focus>
+  <valueQuantity>
+    <value value="18621"/>
+    <system value="https://uts.nlm.nih.gov/uts/umls"/>
+    <code value="C1515051"/>
+  </valueQuantity>
+  <component>
+    <code>
+      <coding>
+        <system value="https://uts.nlm.nih.gov/uts/umls"/>
+        <code value="C99269"/>
+        <display value="Case"/>
+      </coding>
+    </code>
+    <valueInteger value="774"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://uts.nlm.nih.gov/uts/umls"/>
+        <code value="C99270"/>
+        <display value="Control"/>
+      </coding>
+    </code>
+    <valueInteger value="2404"/>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://uts.nlm.nih.gov/uts/umls"/>
+        <code value="C99273"/>
+        <display value="Neither Case or Control Status"/>
+      </coding>
+    </code>
+    <valueInteger value="15443"/>
+  </component>
+</Observation>

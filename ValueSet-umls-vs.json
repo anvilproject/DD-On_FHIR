@@ -1,0 +1,44 @@
+{
+  "resourceType": "ValueSet",
+  "id": "umls-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-umls.html\"><code>https://uts.nlm.nih.gov/uts/umls</code></a></li></ul></div>"
+  },
+  "url": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/umls-vs",
+  "version": "0.1.0",
+  "name": "Umls_VS",
+  "title": "UMLs Value Set",
+  "status": "draft",
+  "date": "2021-09-14T22:17:05+00:00",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/nih-NCPI"
+        }
+      ]
+    },
+    {
+      "name": "Eric Torstenson",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "eric.s.torstenson@vumc.org",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "All codes from the local UMLS system",
+  "compose": {
+    "include": [
+      {
+        "system": "https://uts.nlm.nih.gov/uts/umls"
+      }
+    ]
+  }
+}

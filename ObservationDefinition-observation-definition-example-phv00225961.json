@@ -1,0 +1,20 @@
+{
+  "resourceType": "ObservationDefinition",
+  "id": "observation-definition-example-phv00225961",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225961.v1.p1}\">SUBJID</span></p><p><b>permittedDataType</b>: integer</p></div>"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4678",
+        "code": "phv00225961.v1.p1",
+        "display": "SUBJID"
+      }
+    ]
+  },
+  "permittedDataType": [
+    "integer"
+  ]
+}

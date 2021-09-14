@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-pt001-phv00226015"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226015.v1.p1}, {https://uts.nlm.nih.gov/uts/umls C0005890}, {http://loinc.org 8302-2}">HEIGHT</span></p><p><b>subject</b>: <a href="Patient-patient-example-pt001.html">Generated Summary: </a></p><p><b>value</b>: 162 cm</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680"/>
+      <code value="phv00226015.v1.p1"/>
+      <display value="HEIGHT"/>
+    </coding>
+    <coding>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+      <code value="C0005890"/>
+      <display value="Body Height"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8302-2"/>
+      <display value="Body height"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-pt001"/>
+  </subject>
+  <valueQuantity>
+    <value value="162"/>
+    <unit value="cm"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="cm"/>
+  </valueQuantity>
+</Observation>

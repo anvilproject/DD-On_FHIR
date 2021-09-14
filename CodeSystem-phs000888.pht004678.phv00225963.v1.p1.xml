@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="phs000888.pht004678.phv00225963.v1.p1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/variable.cgi?study_id=phs000888.v1.p1&amp;phv=225963 defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="phs000888.pht004678.phv00225963.v1.p1-1"> </a></td><td>1900-1919</td></tr><tr><td style="white-space:nowrap">2<a name="phs000888.pht004678.phv00225963.v1.p1-2"> </a></td><td>1920-1929</td></tr><tr><td style="white-space:nowrap">3<a name="phs000888.pht004678.phv00225963.v1.p1-3"> </a></td><td>1930-1939</td></tr><tr><td style="white-space:nowrap">4<a name="phs000888.pht004678.phv00225963.v1.p1-4"> </a></td><td>1940-1949</td></tr><tr><td style="white-space:nowrap">5<a name="phs000888.pht004678.phv00225963.v1.p1-5"> </a></td><td>1950-1959</td></tr><tr><td style="white-space:nowrap">6<a name="phs000888.pht004678.phv00225963.v1.p1-6"> </a></td><td>1960-1960</td></tr><tr><td style="white-space:nowrap">7<a name="phs000888.pht004678.phv00225963.v1.p1-7"> </a></td><td>1970-1979</td></tr><tr><td style="white-space:nowrap">8<a name="phs000888.pht004678.phv00225963.v1.p1-8"> </a></td><td>1980-1989</td></tr><tr><td style="white-space:nowrap">9<a name="phs000888.pht004678.phv00225963.v1.p1-9"> </a></td><td>1990-1999</td></tr><tr><td style="white-space:nowrap">10<a name="phs000888.pht004678.phv00225963.v1.p1-10"> </a></td><td>Year 2000 and later</td></tr></table></div>
+  </text>
+  <url value="https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/variable.cgi?study_id=phs000888.v1.p1&amp;phv=225963"/>
+  <identifier>
+    <system value="https://www.ncbi.nlm.nih.gov/projects/gap/variable_identifier"/>
+    <value value="phv00225963.v1.p1"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="Phv00225963_v1_p1"/>
+  <title value="Decade of birth"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-08-19"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-NCPI"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Torstenson"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eric.s.torstenson@vumc.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="The dataset provides information about presence/absence of medical diagnoses, including AAA, ADHD, AMD, appendicitis, asthma and n=34 other case/control statuses."/>
+  <content value="complete"/>
+  <count value="10"/>
+  <concept>
+    <code value="1"/>
+    <display value="1900-1919"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="1920-1929"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="1930-1939"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="1940-1949"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="1950-1959"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="1960-1960"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="1970-1979"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="1980-1989"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="1990-1999"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="Year 2000 and later"/>
+  </concept>
+</CodeSystem>

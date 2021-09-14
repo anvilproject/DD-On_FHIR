@@ -1,0 +1,156 @@
+[
+  {
+    "id": "Instance-ConceptMap-CUI-To-DD",
+    "type": "ConceptMap",
+    "url": "http://ddent.ncpi.someplace.org/ddent-fhir/ConceptMap/CUI/phs000888.v1.p1-CUItoDD",
+    "version": "0.1.0",
+    "name": "phs000888.v1.p-CUItoDD"
+  },
+  {
+    "id": "Instance-ConceptMap-DD-To-CUI",
+    "type": "ConceptMap",
+    "url": "http://ddent.ncpi.someplace.org/ddent-fhir/ConceptMap/DD/phs000888.v1.p1-DDtoCUI",
+    "version": "0.1.0",
+    "name": "phs000888.v1.p-DDtoCUI"
+  },
+  {
+    "id": "loinc",
+    "type": "CodeSystem",
+    "url": "http://loinc.org",
+    "version": "0.1.0",
+    "name": "LOINC"
+  },
+  {
+    "id": "snomed",
+    "type": "CodeSystem",
+    "url": "http://snomed.info/sct",
+    "version": "0.1.0",
+    "name": "SnoMED"
+  },
+  {
+    "id": "ucum",
+    "type": "CodeSystem",
+    "url": "http://unitsofmeasure.org",
+    "version": "0.1.0",
+    "name": "Ucum"
+  },
+  {
+    "id": "combined-annotation-vs",
+    "type": "ValueSet",
+    "url": "https://ddent.someplace.org/dd-on-fhir/ValueSets/common-systems",
+    "version": "0.1.0",
+    "name": "CombinedAnnotationVS"
+  },
+  {
+    "id": "activity-definition-example-pht004678.v1.p1",
+    "type": "ActivityDefinition",
+    "url": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ActivityDefinition/activity-definition-example-pht004678.v1.p1",
+    "version": "0.1.0",
+    "name": "pht004678.v1.p1_vars"
+  },
+  {
+    "id": "NCPI-DD-on-FHIR-Implementation-Guide",
+    "type": "ImplementationGuide",
+    "url": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide",
+    "version": "0.1.0",
+    "name": "NCPIDDonFHIRImplementationGuide"
+  },
+  {
+    "id": "loinc-vs",
+    "type": "ValueSet",
+    "url": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/loinc-vs",
+    "version": "0.1.0",
+    "name": "LOINC_VS"
+  },
+  {
+    "id": "phs000888.pht004678.phv00225963-vs",
+    "type": "ValueSet",
+    "url": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phs000888.pht004678.phv00225963-vs",
+    "version": "0.1.0",
+    "name": "Phv00225963_vs"
+  },
+  {
+    "id": "phs000888.v1.p1-cuis",
+    "type": "ValueSet",
+    "url": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phs000888.v1.p1-cuis",
+    "version": "0.1.0",
+    "name": "Phs000888_v1_p1_CUIs"
+  },
+  {
+    "id": "phv-case-control-vs",
+    "type": "ValueSet",
+    "url": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phv-case-control-vs",
+    "version": "0.1.0",
+    "name": "Phv_Case_Control_vs"
+  },
+  {
+    "id": "phv00225962-vs",
+    "type": "ValueSet",
+    "url": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phv00225962-vs",
+    "version": "0.1.0",
+    "name": "Phv00225962_vs"
+  },
+  {
+    "id": "snomed-vs",
+    "type": "ValueSet",
+    "url": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/snomed-vs",
+    "version": "0.1.0",
+    "name": "SNOMED_VS"
+  },
+  {
+    "id": "ucum-vs",
+    "type": "ValueSet",
+    "url": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/ucum-vs",
+    "version": "0.1.0",
+    "name": "Ucum_VS"
+  },
+  {
+    "id": "umls-vs",
+    "type": "ValueSet",
+    "url": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/umls-vs",
+    "version": "0.1.0",
+    "name": "Umls_VS"
+  },
+  {
+    "id": "umls",
+    "type": "CodeSystem",
+    "url": "https://uts.nlm.nih.gov/uts/umls",
+    "version": "0.1.0",
+    "name": "Umls"
+  },
+  {
+    "id": "ConceptMap-UMLS",
+    "type": "ConceptMap",
+    "url": "https://uts.nlm.nih.gov/uts/umls",
+    "version": "0.1.0",
+    "name": "UMLS Analogs"
+  },
+  {
+    "id": "phs000888-pht004678.v1.p1",
+    "type": "CodeSystem",
+    "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id\u003dphs000888.v1.p1\u0026pht\u003d4678",
+    "version": "0.1.0",
+    "name": "Pht004678_v1_p1"
+  },
+  {
+    "id": "phs000888-pht004680.v1.p1",
+    "type": "CodeSystem",
+    "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id\u003dphs000888.v1.p1\u0026pht\u003d4680",
+    "version": "0.1.0",
+    "name": "Pht004680_v1_p1"
+  },
+  {
+    "id": "phs000888.pht004678.phv00225963.v1.p1",
+    "type": "CodeSystem",
+    "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/variable.cgi?study_id\u003dphs000888.v1.p1\u0026phv\u003d225963",
+    "version": "0.1.0",
+    "name": "Phv00225963_v1_p1"
+  },
+  {
+    "id": "phs000888-groups",
+    "type": "CodeSystem",
+    "url": "https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier/phs000888",
+    "version": "0.1.0",
+    "name": "Study_phs000888_groups"
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "resourceType": "Consent",
+  "id": "consent-hmb",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: HMB</p><p><b>status</b>: inactive</p><p><b>scope</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C0035168}\">Research</span></p><p><b>category</b>: <span title=\"Codes: \">rsdid</span></p><p><b>policyRule</b>: <span title=\"Codes: \">hipaa-research</span></p></div>"
+  },
+  "identifier": [
+    {
+      "system": "https://www.ncbi.nlm.nih.gov/projects/gap/consent-group-identifier",
+      "value": "HMB"
+    }
+  ],
+  "status": "inactive",
+  "scope": {
+    "coding": [
+      {
+        "system": "https://uts.nlm.nih.gov/uts/umls",
+        "code": "C0035168",
+        "display": "Research"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "rsdid"
+        }
+      ]
+    }
+  ],
+  "policyRule": {
+    "coding": [
+      {
+        "code": "hipaa-research"
+      }
+    ]
+  }
+}

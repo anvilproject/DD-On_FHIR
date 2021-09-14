@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-summary-height-hmb"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226015.v1.p1}">HEIGHT</span></p><p><b>subject</b>: <a href="Group-research-group-phs000888-hmb.html">Generated Summary: type: person; actual; name: Consented with HMB; 1</a></p><p><b>focus</b>: <a href="ObservationDefinition-observation-definition-example-phv00226015.html">Generated Summary: <span title="Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226015.v1.p1}">HEIGHT</span>; permittedDataType: Quantity</a></p><p><b>value</b>: 1188121 C1515051</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {https://uts.nlm.nih.gov/uts/umls C1524031}">Minimum</span></p><p><b>value</b>: 33.02 C1515051</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {https://uts.nlm.nih.gov/uts/umls C0876920}">Median</span></p><p><b>value</b>: 168.7 C1515051</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {https://uts.nlm.nih.gov/uts/umls C0806909}">Maximum</span></p><p><b>value</b>: 203.2 C1515051</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {https://uts.nlm.nih.gov/uts/umls C0444504}">Mean</span></p><p><b>value</b>: 169.2 C1515051</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {https://uts.nlm.nih.gov/uts/umls C0871420}">Std</span></p><p><b>value</b>: 10 C1515051</p></blockquote></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680"/>
+      <code value="phv00226015.v1.p1"/>
+      <display value="HEIGHT"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Group/research-group-phs000888-hmb"/>
+  </subject>
+  <focus>
+    <reference value="ObservationDefinition/observation-definition-example-phv00226015"/>
+  </focus>
+  <valueQuantity>
+    <value value="1188121"/>
+    <system value="https://uts.nlm.nih.gov/uts/umls"/>
+    <code value="C1515051"/>
+  </valueQuantity>
+  <component>
+    <code>
+      <coding>
+        <system value="https://uts.nlm.nih.gov/uts/umls"/>
+        <code value="C1524031"/>
+        <display value="Minimum"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="33.02"/>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+      <code value="C1515051"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://uts.nlm.nih.gov/uts/umls"/>
+        <code value="C0876920"/>
+        <display value="Median"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="168.7"/>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+      <code value="C1515051"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://uts.nlm.nih.gov/uts/umls"/>
+        <code value="C0806909"/>
+        <display value="Maximum"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="203.2"/>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+      <code value="C1515051"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://uts.nlm.nih.gov/uts/umls"/>
+        <code value="C0444504"/>
+        <display value="Mean"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="169.2"/>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+      <code value="C1515051"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://uts.nlm.nih.gov/uts/umls"/>
+        <code value="C0871420"/>
+        <display value="Std"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="10"/>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+      <code value="C1515051"/>
+    </valueQuantity>
+  </component>
+</Observation>

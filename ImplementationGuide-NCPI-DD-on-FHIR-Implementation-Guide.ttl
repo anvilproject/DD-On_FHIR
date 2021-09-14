@@ -1,0 +1,1368 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "NCPI-DD-on-FHIR-Implementation-Guide"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NCPIDDonFHIRImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide</pre><div><p>Example FHIR model for reprenting Data Dictionaries on FHIR for NCPI Studies.</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide"];
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
+  fhir:ImplementationGuide.name [ fhir:value "NCPIDDonFHIRImplementationGuide"];
+  fhir:ImplementationGuide.title [ fhir:value "NCPI DD on FHIR Implementation Guide"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.date [ fhir:value "2021-09-14T22:17:05+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "NCPI FHIR Working Group"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "NCPI FHIR Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/nih-NCPI" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Eric Torstenson" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "eric.s.torstenson@vumc.org" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "Example FHIR model for reprenting Data Dictionaries on FHIR for NCPI Studies."];
+  fhir:ImplementationGuide.packageId [ fhir:value "NCPI-DD-on-FHIR-Implementation-Guide"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "hl7_fhir_us_core" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core";
+       fhir:link <http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.core" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.1" ]
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2021+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/combined-annotation-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/combined-annotation-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Codings associated with all supported annotation systems" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codings associated with all supported annotation systems" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/loinc-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/loinc-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LOINC Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "All codes from the local LOINC system" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phs000888.v1.p1-cuis>;
+         fhir:Reference.reference [ fhir:value "ValueSet/phs000888.v1.p1-cuis" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CUIs mapped to phs000888.v1.p1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CUIs mapped to phs000888.v1.p1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phv00225962-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/phv00225962-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Values_for_Phv00225962" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values allowed for Phv00225962" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phs000888.pht004678.phv00225963-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/phs000888.pht004678.phv00225963-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Values_for_Phv00225963-vs" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values allowed for Phv00225962" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phv-case-control-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/phv-case-control-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Values For Case Control Variables" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Values For Case Control Variables" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/snomed-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/snomed-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SNOMED Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "All codes from the local SNOMED system" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/ucum-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ucum-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "UCUM Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unified Code for Units of Measure" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/umls-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/umls-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "UMLs Value Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "All codes from the local UMLS system" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/CodeSystem/loinc>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/loinc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LOINC Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The international standard for identifying health measurements, observations, and documents." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/CodeSystem/phs000888-pht004678.v1.p1>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/phs000888-pht004678.v1.p1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "eMERGE_Imputed_Subject_Phenotypes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The dataset provides information about presence/absence of medical diagnoses, including AAA, ADHD, AMD, appendicitis, asthma and n=34 other case/control statuses." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/CodeSystem/phs000888-pht004680.v1.p1>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/phs000888-pht004680.v1.p1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EMERGEII_BMI_merged" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The dataset provides data of repeat BMI/height/weight measurements and age of observation." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/CodeSystem/phs000888.pht004678.phv00225963.v1.p1>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/phs000888.pht004678.phv00225963.v1.p1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Decade of birth" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The dataset provides information about presence/absence of medical diagnoses, including AAA, ADHD, AMD, appendicitis, asthma and n=34 other case/control statuses." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/CodeSystem/snomed>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/snomed" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SNOMED terms" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Selected Codes from SNOMED" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/CodeSystem/phs000888-groups>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/phs000888-groups" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "eMERGE Groups" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Group types associated with study phs000888." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/CodeSystem/ucum>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/ucum" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "UCUM Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unified Code for Units of Measure" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/CodeSystem/umls>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/umls" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "UMLs CUIs" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CUIs maintained by UMLs" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ConceptMap/ConceptMap-UMLS>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/ConceptMap-UMLS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ConceptMap-UMLS" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "These terms may appear as part of a dataset's encoding. This map will permit systematic expansion to other terminologies" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ConceptMap/Instance-ConceptMap-CUI-To-DD>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/Instance-ConceptMap-CUI-To-DD" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance-ConceptMap-CUI-To-DD" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The electronic Medical Records and Genomics (eMERGE) Network is a consortium of ten participating sites" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ConceptMap/Instance-ConceptMap-DD-To-CUI>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/Instance-ConceptMap-DD-To-CUI" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Instance-ConceptMap-DD-To-CUI" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The electronic Medical Records and Genomics (eMERGE) Network is a consortium of ten participating sites" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ActivityDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ActivityDefinition/activity-definition-example-pht004678.v1.p1>;
+         fhir:Reference.reference [ fhir:value "ActivityDefinition/activity-definition-example-pht004678.v1.p1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "activity-definition-example-pht004678.v1.p1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This wraps up all data set variables" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Composition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Composition/composition-phs000888.v1.p1.summary>;
+         fhir:Reference.reference [ fhir:value "Composition/composition-phs000888.v1.p1.summary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Summary Composition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example composition for the summary content associated with study phs000888.v1.p1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Consent" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Consent/consent-hmb>;
+         fhir:Reference.reference [ fhir:value "Consent/consent-hmb" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "consent-hmb" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Consent for Health/Medical/Biomedical" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225961>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225961" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "observation-definition-example-phv00225961" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Non-enumerated value domain. De-identified ID where the first two digits denote the origination site of the samples; site key: Marshfield Clinic=16; Vanderbilt University=27; Group Health Cooperative=38; Mayo Clinic=49; Northwestern University=52 External variable resource: <a href='https://cdebrowser.nci.nih.gov'>caDSR</a>; enter source ID: 2181644 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225962>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225962" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "observation-definition-example-phv00225962" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "External variable resource: <a href='https://cdebrowser.nci.nih.gov'>caDSR</a>; enter source ID: 2200604 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225963.v1.p1>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225963.v1.p1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "observation-definition-example-phv00225963.v1.p1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Group patients born prior to 1920 (&gt;=89 years of age) into one group External variable resource: <a href='https://cdebrowser.nci.nih.gov'>caDSR</a>; enter source ID: 3018429 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225964.v1.p1>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225964.v1.p1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "observation-definition-example-phv00225964.v1.p1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Show year of birth when decade of birth = 9 or more" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225967>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225967" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "observation-definition-example-phv00225967" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Case - control status: Abdominal Aortic Aneurysm" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225968>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225968" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "observation-definition-example-phv00225968" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "External variable resource: <a href='https://cdebrowser.nci.nih.gov'>caDSR</a>; enter source ID: 2200604 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00225969>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00225969" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "observation-definition-example-phv00225969" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "External variable resource: <a href='https://cdebrowser.nci.nih.gov'>caDSR</a>; enter source ID: 2200604 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00226013>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00226013" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "observation-definition-example-phv00226013" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Non-enumerated value domain. De-identified ID where the first two digits denote the origination site of the samples; site key: Marshfield Clinic=16; Vanderbilt University=27; Group Health Cooperative=38; Mayo Clinic=49; Northwestern University=52 External variable resource: <a href='https://cdebrowser.nci.nih.gov'>caDSR</a>; enter source ID: 2181644 (Public ID). NOTE: The codes from NCI Thesaurus are based on the Version 10.07d (July 26, 2010). The source files can be accessed from: http://evs.nci.nih.gov/ftp1/NCI_Thesaurus." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00226014>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00226014" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "observation-definition-example-phv00226014" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's weight at enrollment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00226015>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00226015" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "observation-definition-example-phv00226015" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's height at enrollment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ObservationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ObservationDefinition/observation-definition-example-phv00226016>;
+         fhir:Reference.reference [ fhir:value "ObservationDefinition/observation-definition-example-phv00226016" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "observation-definition-example-phv00226016" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's BMI over time" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt001-phv00225967>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-pt001-phv00225967" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Status-Abdominal Aortic Aneurysm" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example case/control status for Abdominal Aortic Aneurysm" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt001-phv00226013>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-pt001-phv00226013" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SUBJID - pt001" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "De-identified Subject- eMERGE ID" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt001-phv00226014>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-pt001-phv00226014" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WEIGHT - pt001" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's weight at enrollment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt001-phv00226015>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-pt001-phv00226015" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HEIGHT - pt001" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's height at enrollment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt001-phv00226016>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-pt001-phv00226016" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BMI - pt001" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's BMI over time" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt002-phv00225967>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-pt002-phv00225967" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Status-Abdominal Aortic Aneurysm for pt001" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example case/control status for Abdominal Aortic Aneurysm" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt002-phv00226014>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-pt002-phv00226014" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WEIGHT - pt002" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's weight at enrollment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt002-phv00226015>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-pt002-phv00226015" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HEIGHT - pt002" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's height at enrollment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt002-phv00226016>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-pt002-phv00226016" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BMI - pt002" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's BMI over time" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt003-phv00226014>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-pt003-phv00226014" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WEIGHT - pt003" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's weight at enrollment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt003-phv00226015>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-pt003-phv00226015" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HEIGHT - pt003" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's height at enrollment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt003-phv00226016>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-pt003-phv00226016" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BMI - pt003" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Subject's BMI over time" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-aaa-all>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-summary-aaa-all" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary details for variable phv00225967.v1.p1, aaa" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Summary details for variable phv00225967.v1.p1, aaa" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-aaa-hmb>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-summary-aaa-hmb" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary details for variable phv00225967.v1.p1, aaa (HMB)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Summary details for variable phv00225967.v1.p1, aaa for consent group (HMB)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-bmi-all>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-summary-bmi-all" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary counts for variable phv00226016.v1.p1 , BMI" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "summary counts for variable phv00226016.v1.p1 , BMI" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-bmi-hmb>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-summary-bmi-hmb" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary counts for variable phv00226016.v1.p1, BMI (HMB)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "summary counts for variable phv00226016.v1.p1, BMI (HMB)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-height-all>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-summary-height-all" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary counts for variable phv00226015.v1.p1 , height" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "summary counts for variable phv00226015.v1.p1 , height" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-height-hmb>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-summary-height-hmb" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary counts for variable phv00226015.v1.p1 , height (HMB)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "summary counts for variable phv00226015.v1.p1 , height (HMB)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-sex-all>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-summary-sex-all" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary counts for variable phv00225962.v1.p1, sex" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "summary counts for variable phv00225962.v1.p1, sex" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-sex-hmb>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-summary-sex-hmb" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary counts for variable phv00225962.v1.p1, sex for subgroup HMB" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "summary counts for variable phv00225962.v1.p1, sex for subgroup HBM" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-weight-all>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-summary-weight-all" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary counts for variable phv00226014.v1.p1 , weight" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "summary counts for variable phv00226014.v1.p1 , weight" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-summary-weight-hmb>;
+         fhir:Reference.reference [ fhir:value "Observation/observation-summary-weight-hmb" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Summary counts for variable phv00226014.v1.p1 , weight (HMB)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "summary counts for variable phv00226014.v1.p1 , weight (HMB)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Organization/organization-ncpi>;
+         fhir:Reference.reference [ fhir:value "Organization/organization-ncpi" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "organization-ncpi" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example NCPI organization." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Patient/patient-example-pt001>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-example-pt001" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-example-pt001" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Patient/patient-example-pt002>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-example-pt002" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-example-pt002" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Patient/patient-example-pt003>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-example-pt003" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-example-pt003" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Patient/patient-example-pt004>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-example-pt004" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-example-pt004" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Patient/patient-example-pt005>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-example-pt005" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-example-pt005" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Patient." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Group" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Group/research-group-phs000888-all>;
+         fhir:Reference.reference [ fhir:value "Group/research-group-phs000888-all" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-group-phs000888-all" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of grouping subjects together for high level summarization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Group" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Group/research-group-phs000888-hmb>;
+         fhir:Reference.reference [ fhir:value "Group/research-group-phs000888-hmb" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-group-phs000888-hmb" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of grouping subjects together for high level summarization" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchStudy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ResearchStudy/research-study-phs000888.v1.p1>;
+         fhir:Reference.reference [ fhir:value "ResearchStudy/research-study-phs000888.v1.p1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-study-phs000888.v1.p1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The electronic Medical Records and Genomics (eMERGE) Network is a consortium of ten participating sites (Cincinnati Children's Hospital Medical Center/Boston Children's Hospital, Children's Hospital of Philadelphia, Essentia Institute of Rural Health, Marshfield Clinic Research Foundation and Pennsylvania State University, Geisinger Clinic, Group Health Cooperative/University of Washington, Mayo Clinic, Icahn School of Medicine at Mount Sinai, Northwestern University, Vanderbilt University Medical Center) funded by the NHGRI to investigate the use of electronic medical record (EMR) systems for genomic research. The goal of eMERGE is to conduct genome-wide association studies in approximately 55,000 individuals using EMR-derived phenotypes and DNA from linked Biorepositories." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchSubject" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ResearchSubject/research-subject-example-pt001>;
+         fhir:Reference.reference [ fhir:value "ResearchSubject/research-subject-example-pt001" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-subject-example-pt001" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Subject." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchSubject" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ResearchSubject/research-subject-example-pt002>;
+         fhir:Reference.reference [ fhir:value "ResearchSubject/research-subject-example-pt002" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-subject-example-pt002" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Subject." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchSubject" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ResearchSubject/research-subject-example-pt003>;
+         fhir:Reference.reference [ fhir:value "ResearchSubject/research-subject-example-pt003" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-subject-example-pt003" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Subject." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchSubject" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ResearchSubject/research-subject-example-pt004>;
+         fhir:Reference.reference [ fhir:value "ResearchSubject/research-subject-example-pt004" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-subject-example-pt004" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Subject." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchSubject" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ResearchSubject/research-subject-example-pt005>;
+         fhir:Reference.reference [ fhir:value "ResearchSubject/research-subject-example-pt005" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "research-subject-example-pt005" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of the representation of Research Subject." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "authors.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Authors" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "contact.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Contact" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "interoperability.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Interoperability" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ImplementationGuide/NCPI-DD-on-FHIR-Implementation-Guide.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

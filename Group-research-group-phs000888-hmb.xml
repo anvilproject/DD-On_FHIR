@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Group xmlns="http://hl7.org/fhir">
+  <id value="research-group-phs000888-hmb"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>type</b>: person</p><p><b>actual</b>: true</p><p><b>name</b>: Consented with HMB</p><p><b>quantity</b>: 1</p><h3>Characteristics</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value[x]</b></td><td><b>Exclude</b></td></tr><tr><td>*</td><td><span title="Codes: {https://uts.nlm.nih.gov/uts/umls C0742766}">Consent signed</span></td><td><span title="Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier/phs000888 GroupConsentHMB}">Consent Group 01 HMB</span></td><td>false</td></tr></table><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-patient-example-pt001.html">Generated Summary: </a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-patient-example-pt002.html">Generated Summary: </a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-patient-example-pt003.html">Generated Summary: </a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-patient-example-pt004.html">Generated Summary: </a></p></blockquote><blockquote><p><b>member</b></p><p><b>entity</b>: <a href="Patient-patient-example-pt005.html">Generated Summary: </a></p></blockquote></div>
+  </text>
+  <type value="person"/>
+  <actual value="true"/>
+  <name value="Consented with HMB"/>
+  <quantity value="1"/>
+  <characteristic>
+    <code>
+      <coding>
+        <system value="https://uts.nlm.nih.gov/uts/umls"/>
+        <code value="C0742766"/>
+        <display value="Consent signed"/>
+      </coding>
+    </code>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://www.ncbi.nlm.nih.gov/projects/gap/group-identifier/phs000888"/>
+        <code value="GroupConsentHMB"/>
+      </coding>
+    </valueCodeableConcept>
+    <exclude value="false"/>
+  </characteristic>
+  <member>
+    <entity>
+      <reference value="Patient/patient-example-pt001"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/patient-example-pt002"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/patient-example-pt003"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/patient-example-pt004"/>
+    </entity>
+  </member>
+  <member>
+    <entity>
+      <reference value="Patient/patient-example-pt005"/>
+    </entity>
+  </member>
+</Group>

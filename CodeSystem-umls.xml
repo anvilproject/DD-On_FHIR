@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="umls"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://uts.nlm.nih.gov/uts/umls defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">C0742766<a name="umls-C0742766"> </a></td><td>Consent signed</td><td/></tr><tr><td style="white-space:nowrap">C439673<a name="umls-C439673"> </a></td><td>Unknown</td><td>Not known, not observed, not recorded, or refused.</td></tr><tr><td style="white-space:nowrap">C3846720<a name="umls-C3846720"> </a></td><td>No Assessed</td><td>Indicates that an assessment was not performed.</td></tr><tr><td style="white-space:nowrap">C1705492<a name="umls-C1705492"> </a></td><td>Missing</td><td>Not existing; not able to be found</td></tr><tr><td style="white-space:nowrap">C46109<a name="umls-C46109"> </a></td><td>Male</td><td>Male Gender</td></tr><tr><td style="white-space:nowrap">C46110<a name="umls-C46110"> </a></td><td>Female</td><td>Female Gender</td></tr><tr><td style="white-space:nowrap">C99269<a name="umls-C99269"> </a></td><td>Case</td><td>True Case Status</td></tr><tr><td style="white-space:nowrap">C99270<a name="umls-C99270"> </a></td><td>Control</td><td>True Control Status</td></tr><tr><td style="white-space:nowrap">C99271<a name="umls-C99271"> </a></td><td>Probable Case Status</td><td>The participant is a probable case for the phenotype under consideration.</td></tr><tr><td style="white-space:nowrap">C99272<a name="umls-C99272"> </a></td><td>Probable Control Status</td><td>The participant is a probable control for the phenotype under consideration.</td></tr><tr><td style="white-space:nowrap">C99273<a name="umls-C99273"> </a></td><td>Neither Case or Control Status</td><td>The participant is neither a true case or true control for the phenotype under consideration.</td></tr><tr><td style="white-space:nowrap">C99274<a name="umls-C99274"> </a></td><td>Unable to Assess Case or Control status</td><td>The participant's case/control status could not be assessed.</td></tr><tr><td style="white-space:nowrap">C0035168<a name="umls-C0035168"> </a></td><td>Research</td><td>Critical and exhaustive investigation or experimentation, having for its aim the discovery of new facts and their correct interpretation, the revision of accepted conclusions, theories, or laws in the light of newly discovered facts, or the practical application of such new or revised conclusions, theories, or laws.</td></tr><tr><td style="white-space:nowrap">C0947630<a name="umls-C0947630"> </a></td><td>Scientific Study</td><td/></tr><tr><td style="white-space:nowrap">C1515051<a name="umls-C1515051"> </a></td><td>Sum</td><td>The final aggregate amount.</td></tr><tr><td style="white-space:nowrap">C1524031<a name="umls-C1524031"> </a></td><td>Minimum</td><td>Smallest of all non-null values in the referenced set of values.</td></tr><tr><td style="white-space:nowrap">C0806909<a name="umls-C0806909"> </a></td><td>Maximum</td><td>Largest of all non-null values in the referenced set of values.</td></tr><tr><td style="white-space:nowrap">C0876920<a name="umls-C0876920"> </a></td><td>Median</td><td>The value which has an equal number of values greater and less than it.</td></tr><tr><td style="white-space:nowrap">C0444504<a name="umls-C0444504"> </a></td><td>Mean</td><td>The sum of the values of all observations or data points divided by the number of observations; an arithmetical average.</td></tr><tr><td style="white-space:nowrap">C0871420<a name="umls-C0871420"> </a></td><td>Std</td><td>Indicator of the relative variability of a variable around its mean; the square root of the variance.</td></tr><tr><td style="white-space:nowrap">C0424638<a name="umls-C0424638"> </a></td><td>Height and weight</td><td/></tr><tr><td style="white-space:nowrap">C0005890<a name="umls-C0005890"> </a></td><td>Body Height</td><td/></tr><tr><td style="white-space:nowrap">C0005910<a name="umls-C0005910"> </a></td><td>Body Weight</td><td/></tr><tr><td style="white-space:nowrap">C0005893<a name="umls-C0005893"> </a></td><td>Body mass index procedure</td><td/></tr></table></div>
+  </text>
+  <url value="https://uts.nlm.nih.gov/uts/umls"/>
+  <version value="0.1.0"/>
+  <name value="Umls"/>
+  <title value="UMLs CUIs"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-08-19"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-NCPI"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Torstenson"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eric.s.torstenson@vumc.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="CUIs maintained by UMLs"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="C0742766"/>
+    <display value="Consent signed"/>
+  </concept>
+  <concept>
+    <code value="C439673"/>
+    <display value="Unknown"/>
+    <definition value="Not known, not observed, not recorded, or refused."/>
+  </concept>
+  <concept>
+    <code value="C3846720"/>
+    <display value="No Assessed"/>
+    <definition value="Indicates that an assessment was not performed."/>
+  </concept>
+  <concept>
+    <code value="C1705492"/>
+    <display value="Missing"/>
+    <definition value="Not existing; not able to be found"/>
+  </concept>
+  <concept>
+    <code value="C46109"/>
+    <display value="Male"/>
+    <definition value="Male Gender"/>
+  </concept>
+  <concept>
+    <code value="C46110"/>
+    <display value="Female"/>
+    <definition value="Female Gender"/>
+  </concept>
+  <concept>
+    <code value="C99269"/>
+    <display value="Case"/>
+    <definition value="True Case Status"/>
+  </concept>
+  <concept>
+    <code value="C99270"/>
+    <display value="Control"/>
+    <definition value="True Control Status"/>
+  </concept>
+  <concept>
+    <code value="C99271"/>
+    <display value="Probable Case Status"/>
+    <definition value="The participant is a probable case for the phenotype under consideration."/>
+  </concept>
+  <concept>
+    <code value="C99272"/>
+    <display value="Probable Control Status"/>
+    <definition value="The participant is a probable control for the phenotype under consideration."/>
+  </concept>
+  <concept>
+    <code value="C99273"/>
+    <display value="Neither Case or Control Status"/>
+    <definition value="The participant is neither a true case or true control for the phenotype under consideration."/>
+  </concept>
+  <concept>
+    <code value="C99274"/>
+    <display value="Unable to Assess Case or Control status"/>
+    <definition value="The participant&#39;s case/control status could not be assessed."/>
+  </concept>
+  <concept>
+    <code value="C0035168"/>
+    <display value="Research"/>
+    <definition value="Critical and exhaustive investigation or experimentation, having for its aim the discovery of new facts and their correct interpretation, the revision of accepted conclusions, theories, or laws in the light of newly discovered facts, or the practical application of such new or revised conclusions, theories, or laws."/>
+  </concept>
+  <concept>
+    <code value="C0947630"/>
+    <display value="Scientific Study"/>
+  </concept>
+  <concept>
+    <code value="C1515051"/>
+    <display value="Sum"/>
+    <definition value="The final aggregate amount."/>
+  </concept>
+  <concept>
+    <code value="C1524031"/>
+    <display value="Minimum"/>
+    <definition value="Smallest of all non-null values in the referenced set of values."/>
+  </concept>
+  <concept>
+    <code value="C0806909"/>
+    <display value="Maximum"/>
+    <definition value="Largest of all non-null values in the referenced set of values."/>
+  </concept>
+  <concept>
+    <code value="C0876920"/>
+    <display value="Median"/>
+    <definition value="The value which has an equal number of values greater and less than it."/>
+  </concept>
+  <concept>
+    <code value="C0444504"/>
+    <display value="Mean"/>
+    <definition value="The sum of the values of all observations or data points divided by the number of observations; an arithmetical average."/>
+  </concept>
+  <concept>
+    <code value="C0871420"/>
+    <display value="Std"/>
+    <definition value="Indicator of the relative variability of a variable around its mean; the square root of the variance."/>
+  </concept>
+  <concept>
+    <code value="C0424638"/>
+    <display value="Height and weight"/>
+  </concept>
+  <concept>
+    <code value="C0005890"/>
+    <display value="Body Height"/>
+  </concept>
+  <concept>
+    <code value="C0005910"/>
+    <display value="Body Weight"/>
+  </concept>
+  <concept>
+    <code value="C0005893"/>
+    <display value="Body mass index procedure"/>
+  </concept>
+</CodeSystem>

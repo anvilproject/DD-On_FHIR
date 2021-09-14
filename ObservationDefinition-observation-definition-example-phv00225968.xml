@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ObservationDefinition xmlns="http://hl7.org/fhir">
+  <id value="observation-definition-example-phv00225968"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>code</b>: <span title="Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225968.v1.p1}">CASE_CONTROL_ACEI</span></p><p><b>permittedDataType</b>: CodeableConcept</p><p><b>validCodedValueSet</b>: <a href="ValueSet-phv-case-control-vs.html">Generated Summary: url: https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phv-case-control-vs; version: 0.1.0; name: Phv_Case_Control_vs; title: Values For Case Control Variables; status: active; date: Sep 14, 2021 10:17:05 PM; publisher: NCPI FHIR Working Group; NCPI FHIR Working Group: https://github.com/nih-NCPI, Eric Torstenson: eric.s.torstenson@vumc.org; description: Values For Case Control Variables</a></p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678"/>
+      <code value="phv00225968.v1.p1"/>
+      <display value="CASE_CONTROL_ACEI"/>
+    </coding>
+  </code>
+  <permittedDataType value="CodeableConcept"/>
+  <validCodedValueSet>
+    <reference value="ValueSet/phv-case-control-vs"/>
+  </validCodedValueSet>
+</ObservationDefinition>

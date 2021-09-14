@@ -1,0 +1,118 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "phs000888-pht004678.v1.p1",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">phv00225961.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225961.46v1.46p1\"> </a></td><td>SUBJID</td><td>De-identified Subject- eMERGE ID</td></tr><tr><td style=\"white-space:nowrap\">phv00225962.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225962.46v1.46p1\"> </a></td><td>SEX</td><td>Gender of participant</td></tr><tr><td style=\"white-space:nowrap\">phv00225963.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225963.46v1.46p1\"> </a></td><td>DECADE_BIRTH</td><td>Decade of birth</td></tr><tr><td style=\"white-space:nowrap\">phv00225964.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225964.46v1.46p1\"> </a></td><td>YEAR_BIRTH</td><td>Year of Birth for Pediatrics</td></tr><tr><td style=\"white-space:nowrap\">phv00225965.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225965.46v1.46p1\"> </a></td><td>ETHNICITY</td><td>Ethnicity of participant</td></tr><tr><td style=\"white-space:nowrap\">phv00225966.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225966.46v1.46p1\"> </a></td><td>RACE</td><td>Race of participant</td></tr><tr><td style=\"white-space:nowrap\">phv00225967.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225967.46v1.46p1\"> </a></td><td>CASE_CONTROL_AAA</td><td>Case - control status: Abdominal Aortic Aneurysm</td></tr><tr><td style=\"white-space:nowrap\">phv00225968.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225968.46v1.46p1\"> </a></td><td>CASE_CONTROL_ACEI</td><td>Case - control status: Ace-I Cough</td></tr><tr><td style=\"white-space:nowrap\">phv00225969.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225969.46v1.46p1\"> </a></td><td>CASE_CONTROL_ADHD</td><td>Case - control status: Attention Deficit Hyperactivity Disorder</td></tr><tr><td style=\"white-space:nowrap\">phv00225970.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225970.46v1.46p1\"> </a></td><td>CASE_CONTROL_AMD</td><td>Case - control status: Age-related macular disease</td></tr><tr><td style=\"white-space:nowrap\">phv00225971.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225971.46v1.46p1\"> </a></td><td>CASE_CONTROL_APPENDICITIS</td><td>Case - control status: Appendicitis</td></tr><tr><td style=\"white-space:nowrap\">phv00225972.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225972.46v1.46p1\"> </a></td><td>CASE_CONTROL_ASTHMA</td><td>Case - control status: Asthma</td></tr><tr><td style=\"white-space:nowrap\">phv00225973.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225973.46v1.46p1\"> </a></td><td>CASE_CONTROL_ATOPICDERMATITIS</td><td>Case - control status: Atopic Dermatitis</td></tr><tr><td style=\"white-space:nowrap\">phv00225974.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225974.46v1.46p1\"> </a></td><td>CASE_CONTROL_AUTISM</td><td>Case - control status: Autism</td></tr></table></div>"
+  },
+  "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4678",
+  "identifier": [
+    {
+      "system": "https://www.ncbi.nlm.nih.gov/projects/gap/table_identifier",
+      "value": "pht004678.v1.p1"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "Pht004678_v1_p1",
+  "title": "eMERGE_Imputed_Subject_Phenotypes",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-08-19",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/nih-NCPI"
+        }
+      ]
+    },
+    {
+      "name": "Eric Torstenson",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "eric.s.torstenson@vumc.org",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "The dataset provides information about presence/absence of medical diagnoses, including AAA, ADHD, AMD, appendicitis, asthma and n=34 other case/control statuses.",
+  "content": "complete",
+  "count": 14,
+  "concept": [
+    {
+      "code": "phv00225961.v1.p1",
+      "display": "SUBJID",
+      "definition": "De-identified Subject- eMERGE ID"
+    },
+    {
+      "code": "phv00225962.v1.p1",
+      "display": "SEX",
+      "definition": "Gender of participant"
+    },
+    {
+      "code": "phv00225963.v1.p1",
+      "display": "DECADE_BIRTH",
+      "definition": "Decade of birth"
+    },
+    {
+      "code": "phv00225964.v1.p1",
+      "display": "YEAR_BIRTH",
+      "definition": "Year of Birth for Pediatrics"
+    },
+    {
+      "code": "phv00225965.v1.p1",
+      "display": "ETHNICITY",
+      "definition": "Ethnicity of participant"
+    },
+    {
+      "code": "phv00225966.v1.p1",
+      "display": "RACE",
+      "definition": "Race of participant"
+    },
+    {
+      "code": "phv00225967.v1.p1",
+      "display": "CASE_CONTROL_AAA",
+      "definition": "Case - control status: Abdominal Aortic Aneurysm"
+    },
+    {
+      "code": "phv00225968.v1.p1",
+      "display": "CASE_CONTROL_ACEI",
+      "definition": "Case - control status: Ace-I Cough"
+    },
+    {
+      "code": "phv00225969.v1.p1",
+      "display": "CASE_CONTROL_ADHD",
+      "definition": "Case - control status: Attention Deficit Hyperactivity Disorder"
+    },
+    {
+      "code": "phv00225970.v1.p1",
+      "display": "CASE_CONTROL_AMD",
+      "definition": "Case - control status: Age-related macular disease"
+    },
+    {
+      "code": "phv00225971.v1.p1",
+      "display": "CASE_CONTROL_APPENDICITIS",
+      "definition": "Case - control status: Appendicitis"
+    },
+    {
+      "code": "phv00225972.v1.p1",
+      "display": "CASE_CONTROL_ASTHMA",
+      "definition": "Case - control status: Asthma"
+    },
+    {
+      "code": "phv00225973.v1.p1",
+      "display": "CASE_CONTROL_ATOPICDERMATITIS",
+      "definition": "Case - control status: Atopic Dermatitis"
+    },
+    {
+      "code": "phv00225974.v1.p1",
+      "display": "CASE_CONTROL_AUTISM",
+      "definition": "Case - control status: Autism"
+    }
+  ]
+}

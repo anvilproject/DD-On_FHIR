@@ -1,0 +1,127 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/CodeSystem/phs000888-pht004678.v1.p1> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "phs000888-pht004678.v1.p1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">phv00225961.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225961.46v1.46p1\"> </a></td><td>SUBJID</td><td>De-identified Subject- eMERGE ID</td></tr><tr><td style=\"white-space:nowrap\">phv00225962.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225962.46v1.46p1\"> </a></td><td>SEX</td><td>Gender of participant</td></tr><tr><td style=\"white-space:nowrap\">phv00225963.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225963.46v1.46p1\"> </a></td><td>DECADE_BIRTH</td><td>Decade of birth</td></tr><tr><td style=\"white-space:nowrap\">phv00225964.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225964.46v1.46p1\"> </a></td><td>YEAR_BIRTH</td><td>Year of Birth for Pediatrics</td></tr><tr><td style=\"white-space:nowrap\">phv00225965.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225965.46v1.46p1\"> </a></td><td>ETHNICITY</td><td>Ethnicity of participant</td></tr><tr><td style=\"white-space:nowrap\">phv00225966.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225966.46v1.46p1\"> </a></td><td>RACE</td><td>Race of participant</td></tr><tr><td style=\"white-space:nowrap\">phv00225967.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225967.46v1.46p1\"> </a></td><td>CASE_CONTROL_AAA</td><td>Case - control status: Abdominal Aortic Aneurysm</td></tr><tr><td style=\"white-space:nowrap\">phv00225968.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225968.46v1.46p1\"> </a></td><td>CASE_CONTROL_ACEI</td><td>Case - control status: Ace-I Cough</td></tr><tr><td style=\"white-space:nowrap\">phv00225969.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225969.46v1.46p1\"> </a></td><td>CASE_CONTROL_ADHD</td><td>Case - control status: Attention Deficit Hyperactivity Disorder</td></tr><tr><td style=\"white-space:nowrap\">phv00225970.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225970.46v1.46p1\"> </a></td><td>CASE_CONTROL_AMD</td><td>Case - control status: Age-related macular disease</td></tr><tr><td style=\"white-space:nowrap\">phv00225971.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225971.46v1.46p1\"> </a></td><td>CASE_CONTROL_APPENDICITIS</td><td>Case - control status: Appendicitis</td></tr><tr><td style=\"white-space:nowrap\">phv00225972.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225972.46v1.46p1\"> </a></td><td>CASE_CONTROL_ASTHMA</td><td>Case - control status: Asthma</td></tr><tr><td style=\"white-space:nowrap\">phv00225973.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225973.46v1.46p1\"> </a></td><td>CASE_CONTROL_ATOPICDERMATITIS</td><td>Case - control status: Atopic Dermatitis</td></tr><tr><td style=\"white-space:nowrap\">phv00225974.v1.p1<a name=\"phs000888-pht004678.v1.p1-phv00225974.46v1.46p1\"> </a></td><td>CASE_CONTROL_AUTISM</td><td>Case - control status: Autism</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4678"];
+  fhir:CodeSystem.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/table_identifier" ];
+     fhir:Identifier.value [ fhir:value "pht004678.v1.p1" ]
+  ];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "Pht004678_v1_p1"];
+  fhir:CodeSystem.title [ fhir:value "eMERGE_Imputed_Subject_Phenotypes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2021-08-19"^^xsd:date];
+  fhir:CodeSystem.publisher [ fhir:value "NCPI FHIR Working Group"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "NCPI FHIR Working Group" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://github.com/nih-NCPI" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Eric Torstenson" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "eric.s.torstenson@vumc.org" ];
+       fhir:ContactPoint.use [ fhir:value "work" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "The dataset provides information about presence/absence of medical diagnoses, including AAA, ADHD, AMD, appendicitis, asthma and n=34 other case/control statuses."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "14"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "phv00225961.v1.p1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SUBJID" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "De-identified Subject- eMERGE ID" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "phv00225962.v1.p1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SEX" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Gender of participant" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "phv00225963.v1.p1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "DECADE_BIRTH" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Decade of birth" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "phv00225964.v1.p1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "YEAR_BIRTH" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Year of Birth for Pediatrics" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "phv00225965.v1.p1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ETHNICITY" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Ethnicity of participant" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "phv00225966.v1.p1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "RACE" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Race of participant" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "phv00225967.v1.p1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CASE_CONTROL_AAA" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Case - control status: Abdominal Aortic Aneurysm" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "phv00225968.v1.p1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CASE_CONTROL_ACEI" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Case - control status: Ace-I Cough" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "phv00225969.v1.p1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CASE_CONTROL_ADHD" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Case - control status: Attention Deficit Hyperactivity Disorder" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "phv00225970.v1.p1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CASE_CONTROL_AMD" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Case - control status: Age-related macular disease" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "phv00225971.v1.p1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CASE_CONTROL_APPENDICITIS" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Case - control status: Appendicitis" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "phv00225972.v1.p1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CASE_CONTROL_ASTHMA" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Case - control status: Asthma" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "phv00225973.v1.p1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CASE_CONTROL_ATOPICDERMATITIS" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Case - control status: Atopic Dermatitis" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "phv00225974.v1.p1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CASE_CONTROL_AUTISM" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Case - control status: Autism" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/CodeSystem/phs000888-pht004678.v1.p1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

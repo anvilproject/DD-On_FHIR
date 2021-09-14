@@ -1,0 +1,18 @@
+{
+  "resourceType": "ResearchSubject",
+  "id": "research-subject-example-pt003",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: on-study</p><p><b>study</b>: <a href=\"ResearchStudy-research-study-phs000888.v1.p1.html\">Generated Summary: title: eMERGE Network Imputed GWAS for 41 Phenotypes; status: completed; <span title=\"Codes: \">diagnostic</span></a></p><p><b>individual</b>: <a href=\"Patient-patient-example-pt003.html\">Generated Summary: </a></p><p><b>consent</b>: <a href=\"Consent-consent-hmb.html\">Generated Summary: id: HMB; status: inactive; <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C0035168}\">Research</span>; <span title=\"Codes: \">rsdid</span>; <span title=\"Codes: \">hipaa-research</span></a></p></div>"
+  },
+  "status": "on-study",
+  "study": {
+    "reference": "ResearchStudy/research-study-phs000888.v1.p1"
+  },
+  "individual": {
+    "reference": "Patient/patient-example-pt003"
+  },
+  "consent": {
+    "reference": "Consent/consent-hmb"
+  }
+}

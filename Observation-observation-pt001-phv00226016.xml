@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation-pt001-phv00226016"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226016.v1.p1}, {https://uts.nlm.nih.gov/uts/umls C0005893}, {http://loinc.org 39156-5}">BODY_MASS_INDEX</span></p><p><b>subject</b>: <a href="Patient-patient-example-pt001.html">Generated Summary: </a></p><p><b>value</b>: 28 kg/m2</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680"/>
+      <code value="phv00226016.v1.p1"/>
+      <display value="BODY_MASS_INDEX"/>
+    </coding>
+    <coding>
+      <system value="https://uts.nlm.nih.gov/uts/umls"/>
+      <code value="C0005893"/>
+      <display value="Body mass index procedure"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="39156-5"/>
+      <display value="Body mass index (BMI) [Ratio]"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-example-pt001"/>
+  </subject>
+  <valueQuantity>
+    <value value="28"/>
+    <unit value="kg/m2"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="kg/m2"/>
+  </valueQuantity>
+</Observation>

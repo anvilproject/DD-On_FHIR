@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="ConceptMap-UMLS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>UMLS Analogs (https://uts.nlm.nih.gov/uts/umls)</h2><p>Mapping from <a href="CodeSystem-umls.html">https://uts.nlm.nih.gov/uts/umls</a> to <a href="ValueSet-combined-annotation-vs.html">https://ddent.someplace.org/dd-on-fhir/ValueSets/common-systems</a></p><p>DRAFT. Published on Sep 14, 2021 10:17:05 PM by NCPI FHIR Working Group (NCPI FHIR Working Group: <a href="https://github.com/nih-NCPI">https://github.com/nih-NCPI</a>, Eric Torstenson: <a href="mailto:eric.s.torstenson@vumc.org">eric.s.torstenson@vumc.org</a>). </p><div><p>These terms may appear as part of a dataset's encoding. This map will permit systematic expansion to other terminologies</p>
+</div><br/><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td>C0162871</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>233985008 (Abdominal aortic aneurysm)</td></tr></table><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td>C0162871</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>58266-8 (Ever diagnosed by a doctor as having an abdominal aortic aneurysm)</td></tr><tr><td>C0005890 (Body Height)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>8302-2 (Body height)</td></tr><tr><td>C0005910 (Body Weight)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>29463-7 (Body weight)</td></tr><tr><td>C1305855</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>39156-5 (Body mass index (BMI) [Ratio])</td></tr></table></div>
+  </text>
+  <url value="https://uts.nlm.nih.gov/uts/umls"/>
+  <version value="0.1.0"/>
+  <name value="UMLS Analogs"/>
+  <title value="Alternate mappings that can be made for UMLS terms"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2021-09-14T22:17:05+00:00"/>
+  <publisher value="NCPI FHIR Working Group"/>
+  <contact>
+    <name value="NCPI FHIR Working Group"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/nih-NCPI"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Eric Torstenson"/>
+    <telecom>
+      <system value="email"/>
+      <value value="eric.s.torstenson@vumc.org"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="These terms may appear as part of a dataset&#39;s encoding. This map will permit systematic expansion to other terminologies"/>
+  <sourceUri value="https://uts.nlm.nih.gov/uts/umls"/>
+  <targetUri value="https://ddent.someplace.org/dd-on-fhir/ValueSets/common-systems"/>
+  <group>
+    <source value="https://uts.nlm.nih.gov/uts/umls"/>
+    <target value="http://snomed.info/sct"/>
+    <element>
+      <code value="C0162871"/>
+      <display value="Abdominal aortic aneurysm"/>
+      <target>
+        <code value="233985008"/>
+        <display value="Abdominal aortic aneurysm"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="https://uts.nlm.nih.gov/uts/umls"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="C0162871"/>
+      <display value="Abdominal aortic aneurysm"/>
+      <target>
+        <code value="58266-8"/>
+        <display value="Ever diagnosed by a doctor as having an abdominal aortic aneurysm"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="C0005890"/>
+      <display value="Body height"/>
+      <target>
+        <code value="8302-2"/>
+        <display value="Body height"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="C0005910"/>
+      <display value="Body Weight"/>
+      <target>
+        <code value="29463-7"/>
+        <display value="Body Weight"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="C1305855"/>
+      <display value="Body mass index"/>
+      <target>
+        <code value="39156-5"/>
+        <display value="Body mass index (BMI) [Ratio]"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

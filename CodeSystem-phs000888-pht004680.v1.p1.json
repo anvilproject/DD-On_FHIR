@@ -1,0 +1,83 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "phs000888-pht004680.v1.p1",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">phv00226013.v1.p1<a name=\"phs000888-pht004680.v1.p1-phv00226013.46v1.46p1\"> </a></td><td>SUBJID</td><td>De-identified Subject- eMERGE ID</td></tr><tr><td style=\"white-space:nowrap\">phv00226014.v1.p1<a name=\"phs000888-pht004680.v1.p1-phv00226014.46v1.46p1\"> </a></td><td>WEIGHT</td><td>Subject's weight at enrollment</td></tr><tr><td style=\"white-space:nowrap\">phv00226015.v1.p1<a name=\"phs000888-pht004680.v1.p1-phv00226015.46v1.46p1\"> </a></td><td>HEIGHT</td><td>Subject's height at enrollment</td></tr><tr><td style=\"white-space:nowrap\">phv00226016.v1.p1<a name=\"phs000888-pht004680.v1.p1-phv00226016.46v1.46p1\"> </a></td><td>BODY_MASS_INDEX</td><td>Subject's BMI over time</td></tr><tr><td style=\"white-space:nowrap\">phv00226017.v1.p1<a name=\"phs000888-pht004680.v1.p1-phv00226017.46v1.46p1\"> </a></td><td>AGE_OBSERVATION</td><td>Age when clinical event was recorded in record</td></tr><tr><td style=\"white-space:nowrap\">phv00226018.v1.p1<a name=\"phs000888-pht004680.v1.p1-phv00226018.46v1.46p1\"> </a></td><td>YEAR_OBSERVATION</td><td>Year when clinical event was recorded in record</td></tr><tr><td style=\"white-space:nowrap\">phv00226019.v1.p1<a name=\"phs000888-pht004680.v1.p1-phv00226019.46v1.46p1\"> </a></td><td>VISIT_NUMBER</td><td>A database generated unique key created for weight, height, BMI repeated values</td></tr></table></div>"
+  },
+  "url": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4680",
+  "identifier": [
+    {
+      "system": "https://www.ncbi.nlm.nih.gov/projects/gap/table_identifier",
+      "value": "pht004680.v1.p1"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "Pht004680_v1_p1",
+  "title": "EMERGEII_BMI_merged",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-08-19",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/nih-NCPI"
+        }
+      ]
+    },
+    {
+      "name": "Eric Torstenson",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "eric.s.torstenson@vumc.org",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "The dataset provides data of repeat BMI/height/weight measurements and age of observation.",
+  "content": "complete",
+  "count": 7,
+  "concept": [
+    {
+      "code": "phv00226013.v1.p1",
+      "display": "SUBJID",
+      "definition": "De-identified Subject- eMERGE ID"
+    },
+    {
+      "code": "phv00226014.v1.p1",
+      "display": "WEIGHT",
+      "definition": "Subject's weight at enrollment"
+    },
+    {
+      "code": "phv00226015.v1.p1",
+      "display": "HEIGHT",
+      "definition": "Subject's height at enrollment"
+    },
+    {
+      "code": "phv00226016.v1.p1",
+      "display": "BODY_MASS_INDEX",
+      "definition": "Subject's BMI over time"
+    },
+    {
+      "code": "phv00226017.v1.p1",
+      "display": "AGE_OBSERVATION",
+      "definition": "Age when clinical event was recorded in record"
+    },
+    {
+      "code": "phv00226018.v1.p1",
+      "display": "YEAR_OBSERVATION",
+      "definition": "Year when clinical event was recorded in record"
+    },
+    {
+      "code": "phv00226019.v1.p1",
+      "display": "VISIT_NUMBER",
+      "definition": "A database generated unique key created for weight, height, BMI repeated values"
+    }
+  ]
+}

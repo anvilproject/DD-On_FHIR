@@ -1,0 +1,66 @@
+{
+  "resourceType": "ValueSet",
+  "id": "phv-case-control-vs",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-umls.html\"><code>https://uts.nlm.nih.gov/uts/umls</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>C99269</td><td>Case</td><td>True Case Status</td></tr><tr><td>C99270</td><td>Control</td><td>True Control Status</td></tr><tr><td>C99271</td><td>Probable Case Status</td><td>The participant is a probable case for the phenotype under consideration.</td></tr><tr><td>C99273</td><td>Neither Case or Control Status</td><td>The participant is neither a true case or true control for the phenotype under consideration.</td></tr><tr><td>C99274</td><td>Unable to Assess Case or Control status</td><td>The participant's case/control status could not be assessed.</td></tr></table></li></ul></div>"
+  },
+  "url": "https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/ValueSet/phv-case-control-vs",
+  "version": "0.1.0",
+  "name": "Phv_Case_Control_vs",
+  "title": "Values For Case Control Variables",
+  "status": "active",
+  "date": "2021-09-14T22:17:05+00:00",
+  "publisher": "NCPI FHIR Working Group",
+  "contact": [
+    {
+      "name": "NCPI FHIR Working Group",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://github.com/nih-NCPI"
+        }
+      ]
+    },
+    {
+      "name": "Eric Torstenson",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "eric.s.torstenson@vumc.org",
+          "use": "work"
+        }
+      ]
+    }
+  ],
+  "description": "Values For Case Control Variables",
+  "compose": {
+    "include": [
+      {
+        "system": "https://uts.nlm.nih.gov/uts/umls",
+        "concept": [
+          {
+            "code": "C99269",
+            "display": "Case"
+          },
+          {
+            "code": "C99270",
+            "display": "Control"
+          },
+          {
+            "code": "C99271",
+            "display": "Probable Case Status"
+          },
+          {
+            "code": "C99273",
+            "display": "Neither Case or Control Status"
+          },
+          {
+            "code": "C99274",
+            "display": "Unable to Assess Case or Control status"
+          }
+        ]
+      }
+    ]
+  }
+}

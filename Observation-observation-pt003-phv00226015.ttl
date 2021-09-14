@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt003-phv00226015> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "observation-pt003-phv00226015"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4680 phv00226015.v1.p1}, {https://uts.nlm.nih.gov/uts/umls C0005890}, {http://loinc.org 8302-2}\">HEIGHT</span></p><p><b>subject</b>: <a href=\"Patient-patient-example-pt003.html\">Generated Summary: </a></p><p><b>value</b>: 180 cm</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4680" ];
+       fhir:Coding.code [ fhir:value "phv00226015.v1.p1" ];
+       fhir:Coding.display [ fhir:value "HEIGHT" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "https://uts.nlm.nih.gov/uts/umls" ];
+       fhir:Coding.code [ fhir:value "C0005890" ];
+       fhir:Coding.display [ fhir:value "Body Height" ]
+     ], [
+       fhir:index 2;
+       a loinc:8302-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "8302-2" ];
+       fhir:Coding.display [ fhir:value "Body height" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Patient/patient-example-pt003>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-example-pt003" ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "180"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "cm" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "cm" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig/Observation/observation-pt003-phv00226015.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

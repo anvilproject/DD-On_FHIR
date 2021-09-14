@@ -1,0 +1,68 @@
+{
+  "resourceType": "Observation",
+  "id": "observation-summary-aaa-hmb",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225967.v1.p1}\">CASE_CONTROL_AAA</span></p><p><b>subject</b>: <a href=\"Group-research-group-phs000888-hmb.html\">Generated Summary: type: person; actual; name: Consented with HMB; 1</a></p><p><b>focus</b>: <a href=\"ObservationDefinition-observation-definition-example-phv00225967.html\">Generated Summary: <span title=\"Codes: {https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&amp;pht=4678 phv00225967.v1.p1}\">CASE_CONTROL_AAA</span>; permittedDataType: CodeableConcept</a></p><p><b>value</b>: 18621 C1515051</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C99269}\">Case</span></p><p><b>value</b>: 774</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C99270}\">Control</span></p><p><b>value</b>: 2404</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {https://uts.nlm.nih.gov/uts/umls C99273}\">Neither Case or Control Status</span></p><p><b>value</b>: 15443</p></blockquote></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4678",
+        "code": "phv00225967.v1.p1"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Group/research-group-phs000888-hmb"
+  },
+  "focus": [
+    {
+      "reference": "ObservationDefinition/observation-definition-example-phv00225967"
+    }
+  ],
+  "valueQuantity": {
+    "value": 18621,
+    "system": "https://uts.nlm.nih.gov/uts/umls",
+    "code": "C1515051"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://uts.nlm.nih.gov/uts/umls",
+            "code": "C99269",
+            "display": "Case"
+          }
+        ]
+      },
+      "valueInteger": 774
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://uts.nlm.nih.gov/uts/umls",
+            "code": "C99270",
+            "display": "Control"
+          }
+        ]
+      },
+      "valueInteger": 2404
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "https://uts.nlm.nih.gov/uts/umls",
+            "code": "C99273",
+            "display": "Neither Case or Control Status"
+          }
+        ]
+      },
+      "valueInteger": 15443
+    }
+  ]
+}
