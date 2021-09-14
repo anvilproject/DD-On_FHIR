@@ -22,7 +22,7 @@
   fhir:CodeSystem.name [ fhir:value "Study_phs000888_groups"];
   fhir:CodeSystem.title [ fhir:value "eMERGE Groups"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-09-14T22:17:05+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-09-14T22:17:07+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:CodeSystem.contact [
      fhir:index 0;

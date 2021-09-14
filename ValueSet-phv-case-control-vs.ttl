@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "Phv_Case_Control_vs"];
   fhir:ValueSet.title [ fhir:value "Values For Case Control Variables"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2021-09-14T22:17:05+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-09-14T22:17:07+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "NCPI FHIR Working Group"];
   fhir:ValueSet.contact [
      fhir:index 0;

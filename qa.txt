@@ -3,7 +3,7 @@
 
 err = 0, warn = 9, info = 7
 IG Publisher Version: 1.1.80
-Generated Tue Sep 14 22:17:35 UTC 2021. FHIR version 4.0.1 for NCPI-DD-on-FHIR-Implementation-Guide#0.1.0 (canonical = https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig)
+Generated Tue Sep 14 22:17:39 UTC 2021. FHIR version 4.0.1 for NCPI-DD-on-FHIR-Implementation-Guide#0.1.0 (canonical = https://nih-NCPI.github.io/ncpi-dd-on-fhir-ig)
 
  Build Errors : 0 / 0 / 0
  /home/runner/work/DD-On-FHIR/DD-On-FHIR/fsh-generated/resources/ActivityDefinition-activity-definition-example-pht004678.v1.p1 : 0 / 1 / 1

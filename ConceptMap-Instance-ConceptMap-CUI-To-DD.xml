@@ -3,7 +3,7 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
   <id value="Instance-ConceptMap-CUI-To-DD"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>phs000888.v1.p-CUItoDD (http://ddent.ncpi.someplace.org/ddent-fhir/ConceptMap/CUI/phs000888.v1.p1-CUItoDD)</h2><p>Mapping from http://ddent.ncpi.someplace.org/ddent-fhir/ValueSet/CUI/phs000888.v1.p1 to http://ddent.ncpi.someplace.org/ddent-fhir/ValueSet/DD/phs000888.v1.p1</p><p>DRAFT. Published on Sep 14, 2021 10:17:05 PM by NCPI FHIR Working Group (NCPI FHIR Working Group: <a href="https://github.com/nih-NCPI">https://github.com/nih-NCPI</a>, Eric Torstenson: <a href="mailto:eric.s.torstenson@vumc.org">eric.s.torstenson@vumc.org</a>). </p><div><p>The electronic Medical Records and Genomics (eMERGE) Network is a consortium of ten participating sites</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>phs000888.v1.p-CUItoDD (http://ddent.ncpi.someplace.org/ddent-fhir/ConceptMap/CUI/phs000888.v1.p1-CUItoDD)</h2><p>Mapping from http://ddent.ncpi.someplace.org/ddent-fhir/ValueSet/CUI/phs000888.v1.p1 to http://ddent.ncpi.someplace.org/ddent-fhir/ValueSet/DD/phs000888.v1.p1</p><p>DRAFT. Published on Sep 14, 2021 10:17:07 PM by NCPI FHIR Working Group (NCPI FHIR Working Group: <a href="https://github.com/nih-NCPI">https://github.com/nih-NCPI</a>, Eric Torstenson: <a href="mailto:eric.s.torstenson@vumc.org">eric.s.torstenson@vumc.org</a>). </p><div><p>The electronic Medical Records and Genomics (eMERGE) Network is a consortium of ten participating sites</p>
 </div><br/><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td><td><b>Comment</b></td></tr><tr><td>233985008 (Abdominal aortic aneurysm)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent">is equivalent to</a></td><td>phv00225967.v1</td><td>* Semantics: problem
  * Assertion: present
  * Prob:  0.867	
@@ -76,7 +76,7 @@
   <title value="Study Concept Map for eMERGE Network Imputed GWAS for 41 Phenotypes"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2021-09-14T22:17:05+00:00"/>
+  <date value="2021-09-14T22:17:07+00:00"/>
   <publisher value="NCPI FHIR Working Group"/>
   <contact>
     <name value="NCPI FHIR Working Group"/>
