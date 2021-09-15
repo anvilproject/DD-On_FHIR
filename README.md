@@ -43,4 +43,4 @@ $ ./_genonce.sh
 
 ## Implementation Guide (Pre-Release)
 
-The DD-On-FHIR Implementation Guide (pre-release) is available [here](https://anvilproject.github.io/DD-On-FHIR/).
+The DD-On-FHIR Implementation Guide (pre-release) is available [here](http://torstees.github.io/DD-On-FHIR/).
