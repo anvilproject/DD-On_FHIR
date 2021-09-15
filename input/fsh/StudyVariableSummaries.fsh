@@ -24,14 +24,14 @@ InstanceOf: Observation
 Title: "Summary counts for variable phv00225962.v1.p1, sex"
 Description: "summary counts for variable phv00225962.v1.p1, sex"
 * status = #final
-* code.coding = $pht004678#phv00225962.v1.p1
+* code.coding = $ncpi#Summary "Variable Summary"
 * subject = Reference(research-group-phs000888-all)
 * focus = Reference(observation-definition-example-phv00225962)
-* valueQuantity
-  * value = 55029
-  * code = #C1515051
-  * system = $umls
+* valueCodeableConcept = $umls#C17357 "Gender"
 * component
+  * code = $umls#C1515051 "Sum"
+  * valueInteger = 55029
+* component[+]
   * code = $umls#C46109 "Male"
   * valueInteger = 25246
 * component[+]
@@ -43,14 +43,13 @@ InstanceOf: Observation
 Title: "Summary details for variable phv00225967.v1.p1, aaa"
 Description: "Summary details for variable phv00225967.v1.p1, aaa"
 * status = #final
-* code.coding = $pht004678#phv00225967.v1.p1
+* code.coding = $ncpi#Summary "Variable Summary"
 * subject = Reference(research-group-phs000888-all)
 * focus = Reference(observation-definition-example-phv00225967)
-* valueQuantity 
-  * value = 55029
-  * code = #C1515051
-  * system = $umls
 * component
+  * code = #C1515051 "Sum"
+  * valueInteger = 55029
+* component[+]
   * code = $umls#C99269 "Case"
   * valueInteger = 1110
 * component[+]
@@ -65,14 +64,13 @@ InstanceOf: Observation
 Title: "Summary counts for variable phv00226014.v1.p1 , weight"
 Description: "summary counts for variable phv00226014.v1.p1 , weight"
 * status = #final
-* code.coding = $pht004680#phv00226014.v1.p1 "WEIGHT"
+* code.coding = $ncpi#Summary "Variable Summary"
 * subject = Reference(research-group-phs000888-all)
 * focus = Reference(observation-definition-example-phv00226014)
-* valueQuantity
-  * value = 2096779
-  * code = #C1515051
-  * system = $umls
 * component
+  * code = $umls#C1515051 "Sum"
+  * valueInteger = 2096779
+* component[+]
   * code = $umls#C1524031 "Minimum"
   * valueQuantity 
     * value = 30
@@ -108,14 +106,13 @@ InstanceOf: Observation
 Title: "Summary counts for variable phv00226015.v1.p1 , height"
 Description: "summary counts for variable phv00226015.v1.p1 , height"
 * status = #final
-* code.coding = $pht004680#phv00226015.v1.p1 "HEIGHT"
+* code.coding = $ncpi#Summary "Variable Summary"
 * subject = Reference(research-group-phs000888-all)
 * focus = Reference(observation-definition-example-phv00226015)
-* valueQuantity
-  * value = 1987376
-  * code = #C1515051
-  * system = $umls
 * component
+  * code = #C1515051 "Sum"
+  * valueInteger = 1987376
+* component[+]
   * code = $umls#C1524031 "Minimum"
   * valueQuantity 
     * value = 33.02
@@ -151,14 +148,13 @@ InstanceOf: Observation
 Title: "Summary counts for variable phv00226016.v1.p1 , BMI"
 Description: "summary counts for variable phv00226016.v1.p1 , BMI"
 * status = #final
-* code.coding = $pht004680#phv00226016.v1.p1 "BODY_MASS_INDEX"
+* code.coding = $ncpi#Summary "Variable Summary"
 * subject = Reference(research-group-phs000888-all)
 * focus = Reference(observation-definition-example-phv00226016)
-* valueQuantity
-  * value = 2438477
-  * code = #C1515051
-  * system = $umls
 * component
+  * code = #C1515051 "Sum"
+  * valueInteger = 2438477
+* component[+]
   * code = $umls#C1524031 "Minimum"
   * valueQuantity
     * value = 0.3
@@ -195,14 +191,13 @@ InstanceOf: Observation
 Title: "Summary counts for variable phv00225962.v1.p1, sex for subgroup HMB"
 Description: "summary counts for variable phv00225962.v1.p1, sex for subgroup HBM"
 * status = #final
-* code.coding = $pht004678#phv00225962.v1.p1
+* code.coding = $ncpi#Summary "Variable Summary"
 * focus = Reference(observation-definition-example-phv00225962)
 * subject = Reference(research-group-phs000888-hmb)
-* valueQuantity
-  * value = 18621	
-  * code = #C1515051
-  * system = $umls
 * component
+  * code = #C1515051 "Sum"
+  * valueInteger = 18621
+* component[+]
   * code = $umls#C46109 "Male"
   * valueInteger = 8887
 * component[+]
@@ -214,15 +209,14 @@ InstanceOf: Observation
 Title: "Summary details for variable phv00225967.v1.p1, aaa (HMB)"
 Description: "Summary details for variable phv00225967.v1.p1, aaa for consent group (HMB)"
 * status = #final
-* code.coding = $pht004678#phv00225967.v1.p1
+* code.coding = $ncpi#Summary "Variable Summary"
 * subject = Reference(research-group-phs000888-hmb)
 * focus = Reference(observation-definition-example-phv00225967)
 * subject = Reference(research-group-phs000888-hmb)
-* valueQuantity 
-  * value = 18621
-  * code = #C1515051
-  * system = $umls
 * component
+  * code = $umls#C1515051 "Sum"
+  * valueInteger = 18621
+* component[+]
   * code = $umls#C99269 "Case"
   * valueInteger = 774
 * component[+]
@@ -237,14 +231,13 @@ InstanceOf: Observation
 Title: "Summary counts for variable phv00226014.v1.p1 , weight (HMB)"
 Description: "summary counts for variable phv00226014.v1.p1 , weight (HMB)"
 * status = #final
-* code.coding = $pht004680#phv00226014.v1.p1 "WEIGHT"
+* code.coding = $ncpi#Summary "Variable Summary"
 * focus = Reference(observation-definition-example-phv00226014)
 * subject = Reference(research-group-phs000888-hmb)
-* valueQuantity
-  * value = 1297606
-  * code = #C1515051
-  * system = $umls
 * component
+  * code = $umls#C1515051 "Sum"
+  * valueInteger = 1297606
+* component[+]
   * code = $umls#C1524031 "Minimum"
   * valueQuantity
     * value = 30
@@ -280,14 +273,13 @@ InstanceOf: Observation
 Title: "Summary counts for variable phv00226015.v1.p1 , height (HMB)"
 Description: "summary counts for variable phv00226015.v1.p1 , height (HMB)"
 * status = #final
-* code.coding = $pht004680#phv00226015.v1.p1 "HEIGHT"
+* code.coding = $ncpi#Summary "Variable Summary"
 * focus = Reference(observation-definition-example-phv00226015)
 * subject = Reference(research-group-phs000888-hmb)
-* valueQuantity
-  * value = 1188121
-  * code = #C1515051
-  * system = $umls
 * component
+  * code = #C1515051 "Sum"
+  * valueInteger = 1188121
+* component[+]
   * code = $umls#C1524031 "Minimum"
   * valueQuantity
     * value = 33.02
@@ -323,14 +315,13 @@ InstanceOf: Observation
 Title: "Summary counts for variable phv00226016.v1.p1, BMI (HMB)"
 Description: "summary counts for variable phv00226016.v1.p1, BMI (HMB)"
 * status = #final
-* code.coding = $pht004680#phv00226016.v1.p1 "BODY_MASS_INDEX"
+* code.coding = $ncpi#Summary "Variable Summary"
 * focus = Reference(observation-definition-example-phv00226016)
 * subject = Reference(research-group-phs000888-hmb)
-* valueQuantity
-  * value = 1488423
-  * code = #C1515051 "Sum"
-  * system = $umls
 * component
+  * code = #C1515051 "Sum"
+  * valueInteger = 1488423
+* component[+]
   * code = $umls#C1524031 "Minimum"
   * valueQuantity
     * value = 0.3

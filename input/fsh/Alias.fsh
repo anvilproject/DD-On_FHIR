@@ -12,6 +12,7 @@ Alias: $loinc = http://loinc.org
 /**
  * Local Aliases
  */
+Alias: $ncpi = http://www.ncbi.nlm.nih.gov/codesystems
 Alias: $pht004678 = https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4678
 Alias: $pht004680 = https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/dataset.cgi?study_id=phs000888.v1.p1&pht=4680
 Alias: $phv00225963 = https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/variable.cgi?study_id=phs000888.v1.p1&phv=225963
